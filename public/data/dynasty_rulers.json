@@ -1,0 +1,8794 @@
+{
+  "Maratha Empire": [
+    {
+      "ruler": "Shivaji",
+      "start": 1674,
+      "end": 1680
+    },
+    {
+      "ruler": "Sambhaji",
+      "start": 1681,
+      "end": 1689
+    },
+    {
+      "ruler": "Rajaram I",
+      "start": 1689,
+      "end": 1700
+    },
+    {
+      "ruler": "Shivaji II under Regent Tarabai",
+      "start": 1700,
+      "end": 1707,
+      "title": "Regency government",
+      "note": "Satara succession; Tarabai was regent"
+    },
+    {
+      "ruler": "Shahu I",
+      "start": 1708,
+      "end": 1749
+    },
+    {
+      "ruler": "Balaji Vishwanath",
+      "start": 1713,
+      "end": 1720,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Baji Rao I",
+      "start": 1720,
+      "end": 1740,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Balaji Baji Rao / Nanasaheb",
+      "start": 1740,
+      "end": 1761,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Rajaram II",
+      "start": 1749,
+      "end": 1777,
+      "title": "Nominal sovereign",
+      "note": "Chhatrapati at Satara; Peshwas exercised executive power"
+    },
+    {
+      "ruler": "Madhavrao I",
+      "start": 1761,
+      "end": 1772,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Narayanrao",
+      "start": 1772,
+      "end": 1773,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Raghunathrao",
+      "start": 1773,
+      "end": 1774,
+      "title": "Contested Peshwa",
+      "note": "Claimant Peshwa"
+    },
+    {
+      "ruler": "Madhavrao II",
+      "start": 1774,
+      "end": 1795,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Shahu II",
+      "start": 1777,
+      "end": 1808,
+      "title": "Nominal sovereign",
+      "note": "Chhatrapati at Satara; Peshwas exercised executive power"
+    },
+    {
+      "ruler": "Baji Rao II",
+      "start": 1796,
+      "end": 1818,
+      "title": "Peshwa / chief executive",
+      "note": "Peshwa"
+    },
+    {
+      "ruler": "Pratap Singh of Satara",
+      "start": 1808,
+      "end": 1839,
+      "note": "Maratha Empire ended in 1818; ruled Satara State thereafter"
+    },
+    {
+      "ruler": "Shahaji of Satara",
+      "start": 1839,
+      "end": 1848,
+      "note": "Princely ruler of Satara State"
+    }
+  ],
+  "Mughal Empire": [
+    {
+      "ruler": "Babur",
+      "start": 1526,
+      "end": 1530
+    },
+    {
+      "ruler": "Humayun (first reign)",
+      "start": 1530,
+      "end": 1540
+    },
+    {
+      "ruler": "Humayun (restored)",
+      "start": 1555,
+      "end": 1556
+    },
+    {
+      "ruler": "Akbar",
+      "start": 1556,
+      "end": 1605
+    },
+    {
+      "ruler": "Jahangir",
+      "start": 1605,
+      "end": 1627
+    },
+    {
+      "ruler": "Shah Jahan",
+      "start": 1628,
+      "end": 1658
+    },
+    {
+      "ruler": "Aurangzeb",
+      "start": 1658,
+      "end": 1707
+    },
+    {
+      "ruler": "Bahadur Shah I",
+      "start": 1707,
+      "end": 1712
+    },
+    {
+      "ruler": "Jahandar Shah",
+      "start": 1712,
+      "end": 1713
+    },
+    {
+      "ruler": "Farrukhsiyar",
+      "start": 1713,
+      "end": 1719
+    },
+    {
+      "ruler": "Rafi ud-Darajat",
+      "start": 1719,
+      "end": 1719,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Shah Jahan II / Rafi ud-Daulah",
+      "start": 1719,
+      "end": 1719,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Muhammad Shah",
+      "start": 1719,
+      "end": 1748
+    },
+    {
+      "ruler": "Ahmad Shah Bahadur",
+      "start": 1748,
+      "end": 1754
+    },
+    {
+      "ruler": "Alamgir II",
+      "start": 1754,
+      "end": 1759
+    },
+    {
+      "ruler": "Shah Jahan III",
+      "start": 1759,
+      "end": 1760,
+      "title": "Contested ruler",
+      "note": "Brief claimant/emperor"
+    },
+    {
+      "ruler": "Shah Alam II",
+      "start": 1760,
+      "end": 1806,
+      "note": "Claim began in 1759; coronation/effective reign convention varies"
+    },
+    {
+      "ruler": "Akbar II",
+      "start": 1806,
+      "end": 1837
+    },
+    {
+      "ruler": "Bahadur Shah II / Zafar",
+      "start": 1837,
+      "end": 1857
+    }
+  ],
+  "Hyderabad": [
+    {
+      "ruler": "Asaf Jah I (Nizam-ul-Mulk)",
+      "title": "Nizam",
+      "start": 1724,
+      "end": 1748,
+      "note": "Founder of the Asaf Jahi dynasty"
+    },
+    {
+      "ruler": "Nasir Jung",
+      "title": "Nizam",
+      "start": 1748,
+      "end": 1750
+    },
+    {
+      "ruler": "Muzaffar Jung",
+      "title": "Nizam",
+      "start": 1750,
+      "end": 1751
+    },
+    {
+      "ruler": "Salabat Jung",
+      "title": "Nizam",
+      "start": 1751,
+      "end": 1762
+    },
+    {
+      "ruler": "Asaf Jah II (Nizam Ali Khan)",
+      "title": "Nizam",
+      "start": 1762,
+      "end": 1803,
+      "note": "Allied with the British against Mysore"
+    },
+    {
+      "ruler": "Asaf Jah III (Sikandar Jah)",
+      "title": "Nizam",
+      "start": 1803,
+      "end": 1829
+    },
+    {
+      "ruler": "Asaf Jah IV (Nasir-ud-Daulah)",
+      "title": "Nizam",
+      "start": 1829,
+      "end": 1857
+    },
+    {
+      "ruler": "Asaf Jah V (Afzal-ud-Daulah)",
+      "title": "Nizam",
+      "start": 1857,
+      "end": 1869
+    },
+    {
+      "ruler": "Asaf Jah VI (Mahbub Ali Khan)",
+      "title": "Nizam",
+      "start": 1869,
+      "end": 1911
+    },
+    {
+      "ruler": "Asaf Jah VII (Osman Ali Khan)",
+      "title": "Nizam",
+      "start": 1911,
+      "end": 1948,
+      "note": "Last Nizam; acceded to India in 1948"
+    }
+  ],
+  "Mysore Sultanate (Hyder Ali & Tipu)": [
+    {
+      "ruler": "Hyder Ali",
+      "title": "Sultan (de-facto)",
+      "start": 1761,
+      "end": 1782,
+      "note": "De-facto ruler; the Wodeyar raja was titular"
+    },
+    {
+      "ruler": "Tipu Sultan",
+      "title": "Sultan",
+      "start": 1782,
+      "end": 1799,
+      "note": "Killed at the fall of Seringapatam"
+    }
+  ],
+  "Sikh Empire": [
+    {
+      "ruler": "Maharaja Ranjit Singh",
+      "start": 1801,
+      "end": 1839
+    },
+    {
+      "ruler": "Kharak Singh",
+      "start": 1839,
+      "end": 1839,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Nau Nihal Singh",
+      "start": 1839,
+      "end": 1840
+    },
+    {
+      "ruler": "Chand Kaur",
+      "start": 1840,
+      "end": 1841,
+      "title": "Regent / claimant",
+      "note": "Regent/claimant"
+    },
+    {
+      "ruler": "Sher Singh",
+      "start": 1841,
+      "end": 1843
+    },
+    {
+      "ruler": "Jind Kaur",
+      "start": 1843,
+      "end": 1846,
+      "title": "Regent",
+      "note": "Regent for Duleep Singh"
+    },
+    {
+      "ruler": "Duleep Singh",
+      "start": 1843,
+      "end": 1849
+    }
+  ],
+  "Durrani (Afghan) Empire": [
+    {
+      "ruler": "Ahmad Shah Durrani",
+      "title": "Shah",
+      "start": 1747,
+      "end": 1772,
+      "note": "Founder; victor at the Third Battle of Panipat (1761)"
+    },
+    {
+      "ruler": "Timur Shah",
+      "title": "Shah",
+      "start": 1772,
+      "end": 1793,
+      "note": "Moved the capital to Kabul"
+    },
+    {
+      "ruler": "Zaman Shah",
+      "title": "Shah",
+      "start": 1793,
+      "end": 1801
+    },
+    {
+      "ruler": "Mahmud Shah",
+      "title": "Shah",
+      "start": 1801,
+      "end": 1803
+    },
+    {
+      "ruler": "Shah Shuja",
+      "title": "Shah",
+      "start": 1803,
+      "end": 1809
+    }
+  ],
+  "Bengal (Nawab)": [
+    {
+      "ruler": "Murshid Quli Khan",
+      "start": 1717,
+      "end": 1727
+    },
+    {
+      "ruler": "Sarfaraz Khan (first reign)",
+      "start": 1727,
+      "end": 1727,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Shuja-ud-Din Muhammad Khan",
+      "start": 1727,
+      "end": 1739
+    },
+    {
+      "ruler": "Sarfaraz Khan (restored)",
+      "start": 1739,
+      "end": 1740
+    },
+    {
+      "ruler": "Alivardi Khan",
+      "start": 1740,
+      "end": 1756
+    },
+    {
+      "ruler": "Siraj ud-Daulah",
+      "start": 1756,
+      "end": 1757
+    },
+    {
+      "ruler": "Mir Jafar (first reign)",
+      "start": 1757,
+      "end": 1760,
+      "title": "Dependent ruler",
+      "note": "British-dependent Nawab"
+    },
+    {
+      "ruler": "Mir Qasim",
+      "start": 1760,
+      "end": 1763,
+      "title": "Dependent ruler",
+      "note": "British-dependent Nawab, later rebelled"
+    },
+    {
+      "ruler": "Mir Jafar (restored)",
+      "start": 1763,
+      "end": 1765,
+      "title": "Dependent ruler",
+      "note": "British-dependent Nawab"
+    },
+    {
+      "ruler": "Najmuddin Ali Khan",
+      "start": 1765,
+      "end": 1766,
+      "title": "Nominal ruler",
+      "note": "British-dependent/nominal Nawab"
+    },
+    {
+      "ruler": "Najabut Ali Khan",
+      "start": 1766,
+      "end": 1770,
+      "title": "Nominal ruler",
+      "note": "British-dependent/nominal Nawab"
+    },
+    {
+      "ruler": "Ashraf Ali Khan",
+      "start": 1770,
+      "end": 1770,
+      "title": "Nominal ruler",
+      "note": "Brief nominal Nawab"
+    },
+    {
+      "ruler": "Mubarak Ali Khan",
+      "start": 1770,
+      "end": 1793,
+      "title": "Nominal ruler",
+      "note": "Nominal Nawab under Company supremacy"
+    },
+    {
+      "ruler": "Babar Ali Khan",
+      "start": 1793,
+      "end": 1810,
+      "title": "Titular ruler",
+      "note": "Nawab Nazim of Murshidabad"
+    },
+    {
+      "ruler": "Zain-ud-Din Ali Khan",
+      "start": 1810,
+      "end": 1821,
+      "title": "Titular ruler",
+      "note": "Nawab Nazim of Murshidabad"
+    },
+    {
+      "ruler": "Ahmad Ali Khan",
+      "start": 1821,
+      "end": 1824,
+      "title": "Titular ruler",
+      "note": "Nawab Nazim of Murshidabad"
+    },
+    {
+      "ruler": "Mubarak Ali Khan II",
+      "start": 1824,
+      "end": 1838,
+      "title": "Titular ruler",
+      "note": "Nawab Nazim of Murshidabad"
+    },
+    {
+      "ruler": "Mansur Ali Khan",
+      "start": 1838,
+      "end": 1880,
+      "title": "Titular ruler",
+      "note": "Nawab Nazim; title later abolished"
+    }
+  ],
+  "Carnatic (Arcot Nawab)": [
+    {
+      "ruler": "Saadatullah Khan I",
+      "title": "Nawab",
+      "start": 1710,
+      "end": 1732
+    },
+    {
+      "ruler": "Dost Ali Khan",
+      "title": "Nawab",
+      "start": 1732,
+      "end": 1740
+    },
+    {
+      "ruler": "Safdar Ali Khan",
+      "title": "Nawab",
+      "start": 1740,
+      "end": 1742
+    },
+    {
+      "ruler": "Anwaruddin Khan",
+      "title": "Nawab",
+      "start": 1744,
+      "end": 1749
+    },
+    {
+      "ruler": "Muhammad Ali Khan Wallajah",
+      "title": "Nawab",
+      "start": 1749,
+      "end": 1795,
+      "note": "Ally of the British in the Carnatic Wars"
+    },
+    {
+      "ruler": "Umdat ul-Umara",
+      "title": "Nawab",
+      "start": 1795,
+      "end": 1801
+    },
+    {
+      "ruler": "Azim-ud-Daula",
+      "title": "Nawab",
+      "start": 1801,
+      "end": 1819,
+      "note": "Ceded revenue rights to the British (1801)"
+    }
+  ],
+  "Travancore": [
+    {
+      "ruler": "Marthanda Varma",
+      "start": 1729,
+      "end": 1758
+    },
+    {
+      "ruler": "Dharma Raja",
+      "start": 1758,
+      "end": 1798
+    },
+    {
+      "ruler": "Balarama Varma",
+      "start": 1798,
+      "end": 1810
+    },
+    {
+      "ruler": "Gowri Lakshmi Bayi",
+      "start": 1810,
+      "end": 1815
+    },
+    {
+      "ruler": "Gowri Parvati Bayi",
+      "start": 1815,
+      "end": 1829,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Swathi Thirunal Rama Varma",
+      "start": 1829,
+      "end": 1846
+    },
+    {
+      "ruler": "Uthram Thirunal Marthanda Varma",
+      "start": 1846,
+      "end": 1860
+    },
+    {
+      "ruler": "Ayilyam Thirunal Rama Varma",
+      "start": 1860,
+      "end": 1880
+    },
+    {
+      "ruler": "Visakham Thirunal Rama Varma",
+      "start": 1880,
+      "end": 1885
+    },
+    {
+      "ruler": "Moolam Thirunal Rama Varma",
+      "start": 1885,
+      "end": 1924
+    },
+    {
+      "ruler": "Sethu Lakshmi Bayi",
+      "start": 1924,
+      "end": 1931,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Chithira Thirunal Balarama Varma",
+      "start": 1931,
+      "end": 1949
+    }
+  ],
+  "Vijayanagara Empire": [
+    {
+      "ruler": "Harihara I",
+      "start": 1336,
+      "end": 1356
+    },
+    {
+      "ruler": "Bukka I",
+      "start": 1356,
+      "end": 1377
+    },
+    {
+      "ruler": "Harihara II",
+      "start": 1377,
+      "end": 1404
+    },
+    {
+      "ruler": "Virupaksha Raya I",
+      "start": 1404,
+      "end": 1405
+    },
+    {
+      "ruler": "Bukka II",
+      "start": 1405,
+      "end": 1406
+    },
+    {
+      "ruler": "Deva Raya I",
+      "start": 1406,
+      "end": 1422
+    },
+    {
+      "ruler": "Ramachandra Raya / Vira Vijaya",
+      "start": 1422,
+      "end": 1424
+    },
+    {
+      "ruler": "Deva Raya II",
+      "start": 1424,
+      "end": 1446
+    },
+    {
+      "ruler": "Mallikarjuna Raya",
+      "start": 1446,
+      "end": 1465
+    },
+    {
+      "ruler": "Virupaksha Raya II",
+      "start": 1465,
+      "end": 1485
+    },
+    {
+      "ruler": "Praudha Raya",
+      "start": 1485,
+      "end": 1485,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Saluva Narasimha Deva Raya",
+      "start": 1485,
+      "end": 1491
+    },
+    {
+      "ruler": "Thimma Bhupala",
+      "start": 1491,
+      "end": 1491,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Tuluva Narasa Nayaka",
+      "start": 1491,
+      "end": 1503,
+      "title": "Regent / de facto ruler",
+      "note": "Regent and de facto ruler"
+    },
+    {
+      "ruler": "Narasimha Raya II",
+      "start": 1491,
+      "end": 1505
+    },
+    {
+      "ruler": "Vira Narasimha Raya",
+      "start": 1503,
+      "end": 1509
+    },
+    {
+      "ruler": "Krishnadevaraya",
+      "start": 1509,
+      "end": 1529
+    },
+    {
+      "ruler": "Achyuta Deva Raya",
+      "start": 1529,
+      "end": 1542
+    },
+    {
+      "ruler": "Aliya Rama Raya",
+      "start": 1542,
+      "end": 1565,
+      "title": "De facto ruler",
+      "note": "De facto ruler under Sadasiva Raya"
+    },
+    {
+      "ruler": "Sadasiva Raya",
+      "start": 1542,
+      "end": 1570,
+      "title": "Nominal ruler",
+      "note": "Nominal emperor during Rama Raya's dominance"
+    },
+    {
+      "ruler": "Tirumala Deva Raya",
+      "start": 1565,
+      "end": 1572
+    },
+    {
+      "ruler": "Sriranga I",
+      "start": 1572,
+      "end": 1586
+    },
+    {
+      "ruler": "Venkata II",
+      "start": 1586,
+      "end": 1614
+    },
+    {
+      "ruler": "Sriranga II",
+      "start": 1614,
+      "end": 1617
+    },
+    {
+      "ruler": "Rama Deva Raya",
+      "start": 1617,
+      "end": 1632
+    },
+    {
+      "ruler": "Venkata III",
+      "start": 1632,
+      "end": 1642
+    },
+    {
+      "ruler": "Sriranga III",
+      "start": 1642,
+      "end": 1646,
+      "note": "Some chronologies extend nominal claims beyond 1646"
+    }
+  ],
+  "Delhi Sultanate": [
+    {
+      "ruler": "Qutb-ud-din Aibak",
+      "start": 1206,
+      "end": 1210
+    },
+    {
+      "ruler": "Aram Shah",
+      "start": 1210,
+      "end": 1211
+    },
+    {
+      "ruler": "Iltutmish",
+      "start": 1211,
+      "end": 1236
+    },
+    {
+      "ruler": "Rukn-ud-din Firuz",
+      "start": 1236,
+      "end": 1236,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Razia Sultan",
+      "start": 1236,
+      "end": 1240
+    },
+    {
+      "ruler": "Muiz-ud-din Bahram",
+      "start": 1240,
+      "end": 1242
+    },
+    {
+      "ruler": "Ala-ud-din Masud",
+      "start": 1242,
+      "end": 1246
+    },
+    {
+      "ruler": "Nasir-ud-din Mahmud",
+      "start": 1246,
+      "end": 1266
+    },
+    {
+      "ruler": "Ghiyas-ud-din Balban",
+      "start": 1266,
+      "end": 1286
+    },
+    {
+      "ruler": "Muiz-ud-din Qaiqabad",
+      "start": 1286,
+      "end": 1290
+    },
+    {
+      "ruler": "Jalal-ud-din Khalji",
+      "start": 1290,
+      "end": 1296
+    },
+    {
+      "ruler": "Ala-ud-din Khalji",
+      "start": 1296,
+      "end": 1316
+    },
+    {
+      "ruler": "Shihab-ud-din Omar",
+      "start": 1316,
+      "end": 1316,
+      "title": "Puppet ruler",
+      "note": "Minor puppet ruler"
+    },
+    {
+      "ruler": "Qutb-ud-din Mubarak Shah",
+      "start": 1316,
+      "end": 1320
+    },
+    {
+      "ruler": "Ghiyath al-Din Tughlaq",
+      "start": 1321,
+      "end": 1325
+    },
+    {
+      "ruler": "Muhammad bin Tughlaq",
+      "start": 1325,
+      "end": 1351
+    },
+    {
+      "ruler": "Firuz Shah Tughlaq",
+      "start": 1351,
+      "end": 1388
+    },
+    {
+      "ruler": "Ghiyath al-Din Tughlaq II",
+      "start": 1388,
+      "end": 1389
+    },
+    {
+      "ruler": "Abu Bakr Shah",
+      "start": 1389,
+      "end": 1390
+    },
+    {
+      "ruler": "Nasir-ud-din Muhammad Shah III",
+      "start": 1390,
+      "end": 1394
+    },
+    {
+      "ruler": "Sikandar Shah I",
+      "start": 1394,
+      "end": 1394,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Nasir-ud-din Mahmud Shah IV",
+      "start": 1394,
+      "end": 1413
+    },
+    {
+      "ruler": "Khizr Khan",
+      "start": 1414,
+      "end": 1421
+    },
+    {
+      "ruler": "Mubarak Shah",
+      "start": 1421,
+      "end": 1434
+    },
+    {
+      "ruler": "Muhammad Shah",
+      "start": 1434,
+      "end": 1445
+    },
+    {
+      "ruler": "Ala-ud-din Alam Shah",
+      "start": 1445,
+      "end": 1451
+    },
+    {
+      "ruler": "Bahlul Lodi",
+      "start": 1451,
+      "end": 1489
+    },
+    {
+      "ruler": "Sikandar Lodi",
+      "start": 1489,
+      "end": 1517
+    },
+    {
+      "ruler": "Ibrahim Lodi",
+      "start": 1517,
+      "end": 1526
+    }
+  ],
+  "Ahom Kingdom": [
+    {
+      "ruler": "Sukaphaa",
+      "start": 1228,
+      "end": 1268
+    },
+    {
+      "ruler": "Suteuphaa",
+      "start": 1268,
+      "end": 1281
+    },
+    {
+      "ruler": "Subinphaa",
+      "start": 1281,
+      "end": 1293
+    },
+    {
+      "ruler": "Sukhaangphaa",
+      "start": 1293,
+      "end": 1332
+    },
+    {
+      "ruler": "Sukhrangphaa",
+      "start": 1332,
+      "end": 1364
+    },
+    {
+      "ruler": "Sutuphaa",
+      "start": 1369,
+      "end": 1376
+    },
+    {
+      "ruler": "Tyao Khamti",
+      "start": 1380,
+      "end": 1389
+    },
+    {
+      "ruler": "Sudangphaa / Bamuni Konwar",
+      "start": 1397,
+      "end": 1407
+    },
+    {
+      "ruler": "Sujangphaa",
+      "start": 1407,
+      "end": 1422
+    },
+    {
+      "ruler": "Suphakphaa",
+      "start": 1422,
+      "end": 1439
+    },
+    {
+      "ruler": "Susenphaa",
+      "start": 1439,
+      "end": 1488
+    },
+    {
+      "ruler": "Suhenphaa",
+      "start": 1488,
+      "end": 1493
+    },
+    {
+      "ruler": "Supimphaa",
+      "start": 1493,
+      "end": 1497
+    },
+    {
+      "ruler": "Suhungmung",
+      "start": 1497,
+      "end": 1539
+    },
+    {
+      "ruler": "Suklenmung",
+      "start": 1539,
+      "end": 1552
+    },
+    {
+      "ruler": "Sukhaamphaa",
+      "start": 1552,
+      "end": 1603
+    },
+    {
+      "ruler": "Susenghphaa / Pratap Singha",
+      "start": 1603,
+      "end": 1641
+    },
+    {
+      "ruler": "Suramphaa",
+      "start": 1641,
+      "end": 1644
+    },
+    {
+      "ruler": "Sutingphaa",
+      "start": 1644,
+      "end": 1648
+    },
+    {
+      "ruler": "Sutamla / Jayadhwaj Singha",
+      "start": 1648,
+      "end": 1663
+    },
+    {
+      "ruler": "Supangmung / Chakradhwaj Singha",
+      "start": 1663,
+      "end": 1670
+    },
+    {
+      "ruler": "Sunyatphaa / Udayaditya Singha",
+      "start": 1670,
+      "end": 1672
+    },
+    {
+      "ruler": "Suklamphaa / Ramadhwaj Singha",
+      "start": 1672,
+      "end": 1674
+    },
+    {
+      "ruler": "Suhung / Samaguria Roja",
+      "start": 1674,
+      "end": 1675
+    },
+    {
+      "ruler": "Gobar Roja",
+      "start": 1675,
+      "end": 1675,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Sujinphaa",
+      "start": 1675,
+      "end": 1677
+    },
+    {
+      "ruler": "Sudoiphaa",
+      "start": 1677,
+      "end": 1679
+    },
+    {
+      "ruler": "Sulikphaa",
+      "start": 1679,
+      "end": 1681
+    },
+    {
+      "ruler": "Supaatphaa / Gadadhar Singha",
+      "start": 1681,
+      "end": 1696
+    },
+    {
+      "ruler": "Sukhrungphaa / Rudra Singha",
+      "start": 1696,
+      "end": 1714
+    },
+    {
+      "ruler": "Sutanphaa / Siva Singha",
+      "start": 1714,
+      "end": 1744
+    },
+    {
+      "ruler": "Sunenphaa / Pramatta Singha",
+      "start": 1744,
+      "end": 1751
+    },
+    {
+      "ruler": "Suremphaa / Rajeswar Singha",
+      "start": 1751,
+      "end": 1769
+    },
+    {
+      "ruler": "Sunyeophaa / Lakshmi Singha",
+      "start": 1769,
+      "end": 1780
+    },
+    {
+      "ruler": "Suhitpangphaa / Gaurinath Singha",
+      "start": 1780,
+      "end": 1795
+    },
+    {
+      "ruler": "Suklingphaa / Kamaleswar Singha",
+      "start": 1795,
+      "end": 1811
+    },
+    {
+      "ruler": "Sudingphaa / Chandrakanta Singha (first reign)",
+      "start": 1811,
+      "end": 1818
+    },
+    {
+      "ruler": "Purandar Singha (first reign)",
+      "start": 1818,
+      "end": 1819
+    },
+    {
+      "ruler": "Sudingphaa / Chandrakanta Singha (second reign)",
+      "start": 1819,
+      "end": 1821
+    },
+    {
+      "ruler": "Jogeswar Singha",
+      "start": 1821,
+      "end": 1822
+    },
+    {
+      "ruler": "Purandar Singha (restored)",
+      "start": 1833,
+      "end": 1838,
+      "title": "Restored ruler under British supervision",
+      "note": "Limited British restoration"
+    }
+  ],
+  "Gwalior (Scindia)": [
+    {
+      "ruler": "Ranoji Scindia",
+      "start": 1731,
+      "end": 1745
+    },
+    {
+      "ruler": "Jayappaji Scindia",
+      "start": 1745,
+      "end": 1755
+    },
+    {
+      "ruler": "Dattaji Rao Scindia",
+      "start": 1755,
+      "end": 1760,
+      "title": "Regent / military ruler",
+      "note": "Regent and military leader"
+    },
+    {
+      "ruler": "Jankoji Rao Scindia I",
+      "start": 1755,
+      "end": 1761
+    },
+    {
+      "ruler": "Kadarji Rao Scindia",
+      "start": 1763,
+      "end": 1764
+    },
+    {
+      "ruler": "Manaji Rao Scindia",
+      "start": 1764,
+      "end": 1768
+    },
+    {
+      "ruler": "Mahadji Scindia",
+      "start": 1768,
+      "end": 1794
+    },
+    {
+      "ruler": "Daulat Rao Scindia",
+      "start": 1794,
+      "end": 1827
+    },
+    {
+      "ruler": "Baiza Bai",
+      "start": 1827,
+      "end": 1832,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Jankoji Rao Scindia II",
+      "start": 1827,
+      "end": 1843
+    },
+    {
+      "ruler": "Tara Bai",
+      "start": 1843,
+      "end": 1844,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Jayajirao Scindia",
+      "start": 1843,
+      "end": 1886
+    },
+    {
+      "ruler": "Sakhya Bai",
+      "start": 1886,
+      "end": 1894,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Madhavrao Scindia I",
+      "start": 1886,
+      "end": 1925
+    },
+    {
+      "ruler": "Chinku Bai",
+      "start": 1925,
+      "end": 1931,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Jiwajirao Scindia",
+      "start": 1925,
+      "end": 1948
+    },
+    {
+      "ruler": "Gajra Rajebai",
+      "start": 1931,
+      "end": 1936,
+      "title": "Regent",
+      "note": "Regent"
+    }
+  ],
+  "Holkar (Indore State)": [
+    {
+      "ruler": "Malhar Rao Holkar I",
+      "title": "Maharaja",
+      "start": 1731,
+      "end": 1766,
+      "note": "Founder of the Holkar house"
+    },
+    {
+      "ruler": "Male Rao Holkar",
+      "title": "Maharaja",
+      "start": 1766,
+      "end": 1767
+    },
+    {
+      "ruler": "Ahilyabai Holkar",
+      "title": "Maharani",
+      "start": 1767,
+      "end": 1795,
+      "note": "Renowned for temple-building and just rule"
+    },
+    {
+      "ruler": "Tukoji Rao Holkar I",
+      "title": "Maharaja",
+      "start": 1795,
+      "end": 1797
+    },
+    {
+      "ruler": "Kashi Rao Holkar",
+      "title": "Maharaja",
+      "start": 1797,
+      "end": 1799
+    },
+    {
+      "ruler": "Khande Rao Holkar I",
+      "title": "Maharaja",
+      "start": 1799,
+      "end": 1807
+    },
+    {
+      "ruler": "Yashwant Rao Holkar I",
+      "title": "Maharaja",
+      "start": 1807,
+      "end": 1811
+    },
+    {
+      "ruler": "Malhar Rao Holkar III",
+      "title": "Maharaja",
+      "start": 1811,
+      "end": 1833
+    },
+    {
+      "ruler": "Marthand Rao Holkar",
+      "title": "Maharaja",
+      "start": 1833,
+      "end": 1834
+    },
+    {
+      "ruler": "Hari Rao Holkar",
+      "title": "Maharaja",
+      "start": 1834,
+      "end": 1843
+    },
+    {
+      "ruler": "Khande Rao Holkar II",
+      "title": "Maharaja",
+      "start": 1843,
+      "end": 1844
+    },
+    {
+      "ruler": "Tukoji Rao Holkar II",
+      "title": "Maharaja",
+      "start": 1844,
+      "end": 1886
+    },
+    {
+      "ruler": "Shivaji Rao Holkar",
+      "title": "Maharaja",
+      "start": 1886,
+      "end": 1903
+    },
+    {
+      "ruler": "Tukoji Rao Holkar III",
+      "title": "Maharaja",
+      "start": 1903,
+      "end": 1926
+    },
+    {
+      "ruler": "Yashwant Rao Holkar II",
+      "title": "Maharaja",
+      "start": 1926,
+      "end": 1948,
+      "note": "Last ruling Maharaja; acceded to India, 1948"
+    }
+  ],
+  "Nagpur (Bhonsle)": [
+    {
+      "ruler": "Raghoji I Bhonsle",
+      "start": 1739,
+      "end": 1755
+    },
+    {
+      "ruler": "Janoji Bhonsle",
+      "start": 1755,
+      "end": 1772
+    },
+    {
+      "ruler": "Mudhoji I Bhonsle",
+      "start": 1772,
+      "end": 1788
+    },
+    {
+      "ruler": "Raghoji II Bhonsle",
+      "start": 1788,
+      "end": 1816
+    },
+    {
+      "ruler": "Parsoji Bhonsle",
+      "start": 1816,
+      "end": 1817
+    },
+    {
+      "ruler": "Mudhoji II / Appa Sahib",
+      "start": 1817,
+      "end": 1818
+    },
+    {
+      "ruler": "Raghoji III Bhonsle",
+      "start": 1818,
+      "end": 1853
+    }
+  ],
+  "Golconda (Qutb Shahi)": [
+    {
+      "ruler": "Sultan Quli Qutb-ul-Mulk",
+      "start": 1518,
+      "end": 1543
+    },
+    {
+      "ruler": "Jamsheed Quli Qutb Shah",
+      "start": 1543,
+      "end": 1550
+    },
+    {
+      "ruler": "Subhan Quli Qutb Shah",
+      "start": 1550,
+      "end": 1550,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Ibrahim Quli Qutb Shah",
+      "start": 1550,
+      "end": 1580
+    },
+    {
+      "ruler": "Muhammad Quli Qutb Shah",
+      "start": 1580,
+      "end": 1612
+    },
+    {
+      "ruler": "Sultan Muhammad Qutb Shah",
+      "start": 1612,
+      "end": 1626
+    },
+    {
+      "ruler": "Abdullah Qutb Shah",
+      "start": 1626,
+      "end": 1672
+    },
+    {
+      "ruler": "Abul Hasan Qutb Shah",
+      "start": 1672,
+      "end": 1687
+    }
+  ],
+  "Bijapur (Adil Shahi)": [
+    {
+      "ruler": "Yusuf Adil Shah",
+      "start": 1490,
+      "end": 1511
+    },
+    {
+      "ruler": "Ismail Adil Shah",
+      "start": 1511,
+      "end": 1534
+    },
+    {
+      "ruler": "Mallu Adil Shah",
+      "start": 1534,
+      "end": 1534,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Ibrahim Adil Shah I",
+      "start": 1534,
+      "end": 1558
+    },
+    {
+      "ruler": "Ali Adil Shah I",
+      "start": 1558,
+      "end": 1579
+    },
+    {
+      "ruler": "Ibrahim Adil Shah II",
+      "start": 1580,
+      "end": 1627
+    },
+    {
+      "ruler": "Muhammad Adil Shah",
+      "start": 1627,
+      "end": 1657
+    },
+    {
+      "ruler": "Ali Adil Shah II",
+      "start": 1657,
+      "end": 1672
+    },
+    {
+      "ruler": "Sikandar Adil Shah",
+      "start": 1672,
+      "end": 1686
+    }
+  ],
+  "Ahmadnagar Sultanate": [
+    {
+      "ruler": "Malik Ahmad Nizam Shah I",
+      "start": 1490,
+      "end": 1510
+    },
+    {
+      "ruler": "Burhan Nizam Shah I",
+      "start": 1510,
+      "end": 1553
+    },
+    {
+      "ruler": "Hussain Nizam Shah I",
+      "start": 1553,
+      "end": 1565
+    },
+    {
+      "ruler": "Murtaza Nizam Shah I",
+      "start": 1565,
+      "end": 1588
+    },
+    {
+      "ruler": "Hussain Nizam Shah II",
+      "start": 1588,
+      "end": 1589
+    },
+    {
+      "ruler": "Ismail Nizam Shah",
+      "start": 1589,
+      "end": 1591
+    },
+    {
+      "ruler": "Burhan Nizam Shah II",
+      "start": 1591,
+      "end": 1595
+    },
+    {
+      "ruler": "Ibrahim Nizam Shah",
+      "start": 1595,
+      "end": 1596
+    },
+    {
+      "ruler": "Ahmad Nizam Shah II",
+      "start": 1596,
+      "end": 1596,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Bahadur Nizam Shah",
+      "start": 1596,
+      "end": 1600
+    },
+    {
+      "ruler": "Murtaza Nizam Shah II",
+      "start": 1600,
+      "end": 1610
+    },
+    {
+      "ruler": "Burhan Nizam Shah III",
+      "start": 1610,
+      "end": 1631
+    },
+    {
+      "ruler": "Hussain Nizam Shah III",
+      "start": 1631,
+      "end": 1633
+    },
+    {
+      "ruler": "Murtaza Nizam Shah III",
+      "start": 1633,
+      "end": 1636
+    }
+  ],
+  "Bahmani Sultanate": [
+    {
+      "ruler": "Ala-ud-Din Bahman Shah",
+      "start": 1347,
+      "end": 1358
+    },
+    {
+      "ruler": "Muhammad Shah I",
+      "start": 1358,
+      "end": 1375
+    },
+    {
+      "ruler": "Mujahid Shah",
+      "start": 1375,
+      "end": 1378
+    },
+    {
+      "ruler": "Daud Shah I",
+      "start": 1378,
+      "end": 1378,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Muhammad Shah II",
+      "start": 1378,
+      "end": 1397
+    },
+    {
+      "ruler": "Ghiyas-ud-din Tahmatan Shah",
+      "start": 1397,
+      "end": 1397,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Shams-ud-din Daud Shah II",
+      "start": 1397,
+      "end": 1397,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Firuz Shah Bahmani",
+      "start": 1397,
+      "end": 1422
+    },
+    {
+      "ruler": "Ahmad Shah I Wali",
+      "start": 1422,
+      "end": 1435
+    },
+    {
+      "ruler": "Ala-ud-din Ahmad Shah II",
+      "start": 1436,
+      "end": 1458
+    },
+    {
+      "ruler": "Humayun Shah",
+      "start": 1458,
+      "end": 1461
+    },
+    {
+      "ruler": "Nizam-ud-Din Ahmad III",
+      "start": 1461,
+      "end": 1463
+    },
+    {
+      "ruler": "Muhammad Shah III Lashkari",
+      "start": 1463,
+      "end": 1482
+    },
+    {
+      "ruler": "Mahmud Shah Bahmani II",
+      "start": 1482,
+      "end": 1518
+    },
+    {
+      "ruler": "Ahmad Shah IV",
+      "start": 1518,
+      "end": 1521
+    },
+    {
+      "ruler": "Ala-ud-din Shah",
+      "start": 1521,
+      "end": 1522
+    },
+    {
+      "ruler": "Waliullah Shah",
+      "start": 1522,
+      "end": 1524
+    },
+    {
+      "ruler": "Kalimullah Shah",
+      "start": 1524,
+      "end": 1527
+    }
+  ],
+  "Bengal Sultanate": [
+    {
+      "ruler": "Shamsuddin Ilyas Shah",
+      "start": 1342,
+      "end": 1358
+    },
+    {
+      "ruler": "Sikandar Shah",
+      "start": 1358,
+      "end": 1390
+    },
+    {
+      "ruler": "Ghiyasuddin Azam Shah",
+      "start": 1390,
+      "end": 1411
+    },
+    {
+      "ruler": "Saifuddin Hamza Shah",
+      "start": 1411,
+      "end": 1413
+    },
+    {
+      "ruler": "Nasiruddin Muhammad Shah",
+      "start": 1413,
+      "end": 1413,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Shihabuddin Bayazid Shah",
+      "start": 1413,
+      "end": 1414
+    },
+    {
+      "ruler": "Alauddin Firuz Shah I",
+      "start": 1414,
+      "end": 1414,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Raja Ganesha (first rule)",
+      "start": 1414,
+      "end": 1415,
+      "note": "Hindu ruler of Bengal"
+    },
+    {
+      "ruler": "Jalaluddin Muhammad Shah (first rule)",
+      "start": 1415,
+      "end": 1416
+    },
+    {
+      "ruler": "Raja Ganesha (restored)",
+      "start": 1416,
+      "end": 1418
+    },
+    {
+      "ruler": "Jalaluddin Muhammad Shah (restored)",
+      "start": 1418,
+      "end": 1433
+    },
+    {
+      "ruler": "Shamsuddin Ahmad Shah",
+      "start": 1433,
+      "end": 1435
+    },
+    {
+      "ruler": "Nasiruddin Mahmud Shah I",
+      "start": 1435,
+      "end": 1459
+    },
+    {
+      "ruler": "Rukunuddin Barbak Shah",
+      "start": 1459,
+      "end": 1474
+    },
+    {
+      "ruler": "Shamsuddin Yusuf Shah",
+      "start": 1474,
+      "end": 1481
+    },
+    {
+      "ruler": "Sikandar Shah II",
+      "start": 1481,
+      "end": 1481,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Jalaluddin Fateh Shah",
+      "start": 1481,
+      "end": 1487
+    },
+    {
+      "ruler": "Shahzada Barbak",
+      "start": 1487,
+      "end": 1487,
+      "title": "Usurper",
+      "note": "Habshi usurper; brief reign"
+    },
+    {
+      "ruler": "Saifuddin Firuz Shah",
+      "start": 1487,
+      "end": 1489
+    },
+    {
+      "ruler": "Mahmud Shah II",
+      "start": 1489,
+      "end": 1490
+    },
+    {
+      "ruler": "Shamsuddin Muzaffar Shah",
+      "start": 1490,
+      "end": 1494
+    },
+    {
+      "ruler": "Alauddin Hussain Shah",
+      "start": 1494,
+      "end": 1518
+    },
+    {
+      "ruler": "Nasiruddin Nasrat Shah",
+      "start": 1518,
+      "end": 1533
+    },
+    {
+      "ruler": "Alauddin Firuz Shah II",
+      "start": 1533,
+      "end": 1533,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Ghiyasuddin Mahmud Shah",
+      "start": 1533,
+      "end": 1538
+    },
+    {
+      "ruler": "Khidr Khan",
+      "start": 1539,
+      "end": 1541,
+      "title": "Governor",
+      "note": "Suri-appointed governor"
+    },
+    {
+      "ruler": "Qazi Fazilat",
+      "start": 1541,
+      "end": 1545,
+      "title": "Governor",
+      "note": "Suri-appointed governor"
+    },
+    {
+      "ruler": "Muhammad Khan Sur",
+      "start": 1545,
+      "end": 1554,
+      "note": "Suri governor, later independent"
+    },
+    {
+      "ruler": "Shamsuddin Muhammad Shah",
+      "start": 1554,
+      "end": 1555,
+      "note": "Independent Muhammad Shahi ruler"
+    },
+    {
+      "ruler": "Ghiyasuddin Bahadur Shah II",
+      "start": 1555,
+      "end": 1561
+    },
+    {
+      "ruler": "Ghiyasuddin Jalal Shah",
+      "start": 1561,
+      "end": 1563
+    },
+    {
+      "ruler": "Ghiyasuddin Bahadur Shah III",
+      "start": 1563,
+      "end": 1564
+    },
+    {
+      "ruler": "Taj Khan Karrani",
+      "start": 1564,
+      "end": 1566
+    },
+    {
+      "ruler": "Sulaiman Khan Karrani",
+      "start": 1566,
+      "end": 1572
+    },
+    {
+      "ruler": "Bayazid Khan Karrani",
+      "start": 1572,
+      "end": 1572,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Daud Khan Karrani",
+      "start": 1572,
+      "end": 1576
+    }
+  ],
+  "Gujarat Sultanate": [
+    {
+      "ruler": "Muzaffar Shah I",
+      "title": "Sultan",
+      "start": 1391,
+      "end": 1411,
+      "note": "Founder of the Gujarat Sultanate"
+    },
+    {
+      "ruler": "Ahmad Shah I",
+      "title": "Sultan",
+      "start": 1411,
+      "end": 1442,
+      "note": "Founded Ahmedabad"
+    },
+    {
+      "ruler": "Mahmud Begada",
+      "title": "Sultan",
+      "start": 1458,
+      "end": 1511,
+      "note": "Greatest ruler of Gujarat"
+    },
+    {
+      "ruler": "Bahadur Shah",
+      "title": "Sultan",
+      "start": 1526,
+      "end": 1537,
+      "note": "Lost and regained Gujarat; drowned off Diu"
+    },
+    {
+      "ruler": "Ahmad Shah III",
+      "title": "Sultan",
+      "start": 1554,
+      "end": 1561
+    },
+    {
+      "ruler": "Muzaffar Shah III",
+      "title": "Sultan",
+      "start": 1561,
+      "end": 1573,
+      "note": "Last; annexed by Akbar"
+    }
+  ],
+  "Mysore": [
+    {
+      "ruler": "Yaduraya Wodeyar",
+      "start": 1399,
+      "end": 1423
+    },
+    {
+      "ruler": "Chamaraja Wodeyar I",
+      "start": 1423,
+      "end": 1459
+    },
+    {
+      "ruler": "Timmaraja Wodeyar I",
+      "start": 1459,
+      "end": 1478
+    },
+    {
+      "ruler": "Chamaraja Wodeyar II",
+      "start": 1478,
+      "end": 1513
+    },
+    {
+      "ruler": "Chamaraja Wodeyar III",
+      "start": 1513,
+      "end": 1553
+    },
+    {
+      "ruler": "Timmaraja Wodeyar II",
+      "start": 1553,
+      "end": 1572
+    },
+    {
+      "ruler": "Chamaraja Wodeyar IV",
+      "start": 1572,
+      "end": 1576
+    },
+    {
+      "ruler": "Bettada Devaraja Wodeyar",
+      "start": 1576,
+      "end": 1578
+    },
+    {
+      "ruler": "Raja Wodeyar I",
+      "start": 1578,
+      "end": 1617
+    },
+    {
+      "ruler": "Chamaraja Wodeyar V",
+      "start": 1617,
+      "end": 1637
+    },
+    {
+      "ruler": "Raja Wodeyar II",
+      "start": 1637,
+      "end": 1638
+    },
+    {
+      "ruler": "Kantheerava Narasaraja I",
+      "start": 1638,
+      "end": 1659
+    },
+    {
+      "ruler": "Dodda Devaraja Wodeyar",
+      "start": 1659,
+      "end": 1673
+    },
+    {
+      "ruler": "Chikka Devaraja Wodeyar",
+      "start": 1673,
+      "end": 1704
+    },
+    {
+      "ruler": "Kantheerava Narasaraja II",
+      "start": 1704,
+      "end": 1714
+    },
+    {
+      "ruler": "Krishnaraja Wodeyar I",
+      "start": 1714,
+      "end": 1732
+    },
+    {
+      "ruler": "Chamaraja Wodeyar VI",
+      "start": 1732,
+      "end": 1734
+    },
+    {
+      "ruler": "Krishnaraja Wodeyar II",
+      "start": 1734,
+      "end": 1766,
+      "note": "Hyder Ali became de facto ruler from 1761"
+    },
+    {
+      "ruler": "Hyder Ali",
+      "start": 1761,
+      "end": 1782,
+      "title": "De facto ruler",
+      "note": "De facto ruler, not Wodeyar monarch"
+    },
+    {
+      "ruler": "Nanjaraja Wodeyar",
+      "start": 1766,
+      "end": 1770
+    },
+    {
+      "ruler": "Chamaraja Wodeyar VII",
+      "start": 1772,
+      "end": 1776
+    },
+    {
+      "ruler": "Chamaraja Wodeyar VIII",
+      "start": 1776,
+      "end": 1796
+    },
+    {
+      "ruler": "Tipu Sultan",
+      "start": 1782,
+      "end": 1799,
+      "note": "Sultan of Mysore"
+    },
+    {
+      "ruler": "Krishnaraja Wodeyar III",
+      "start": 1799,
+      "end": 1868
+    },
+    {
+      "ruler": "Chamaraja Wodeyar X",
+      "start": 1868,
+      "end": 1894
+    },
+    {
+      "ruler": "Krishnaraja Wodeyar IV",
+      "start": 1894,
+      "end": 1940,
+      "note": "Vani Vilas Sannidhana served as regent, 1894–1902"
+    },
+    {
+      "ruler": "Jayachamarajendra Wodeyar",
+      "start": 1940,
+      "end": 1950
+    }
+  ],
+  "Awadh": [
+    {
+      "ruler": "Saadat Ali Khan I",
+      "start": 1722,
+      "end": 1739,
+      "note": "Standard establishment date used; some list snippets contain a later typo"
+    },
+    {
+      "ruler": "Safdar Jang",
+      "start": 1739,
+      "end": 1754
+    },
+    {
+      "ruler": "Shuja-ud-Daula",
+      "start": 1754,
+      "end": 1775
+    },
+    {
+      "ruler": "Asaf-ud-Daula",
+      "start": 1775,
+      "end": 1797
+    },
+    {
+      "ruler": "Wazir Ali Khan",
+      "start": 1797,
+      "end": 1798
+    },
+    {
+      "ruler": "Saadat Ali Khan II",
+      "start": 1798,
+      "end": 1814
+    },
+    {
+      "ruler": "Ghazi-ud-Din Haidar (Nawab)",
+      "start": 1814,
+      "end": 1818,
+      "note": "Nawab before assuming royal title"
+    },
+    {
+      "ruler": "Ghazi-ud-Din Haidar (King)",
+      "start": 1818,
+      "end": 1827,
+      "note": "King of Awadh"
+    },
+    {
+      "ruler": "Nasir-ud-Din Haidar",
+      "start": 1827,
+      "end": 1837
+    },
+    {
+      "ruler": "Muhammad Ali Shah",
+      "start": 1837,
+      "end": 1842
+    },
+    {
+      "ruler": "Amjad Ali Shah",
+      "start": 1842,
+      "end": 1847
+    },
+    {
+      "ruler": "Wajid Ali Shah",
+      "start": 1847,
+      "end": 1856
+    },
+    {
+      "ruler": "Birjis Qadr",
+      "start": 1857,
+      "end": 1858,
+      "title": "Rebel / claimant ruler",
+      "note": "Rebel king during the 1857 uprising"
+    }
+  ],
+  "Madurai Nayak": [
+    {
+      "ruler": "Viswanatha Nayaka",
+      "start": 1529,
+      "end": 1564
+    },
+    {
+      "ruler": "Krishnappa Nayaka I",
+      "start": 1564,
+      "end": 1572
+    },
+    {
+      "ruler": "Virappa Nayaka",
+      "start": 1572,
+      "end": 1595
+    },
+    {
+      "ruler": "Krishnappa Nayaka II",
+      "start": 1595,
+      "end": 1601
+    },
+    {
+      "ruler": "Muthu Krishnappa Nayaka",
+      "start": 1601,
+      "end": 1609
+    },
+    {
+      "ruler": "Muthu Virappa Nayaka I",
+      "start": 1609,
+      "end": 1623
+    },
+    {
+      "ruler": "Tirumala Nayaka",
+      "start": 1623,
+      "end": 1659
+    },
+    {
+      "ruler": "Muthu Virappa Nayaka II",
+      "start": 1659,
+      "end": 1659,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Chokkanatha Nayaka",
+      "start": 1659,
+      "end": 1682
+    },
+    {
+      "ruler": "Aranga Krishna Muthu Virappa Nayaka",
+      "start": 1682,
+      "end": 1689
+    },
+    {
+      "ruler": "Rani Mangammal",
+      "start": 1689,
+      "end": 1704,
+      "title": "Regent",
+      "note": "Regent"
+    },
+    {
+      "ruler": "Vijayaranga Chokkanatha Nayaka",
+      "start": 1704,
+      "end": 1732
+    },
+    {
+      "ruler": "Queen Meenakshi",
+      "start": 1732,
+      "end": 1736
+    }
+  ],
+  "Tanjore (Thanjavur) Nayak": [
+    {
+      "ruler": "Sevappa Nayak",
+      "title": "Nayak",
+      "start": 1532,
+      "end": 1580,
+      "note": "Founder of the Tanjore Nayak line"
+    },
+    {
+      "ruler": "Achuthappa Nayak",
+      "title": "Nayak",
+      "start": 1580,
+      "end": 1600
+    },
+    {
+      "ruler": "Raghunatha Nayak",
+      "title": "Nayak",
+      "start": 1600,
+      "end": 1634,
+      "note": "Cultural peak of Tanjore"
+    },
+    {
+      "ruler": "Vijaya Raghava Nayak",
+      "title": "Nayak",
+      "start": 1634,
+      "end": 1673,
+      "note": "Last; killed in the Madurai invasion"
+    }
+  ],
+  "Thanjavur (Maratha)": [
+    {
+      "ruler": "Ekoji I / Venkoji",
+      "start": 1674,
+      "end": 1684
+    },
+    {
+      "ruler": "Shahuji I",
+      "start": 1684,
+      "end": 1712
+    },
+    {
+      "ruler": "Serfoji I",
+      "start": 1712,
+      "end": 1728
+    },
+    {
+      "ruler": "Tukkoji",
+      "start": 1728,
+      "end": 1736
+    },
+    {
+      "ruler": "Ekoji II",
+      "start": 1736,
+      "end": 1737
+    },
+    {
+      "ruler": "Sujana Bai",
+      "start": 1737,
+      "end": 1738,
+      "title": "Regent / queen",
+      "note": "Queen/regent"
+    },
+    {
+      "ruler": "Pratap Singh",
+      "start": 1739,
+      "end": 1763
+    },
+    {
+      "ruler": "Tuljaji",
+      "start": 1763,
+      "end": 1787
+    },
+    {
+      "ruler": "Serfoji II (first reign)",
+      "start": 1787,
+      "end": 1788
+    },
+    {
+      "ruler": "Amar Singh",
+      "start": 1788,
+      "end": 1798
+    },
+    {
+      "ruler": "Serfoji II (restored)",
+      "start": 1798,
+      "end": 1832
+    },
+    {
+      "ruler": "Shivaji II",
+      "start": 1832,
+      "end": 1855
+    }
+  ],
+  "Ikkeri (Keladi) Nayak": [
+    {
+      "ruler": "Chaudappa Nayaka",
+      "title": "Nayaka",
+      "start": 1499,
+      "end": 1530,
+      "note": "Founder; feudatory of Vijayanagara"
+    },
+    {
+      "ruler": "Sadashiva Nayaka",
+      "title": "Nayaka",
+      "start": 1530,
+      "end": 1566,
+      "note": "Moved the capital to Ikkeri; earned the title Kotekolahala"
+    },
+    {
+      "ruler": "Dodda Sankanna Nayaka",
+      "title": "Nayaka",
+      "start": 1566,
+      "end": 1570,
+      "note": "Defeated the Bijapur general Randaula Khan"
+    },
+    {
+      "ruler": "Chikka Sankanna & Rama Raja",
+      "title": "Nayaka (co-regents)",
+      "start": 1570,
+      "end": 1582,
+      "note": "Co-regents; secured the Kanara coast and Uttara Kannada"
+    },
+    {
+      "ruler": "Hiriya Venkatappa Nayaka",
+      "title": "Nayaka",
+      "start": 1582,
+      "end": 1629,
+      "note": "Greatest ruler; declared full independence; beat the Portuguese"
+    },
+    {
+      "ruler": "Virabhadra Nayaka",
+      "title": "Nayaka",
+      "start": 1629,
+      "end": 1645,
+      "note": "Ikkeri plundered by the Bijapur army"
+    },
+    {
+      "ruler": "Shivappa Nayaka",
+      "title": "Nayaka",
+      "start": 1645,
+      "end": 1660,
+      "note": "Ablest ruler; ended Portuguese power in Kanara"
+    },
+    {
+      "ruler": "Chikka Venkatappa Nayaka",
+      "title": "Nayaka",
+      "start": 1660,
+      "end": 1662
+    },
+    {
+      "ruler": "Bhadrappa Nayaka",
+      "title": "Nayaka",
+      "start": 1662,
+      "end": 1664
+    },
+    {
+      "ruler": "Somashekara Nayaka I",
+      "title": "Nayaka",
+      "start": 1664,
+      "end": 1672
+    },
+    {
+      "ruler": "Keladi Chennamma",
+      "title": "Rani",
+      "start": 1672,
+      "end": 1697,
+      "note": "Sheltered Chhatrapati Rajaram from the Mughals"
+    },
+    {
+      "ruler": "Basavappa Nayaka",
+      "title": "Nayaka",
+      "start": 1697,
+      "end": 1714,
+      "note": "Author of the Sivatattva Ratnakara"
+    },
+    {
+      "ruler": "Somashekara Nayaka II",
+      "title": "Nayaka",
+      "start": 1714,
+      "end": 1739,
+      "note": "Capital at Bidanur"
+    },
+    {
+      "ruler": "Kiriya Basavappa Nayaka",
+      "title": "Nayaka",
+      "start": 1739,
+      "end": 1754
+    },
+    {
+      "ruler": "Chenna Basappa Nayaka",
+      "title": "Nayaka",
+      "start": 1754,
+      "end": 1757,
+      "note": "Regency of Virammaji"
+    },
+    {
+      "ruler": "Queen Virammaji",
+      "title": "Rani",
+      "start": 1757,
+      "end": 1763,
+      "note": "Last ruler; Keladi annexed by Hyder Ali (1763)"
+    }
+  ],
+  "Mukunda Deva": [
+    {
+      "ruler": "Mukunda Deva",
+      "title": "King",
+      "start": 1560,
+      "end": 1568,
+      "note": "Last independent Hindu king of Odisha; defeated by the Karrani Sultans of Bengal"
+    }
+  ],
+  "India": [
+    {
+      "ruler": "Jawaharlal Nehru",
+      "title": "Prime Minister",
+      "start": 1947,
+      "end": 1964,
+      "note": "First PM of independent India"
+    },
+    {
+      "ruler": "Lal Bahadur Shastri",
+      "title": "Prime Minister",
+      "start": 1964,
+      "end": 1966
+    },
+    {
+      "ruler": "Indira Gandhi",
+      "title": "Prime Minister",
+      "start": 1966,
+      "end": 1977
+    },
+    {
+      "ruler": "Morarji Desai",
+      "title": "Prime Minister",
+      "start": 1977,
+      "end": 1979,
+      "note": "First non-Congress PM (Janata)"
+    },
+    {
+      "ruler": "Charan Singh",
+      "title": "Prime Minister",
+      "start": 1979,
+      "end": 1980
+    },
+    {
+      "ruler": "Indira Gandhi",
+      "title": "Prime Minister",
+      "start": 1980,
+      "end": 1984,
+      "note": "Assassinated in office"
+    },
+    {
+      "ruler": "Rajiv Gandhi",
+      "title": "Prime Minister",
+      "start": 1984,
+      "end": 1989
+    },
+    {
+      "ruler": "V. P. Singh",
+      "title": "Prime Minister",
+      "start": 1989,
+      "end": 1990
+    },
+    {
+      "ruler": "Chandra Shekhar",
+      "title": "Prime Minister",
+      "start": 1990,
+      "end": 1991
+    },
+    {
+      "ruler": "P. V. Narasimha Rao",
+      "title": "Prime Minister",
+      "start": 1991,
+      "end": 1996,
+      "note": "Economic liberalisation"
+    },
+    {
+      "ruler": "Atal Bihari Vajpayee",
+      "title": "Prime Minister",
+      "start": 1996,
+      "end": 1996,
+      "note": "13-day government (May 1996)"
+    },
+    {
+      "ruler": "H. D. Deve Gowda",
+      "title": "Prime Minister",
+      "start": 1996,
+      "end": 1997,
+      "note": "United Front"
+    },
+    {
+      "ruler": "I. K. Gujral",
+      "title": "Prime Minister",
+      "start": 1997,
+      "end": 1998
+    },
+    {
+      "ruler": "Atal Bihari Vajpayee",
+      "title": "Prime Minister",
+      "start": 1998,
+      "end": 2004,
+      "note": "NDA government"
+    },
+    {
+      "ruler": "Manmohan Singh",
+      "title": "Prime Minister",
+      "start": 2004,
+      "end": 2014,
+      "note": "UPA government"
+    },
+    {
+      "ruler": "Narendra Modi",
+      "title": "Prime Minister",
+      "start": 2014,
+      "end": 2026,
+      "note": "NDA government"
+    }
+  ],
+  "Pakistan": [
+    {
+      "ruler": "Muhammad Ali Jinnah",
+      "title": "Governor-General",
+      "start": 1947,
+      "end": 1948,
+      "note": "Founder of Pakistan"
+    },
+    {
+      "ruler": "Liaquat Ali Khan",
+      "title": "Prime Minister",
+      "start": 1947,
+      "end": 1951,
+      "note": "First PM; assassinated"
+    },
+    {
+      "ruler": "Civilian governments (unstable)",
+      "title": "Various PMs",
+      "start": 1951,
+      "end": 1958,
+      "note": "Frequent changes of PM"
+    },
+    {
+      "ruler": "Ayub Khan",
+      "title": "President (military)",
+      "start": 1958,
+      "end": 1969,
+      "note": "Seized power in 1958 coup"
+    },
+    {
+      "ruler": "Yahya Khan",
+      "title": "President (military)",
+      "start": 1969,
+      "end": 1971,
+      "note": "Ruled during the 1971 war and secession of Bangladesh"
+    },
+    {
+      "ruler": "Zulfikar Ali Bhutto",
+      "title": "Prime Minister",
+      "start": 1971,
+      "end": 1977,
+      "note": "Overthrown by Zia"
+    },
+    {
+      "ruler": "Zia-ul-Haq",
+      "title": "President (military coup)",
+      "start": 1977,
+      "end": 1988,
+      "note": "Seized power in 1977; died in a plane crash"
+    },
+    {
+      "ruler": "Benazir Bhutto",
+      "title": "Prime Minister",
+      "start": 1988,
+      "end": 1990,
+      "note": "First woman to lead a Muslim-majority nation"
+    },
+    {
+      "ruler": "Nawaz Sharif",
+      "title": "Prime Minister",
+      "start": 1990,
+      "end": 1993
+    },
+    {
+      "ruler": "Benazir Bhutto",
+      "title": "Prime Minister",
+      "start": 1993,
+      "end": 1996
+    },
+    {
+      "ruler": "Nawaz Sharif",
+      "title": "Prime Minister",
+      "start": 1997,
+      "end": 1999,
+      "note": "Ousted by Musharraf's coup"
+    },
+    {
+      "ruler": "Pervez Musharraf",
+      "title": "President (military coup)",
+      "start": 1999,
+      "end": 2008,
+      "note": "Seized power in the 1999 coup"
+    },
+    {
+      "ruler": "Asif Ali Zardari",
+      "title": "President",
+      "start": 2008,
+      "end": 2013
+    },
+    {
+      "ruler": "Nawaz Sharif",
+      "title": "Prime Minister",
+      "start": 2013,
+      "end": 2017,
+      "note": "Disqualified by the Supreme Court"
+    },
+    {
+      "ruler": "Imran Khan",
+      "title": "Prime Minister",
+      "start": 2018,
+      "end": 2022,
+      "note": "Removed by a no-confidence vote"
+    },
+    {
+      "ruler": "Shehbaz Sharif",
+      "title": "Prime Minister",
+      "start": 2022,
+      "end": 2023
+    },
+    {
+      "ruler": "Shehbaz Sharif",
+      "title": "Prime Minister",
+      "start": 2024,
+      "end": 2026,
+      "note": "PM again since March 2024"
+    }
+  ],
+  "Bangladesh": [
+    {
+      "ruler": "Sheikh Mujibur Rahman",
+      "title": "President",
+      "start": 1971,
+      "end": 1975,
+      "note": "Founding leader; assassinated in a coup"
+    },
+    {
+      "ruler": "Ziaur Rahman",
+      "title": "President (military)",
+      "start": 1977,
+      "end": 1981,
+      "note": "Founder of the BNP; assassinated"
+    },
+    {
+      "ruler": "Hussain Muhammad Ershad",
+      "title": "President (military coup)",
+      "start": 1982,
+      "end": 1990,
+      "note": "Seized power in 1982; resigned amid protests"
+    },
+    {
+      "ruler": "Khaleda Zia",
+      "title": "Prime Minister",
+      "start": 1991,
+      "end": 1996
+    },
+    {
+      "ruler": "Sheikh Hasina",
+      "title": "Prime Minister",
+      "start": 1996,
+      "end": 2001
+    },
+    {
+      "ruler": "Khaleda Zia",
+      "title": "Prime Minister",
+      "start": 2001,
+      "end": 2006
+    },
+    {
+      "ruler": "Sheikh Hasina",
+      "title": "Prime Minister",
+      "start": 2009,
+      "end": 2024,
+      "note": "Ousted in the July 2024 uprising"
+    },
+    {
+      "ruler": "Muhammad Yunus",
+      "title": "Chief Adviser (interim)",
+      "start": 2024,
+      "end": 2026,
+      "note": "Nobel laureate; led the interim government"
+    },
+    {
+      "ruler": "Tarique Rahman",
+      "title": "Prime Minister",
+      "start": 2026,
+      "end": 2026,
+      "note": "BNP; won the Feb 2026 election"
+    }
+  ],
+  "Sur Empire": [
+    {
+      "ruler": "Sher Shah Suri",
+      "start": 1540,
+      "end": 1545,
+      "note": "Independent sovereignty convention; rule in Bihar predates 1540"
+    },
+    {
+      "ruler": "Islam Shah Suri",
+      "start": 1545,
+      "end": 1554
+    },
+    {
+      "ruler": "Firuz Shah Suri",
+      "start": 1554,
+      "end": 1554,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Muhammad Adil Shah",
+      "start": 1554,
+      "end": 1555
+    },
+    {
+      "ruler": "Ibrahim Shah Suri",
+      "start": 1555,
+      "end": 1555,
+      "title": "Contested ruler",
+      "note": "Contested regional reign"
+    },
+    {
+      "ruler": "Sikandar Shah Suri",
+      "start": 1555,
+      "end": 1555,
+      "title": "Contested ruler",
+      "note": "Contested regional reign"
+    },
+    {
+      "ruler": "Adil Shah Suri",
+      "start": 1555,
+      "end": 1556,
+      "title": "Nominal king",
+      "note": "Ruled in name from Chunar; real power was exercised by his chief minister and general Hemu"
+    },
+    {
+      "ruler": "Hemu (Hemachandra Vikramaditya)",
+      "start": 1554,
+      "end": 1556,
+      "title": "De facto ruler",
+      "note": "Chief minister and commander under the last Sur kings; won 22 successive battles, took Delhi and crowned himself Vikramaditya in October 1556; fell at the Second Battle of Panipat, 5 November 1556"
+    }
+  ],
+  "Malwa Sultanate": [
+    {
+      "ruler": "Dilawar Khan Ghuri",
+      "start": 1401,
+      "end": 1406
+    },
+    {
+      "ruler": "Hoshang Shah",
+      "start": 1406,
+      "end": 1435
+    },
+    {
+      "ruler": "Muhammad Shah",
+      "start": 1435,
+      "end": 1436
+    },
+    {
+      "ruler": "Mahmud Shah I Khalji",
+      "start": 1436,
+      "end": 1469
+    },
+    {
+      "ruler": "Ghiyas-ud-Din Shah",
+      "start": 1469,
+      "end": 1500
+    },
+    {
+      "ruler": "Nasir-ud-Din Shah",
+      "start": 1500,
+      "end": 1510
+    },
+    {
+      "ruler": "Mahmud Shah II",
+      "start": 1510,
+      "end": 1531
+    },
+    {
+      "ruler": "Medini Rai",
+      "start": 1519,
+      "end": 1527,
+      "title": "De facto ruler",
+      "note": "De facto Rajput minister/ruler during part of Mahmud II's reign"
+    },
+    {
+      "ruler": "Bahadur Shah of Gujarat",
+      "start": 1531,
+      "end": 1536,
+      "title": "Conquering ruler",
+      "note": "Conqueror of Malwa"
+    },
+    {
+      "ruler": "Hindal Mirza",
+      "start": 1535,
+      "end": 1536,
+      "title": "Mughal governor",
+      "note": "Mughal occupation overlap"
+    },
+    {
+      "ruler": "Bahadur Shah of Gujarat (restored)",
+      "start": 1536,
+      "end": 1537,
+      "note": "Restoration"
+    },
+    {
+      "ruler": "Miran Muhammad Shah I",
+      "start": 1537,
+      "end": 1537,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Qadir Shah",
+      "start": 1537,
+      "end": 1542
+    },
+    {
+      "ruler": "Shuja'at Khan",
+      "start": 1542,
+      "end": 1542,
+      "note": "First brief rule"
+    },
+    {
+      "ruler": "Isa Khan",
+      "start": 1542,
+      "end": 1545
+    },
+    {
+      "ruler": "Shuja'at Khan (restored)",
+      "start": 1545,
+      "end": 1552
+    },
+    {
+      "ruler": "Baz Bahadur",
+      "start": 1555,
+      "end": 1562
+    }
+  ],
+  "Gajapati Empire": [
+    {
+      "ruler": "Kapilendra Deva",
+      "start": 1434,
+      "end": 1467
+    },
+    {
+      "ruler": "Purushottama Deva",
+      "start": 1467,
+      "end": 1497
+    },
+    {
+      "ruler": "Prataparudra Deva",
+      "start": 1497,
+      "end": 1540
+    },
+    {
+      "ruler": "Kalua Deva",
+      "start": 1540,
+      "end": 1541
+    },
+    {
+      "ruler": "Kakharua Deva",
+      "start": 1541,
+      "end": 1541,
+      "note": "Brief reign"
+    }
+  ],
+  "Mewar (Sisodia)": [
+    {
+      "ruler": "Rana Hammir Singh",
+      "start": 1326,
+      "end": 1364
+    },
+    {
+      "ruler": "Rana Kshetra Singh",
+      "start": 1364,
+      "end": 1382
+    },
+    {
+      "ruler": "Rana Lakha Singh",
+      "start": 1382,
+      "end": 1421
+    },
+    {
+      "ruler": "Rana Mokal Singh",
+      "start": 1421,
+      "end": 1433
+    },
+    {
+      "ruler": "Rana Kumbha",
+      "start": 1433,
+      "end": 1468
+    },
+    {
+      "ruler": "Rana Udai Singh I",
+      "start": 1468,
+      "end": 1473
+    },
+    {
+      "ruler": "Rana Raimal",
+      "start": 1473,
+      "end": 1508
+    },
+    {
+      "ruler": "Rana Sanga",
+      "start": 1508,
+      "end": 1527
+    },
+    {
+      "ruler": "Rana Ratan Singh II",
+      "start": 1528,
+      "end": 1531
+    },
+    {
+      "ruler": "Rana Vikramaditya Singh",
+      "start": 1531,
+      "end": 1536
+    },
+    {
+      "ruler": "Rana Vanvir Singh",
+      "start": 1536,
+      "end": 1540
+    },
+    {
+      "ruler": "Maharana Udai Singh II",
+      "start": 1540,
+      "end": 1572
+    },
+    {
+      "ruler": "Maharana Pratap",
+      "start": 1572,
+      "end": 1597
+    },
+    {
+      "ruler": "Maharana Amar Singh I",
+      "start": 1597,
+      "end": 1620
+    },
+    {
+      "ruler": "Maharana Karan Singh II",
+      "start": 1620,
+      "end": 1628
+    },
+    {
+      "ruler": "Maharana Jagat Singh I",
+      "start": 1628,
+      "end": 1652
+    }
+  ],
+  "Amber": [
+    {
+      "ruler": "Prithviraj Singh I",
+      "title": "Raja",
+      "start": 1503,
+      "end": 1527,
+      "note": "Fought alongside Rana Sanga at Khanwa"
+    },
+    {
+      "ruler": "Bharmal",
+      "title": "Raja",
+      "start": 1548,
+      "end": 1574,
+      "note": "First Rajput ruler to ally with Akbar"
+    },
+    {
+      "ruler": "Bhagwant Das",
+      "title": "Raja",
+      "start": 1574,
+      "end": 1589
+    },
+    {
+      "ruler": "Man Singh I",
+      "title": "Raja",
+      "start": 1589,
+      "end": 1614,
+      "note": "Akbar's foremost general; governor of Bengal & Kabul"
+    },
+    {
+      "ruler": "Jai Singh I",
+      "title": "Raja",
+      "start": 1621,
+      "end": 1667
+    },
+    {
+      "ruler": "Sawai Jai Singh II",
+      "title": "Raja",
+      "start": 1699,
+      "end": 1743,
+      "note": "Founded Jaipur (1727); astronomer"
+    }
+  ],
+  "Marwar Kingdom": [
+    {
+      "ruler": "Rao Kanha Dev",
+      "start": 1357,
+      "end": 1374
+    },
+    {
+      "ruler": "Rao Viram Dev",
+      "start": 1374,
+      "end": 1383
+    },
+    {
+      "ruler": "Rao Chandra",
+      "start": 1383,
+      "end": 1424
+    },
+    {
+      "ruler": "Rao Kanha",
+      "start": 1424,
+      "end": 1427
+    },
+    {
+      "ruler": "Rao Ranmal",
+      "start": 1427,
+      "end": 1438
+    },
+    {
+      "ruler": "Rao Jodha",
+      "start": 1438,
+      "end": 1489
+    },
+    {
+      "ruler": "Rao Satal",
+      "start": 1489,
+      "end": 1492
+    },
+    {
+      "ruler": "Rao Suja",
+      "start": 1492,
+      "end": 1515
+    },
+    {
+      "ruler": "Rao Biram Singh",
+      "start": 1515,
+      "end": 1515,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Rao Ganga",
+      "start": 1515,
+      "end": 1532
+    },
+    {
+      "ruler": "Rao Maldeo",
+      "start": 1532,
+      "end": 1562
+    },
+    {
+      "ruler": "Rao Chandra Sen",
+      "start": 1562,
+      "end": 1581
+    },
+    {
+      "ruler": "Raja Udai Singh",
+      "start": 1583,
+      "end": 1595
+    },
+    {
+      "ruler": "Sawai Raja Suraj-Mal",
+      "start": 1595,
+      "end": 1619
+    },
+    {
+      "ruler": "Gaj Singh I",
+      "start": 1619,
+      "end": 1638
+    },
+    {
+      "ruler": "Jaswant Singh",
+      "start": 1638,
+      "end": 1678
+    }
+  ],
+  "Bikaner Kingdom": [
+    {
+      "ruler": "Rao Bika",
+      "title": "Rao",
+      "start": 1465,
+      "end": 1504,
+      "note": "Founder of Bikaner"
+    },
+    {
+      "ruler": "Rao Jait Singh",
+      "title": "Rao",
+      "start": 1526,
+      "end": 1542,
+      "note": "Defeated a Mughal army at Bikaner"
+    },
+    {
+      "ruler": "Rai Singh",
+      "title": "Raja",
+      "start": 1571,
+      "end": 1611,
+      "note": "Allied with the Mughals; general under Akbar"
+    },
+    {
+      "ruler": "Karan Singh",
+      "title": "Maharaja",
+      "start": 1631,
+      "end": 1669
+    }
+  ],
+  "Hada Chauhan": [
+    {
+      "ruler": "Rao Deva",
+      "title": "Rao",
+      "start": 1342,
+      "end": 1364,
+      "note": "Founder of Bundi"
+    },
+    {
+      "ruler": "Rao Surjan",
+      "title": "Rao",
+      "start": 1554,
+      "end": 1585,
+      "note": "Submitted to Akbar (1569)"
+    },
+    {
+      "ruler": "Rao Ratan Singh",
+      "title": "Rao",
+      "start": 1607,
+      "end": 1631,
+      "note": "Kota separated from Bundi in 1631"
+    }
+  ],
+  "Bhati Rajputs of Jaisalmer": [
+    {
+      "ruler": "Rawal Jaisal",
+      "title": "Rawal",
+      "start": 1156,
+      "end": 1168,
+      "note": "Founder of Jaisalmer"
+    },
+    {
+      "ruler": "Rawal Lunakaran",
+      "title": "Rawal",
+      "start": 1528,
+      "end": 1551
+    },
+    {
+      "ruler": "Rawal Har Rai",
+      "title": "Rawal",
+      "start": 1577,
+      "end": 1613,
+      "note": "Allied with Akbar"
+    }
+  ],
+  "Kashmir Sultanate": [
+    {
+      "ruler": "Shah Mir (Shams-ud-Din)",
+      "title": "Sultan",
+      "start": 1339,
+      "end": 1342,
+      "note": "Founder of the Shah Mir dynasty"
+    },
+    {
+      "ruler": "Sikandar Shah (Butshikan)",
+      "title": "Sultan",
+      "start": 1389,
+      "end": 1413,
+      "note": "Iconoclast ruler"
+    },
+    {
+      "ruler": "Zain-ul-Abidin (Budshah)",
+      "title": "Sultan",
+      "start": 1420,
+      "end": 1470,
+      "note": "Tolerant golden-age ruler"
+    },
+    {
+      "ruler": "Fateh Shah",
+      "title": "Sultan",
+      "start": 1489,
+      "end": 1517
+    },
+    {
+      "ruler": "Muhammad Shah",
+      "title": "Sultan",
+      "start": 1517,
+      "end": 1537
+    },
+    {
+      "ruler": "Ghazi Shah Chak",
+      "title": "Sultan",
+      "start": 1561,
+      "end": 1563,
+      "note": "Founder of the Chak dynasty"
+    },
+    {
+      "ruler": "Husain Shah Chak",
+      "title": "Sultan",
+      "start": 1563,
+      "end": 1570
+    },
+    {
+      "ruler": "Ali Shah Chak",
+      "title": "Sultan",
+      "start": 1570,
+      "end": 1578
+    },
+    {
+      "ruler": "Yusuf Shah Chak",
+      "title": "Sultan",
+      "start": 1578,
+      "end": 1586,
+      "note": "Deposed by Akbar"
+    },
+    {
+      "ruler": "Yaqub Shah Chak",
+      "title": "Sultan",
+      "start": 1586,
+      "end": 1589,
+      "note": "Last; Kashmir annexed by the Mughals"
+    }
+  ],
+  "Samma dynasty of Sindh": [
+    {
+      "ruler": "Jam Unar",
+      "title": "Jam",
+      "start": 1351,
+      "end": 1367,
+      "note": "Founder; threw off Delhi Sultanate control of Sindh"
+    },
+    {
+      "ruler": "Jam Nizamuddin II (Jam Nindo)",
+      "title": "Jam",
+      "start": 1461,
+      "end": 1509,
+      "note": "Golden age of the Samma dynasty"
+    },
+    {
+      "ruler": "Jam Nizamuddin (Jam Nindo)",
+      "title": "Jam",
+      "start": 1461,
+      "end": 1509,
+      "note": "Golden age of Samma Sindh; patron of learning"
+    },
+    {
+      "ruler": "Jam Feroz",
+      "title": "Jam",
+      "start": 1509,
+      "end": 1524,
+      "note": "Last Samma ruler; Sindh taken by the Arghuns"
+    }
+  ],
+  "Arghun": [
+    {
+      "ruler": "Shah Beg Arghun",
+      "title": "Sultan",
+      "start": 1520,
+      "end": 1522,
+      "note": "Conquered Sindh from the Sammas"
+    },
+    {
+      "ruler": "Shah Hasan Arghun",
+      "title": "Sultan",
+      "start": 1522,
+      "end": 1554,
+      "note": "Last Arghun; succeeded by the Tarkhans"
+    }
+  ],
+  "Bidar Sultanate": [
+    {
+      "ruler": "Qasim Barid I",
+      "start": 1490,
+      "end": 1504
+    },
+    {
+      "ruler": "Amir Barid I",
+      "start": 1504,
+      "end": 1542
+    },
+    {
+      "ruler": "Ali Barid Shah I",
+      "start": 1542,
+      "end": 1580
+    },
+    {
+      "ruler": "Ibrahim Barid Shah",
+      "start": 1580,
+      "end": 1587
+    },
+    {
+      "ruler": "Qasim Barid Shah II",
+      "start": 1587,
+      "end": 1591
+    },
+    {
+      "ruler": "Ali Barid Shah II",
+      "start": 1591,
+      "end": 1591,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Amir Barid Shah II",
+      "start": 1591,
+      "end": 1601
+    },
+    {
+      "ruler": "Mirza Ali Barid Shah III",
+      "start": 1601,
+      "end": 1609
+    },
+    {
+      "ruler": "Amir Barid Shah III",
+      "start": 1609,
+      "end": 1619
+    }
+  ],
+  "Berar Sultanate": [
+    {
+      "ruler": "Fathullah Imad-ul-Mulk",
+      "start": 1490,
+      "end": 1504
+    },
+    {
+      "ruler": "Ala-ud-din Imad Shah",
+      "start": 1504,
+      "end": 1530
+    },
+    {
+      "ruler": "Darya Imad Shah",
+      "start": 1530,
+      "end": 1562
+    },
+    {
+      "ruler": "Burhan Imad Shah",
+      "start": 1562,
+      "end": 1574
+    },
+    {
+      "ruler": "Tufal Khan",
+      "start": 1574,
+      "end": 1574,
+      "title": "Usurper",
+      "note": "Usurper/brief rule"
+    }
+  ],
+  "Cooch Behar": [
+    {
+      "ruler": "Biswa Singha",
+      "start": 1515,
+      "end": 1540
+    },
+    {
+      "ruler": "Nara Narayan",
+      "start": 1540,
+      "end": 1587,
+      "note": "Undivided Koch kingdom; some sources use 1586"
+    },
+    {
+      "ruler": "Lakshmi Narayan",
+      "start": 1587,
+      "end": 1621
+    },
+    {
+      "ruler": "Bir Narayan",
+      "start": 1621,
+      "end": 1626
+    },
+    {
+      "ruler": "Pran Narayan",
+      "start": 1626,
+      "end": 1665
+    },
+    {
+      "ruler": "Mad Narayan",
+      "start": 1665,
+      "end": 1680
+    },
+    {
+      "ruler": "Basudev Narayan",
+      "start": 1680,
+      "end": 1682
+    },
+    {
+      "ruler": "Mahendra Narayan",
+      "start": 1682,
+      "end": 1693
+    },
+    {
+      "ruler": "Rup Narayan",
+      "start": 1693,
+      "end": 1715,
+      "note": "Some sources use 1714"
+    },
+    {
+      "ruler": "Upendra Narayan",
+      "start": 1715,
+      "end": 1763,
+      "note": "Some sources begin 1714"
+    },
+    {
+      "ruler": "Debendra Narayan",
+      "start": 1763,
+      "end": 1765
+    },
+    {
+      "ruler": "Dhairjendra Narayan (first reign)",
+      "start": 1765,
+      "end": 1770
+    },
+    {
+      "ruler": "Rajendra Narayan",
+      "start": 1770,
+      "end": 1772
+    },
+    {
+      "ruler": "Dharendra Narayan (first reign)",
+      "start": 1772,
+      "end": 1772,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Bijendra Narayan",
+      "start": 1772,
+      "end": 1774
+    },
+    {
+      "ruler": "Dharendra Narayan (restored)",
+      "start": 1774,
+      "end": 1775
+    },
+    {
+      "ruler": "Dhairjendra Narayan (restored)",
+      "start": 1775,
+      "end": 1783
+    },
+    {
+      "ruler": "Harendra Narayan",
+      "start": 1783,
+      "end": 1839
+    },
+    {
+      "ruler": "Shivendra Narayan",
+      "start": 1839,
+      "end": 1847
+    },
+    {
+      "ruler": "Narendra Narayan",
+      "start": 1847,
+      "end": 1863
+    },
+    {
+      "ruler": "Nripendra Narayan",
+      "start": 1863,
+      "end": 1911
+    },
+    {
+      "ruler": "Raj Rajendra Narayan",
+      "start": 1911,
+      "end": 1913
+    },
+    {
+      "ruler": "Jitendra Narayan",
+      "start": 1913,
+      "end": 1922
+    },
+    {
+      "ruler": "Jagaddipendra Narayan",
+      "start": 1922,
+      "end": 1949
+    }
+  ],
+  "East India Company": [
+    {
+      "ruler": "Robert Clive",
+      "title": "Governor of Bengal (de-facto)",
+      "start": 1757,
+      "end": 1767,
+      "note": "Victor of Plassey; founded Company rule in Bengal"
+    },
+    {
+      "ruler": "George II",
+      "title": "British Monarch",
+      "start": 1757,
+      "end": 1760,
+      "note": "Ruler of Britain"
+    },
+    {
+      "ruler": "George III",
+      "title": "British Monarch",
+      "start": 1760,
+      "end": 1820,
+      "note": "Ruler of Britain"
+    },
+    {
+      "ruler": "Warren Hastings",
+      "title": "Governor-General (de-facto)",
+      "start": 1772,
+      "end": 1785,
+      "note": "First Governor-General of Bengal"
+    },
+    {
+      "ruler": "Lord Cornwallis",
+      "title": "Governor-General (de-facto)",
+      "start": 1786,
+      "end": 1793,
+      "note": "Permanent Settlement; defeated Tipu in 1792"
+    },
+    {
+      "ruler": "Sir John Shore",
+      "title": "Governor-General (de-facto)",
+      "start": 1793,
+      "end": 1798
+    },
+    {
+      "ruler": "Lord Wellesley",
+      "title": "Governor-General (de-facto)",
+      "start": 1798,
+      "end": 1805,
+      "note": "Subsidiary alliances; defeated Tipu in 1799"
+    },
+    {
+      "ruler": "Lord Minto",
+      "title": "Governor-General (de-facto)",
+      "start": 1807,
+      "end": 1813
+    },
+    {
+      "ruler": "Lord Hastings (Moira)",
+      "title": "Governor-General (de-facto)",
+      "start": 1813,
+      "end": 1823,
+      "note": "Defeated the Marathas and the Gurkhas"
+    },
+    {
+      "ruler": "George IV",
+      "title": "British Monarch",
+      "start": 1820,
+      "end": 1830,
+      "note": "Ruler of Britain"
+    },
+    {
+      "ruler": "Lord Amherst",
+      "title": "Governor-General (de-facto)",
+      "start": 1823,
+      "end": 1828,
+      "note": "First Anglo-Burmese War"
+    },
+    {
+      "ruler": "Lord William Bentinck",
+      "title": "Governor-General (de-facto)",
+      "start": 1828,
+      "end": 1835,
+      "note": "Abolished sati; first Governor-General of India"
+    },
+    {
+      "ruler": "William IV",
+      "title": "British Monarch",
+      "start": 1830,
+      "end": 1837,
+      "note": "Ruler of Britain"
+    },
+    {
+      "ruler": "Lord Auckland",
+      "title": "Governor-General (de-facto)",
+      "start": 1836,
+      "end": 1842,
+      "note": "First Anglo-Afghan War"
+    },
+    {
+      "ruler": "Queen Victoria",
+      "title": "British Monarch",
+      "start": 1837,
+      "end": 1857,
+      "note": "Ruler of Britain"
+    },
+    {
+      "ruler": "Lord Ellenborough",
+      "title": "Governor-General (de-facto)",
+      "start": 1842,
+      "end": 1844
+    },
+    {
+      "ruler": "Lord Hardinge",
+      "title": "Governor-General (de-facto)",
+      "start": 1844,
+      "end": 1848,
+      "note": "First Anglo-Sikh War"
+    },
+    {
+      "ruler": "Lord Dalhousie",
+      "title": "Governor-General (de-facto)",
+      "start": 1848,
+      "end": 1856,
+      "note": "Doctrine of Lapse; railways and telegraph"
+    },
+    {
+      "ruler": "Lord Canning",
+      "title": "Governor-General (de-facto)",
+      "start": 1856,
+      "end": 1857,
+      "note": "The revolt of 1857; became first Viceroy"
+    }
+  ],
+  "British Raj": [
+    {
+      "ruler": "Lord Canning",
+      "title": "Viceroy of India",
+      "start": 1858,
+      "end": 1862,
+      "note": "First Viceroy of India"
+    },
+    {
+      "ruler": "Queen Victoria",
+      "title": "Empress of India",
+      "start": 1858,
+      "end": 1901,
+      "note": "Empress of India from 1876"
+    },
+    {
+      "ruler": "Lord Elgin",
+      "title": "Viceroy of India",
+      "start": 1862,
+      "end": 1863
+    },
+    {
+      "ruler": "Lord Lawrence",
+      "title": "Viceroy of India",
+      "start": 1864,
+      "end": 1869
+    },
+    {
+      "ruler": "Lord Mayo",
+      "title": "Viceroy of India",
+      "start": 1869,
+      "end": 1872,
+      "note": "Assassinated in the Andamans"
+    },
+    {
+      "ruler": "Lord Northbrook",
+      "title": "Viceroy of India",
+      "start": 1872,
+      "end": 1876
+    },
+    {
+      "ruler": "Lord Lytton",
+      "title": "Viceroy of India",
+      "start": 1876,
+      "end": 1880,
+      "note": "Delhi Durbar of 1877; the Vernacular Press Act"
+    },
+    {
+      "ruler": "Lord Ripon",
+      "title": "Viceroy of India",
+      "start": 1880,
+      "end": 1884,
+      "note": "The Ilbert Bill"
+    },
+    {
+      "ruler": "Lord Dufferin",
+      "title": "Viceroy of India",
+      "start": 1884,
+      "end": 1888,
+      "note": "Indian National Congress founded (1885)"
+    },
+    {
+      "ruler": "Lord Lansdowne",
+      "title": "Viceroy of India",
+      "start": 1888,
+      "end": 1894
+    },
+    {
+      "ruler": "Lord Elgin II",
+      "title": "Viceroy of India",
+      "start": 1894,
+      "end": 1899
+    },
+    {
+      "ruler": "Lord Curzon",
+      "title": "Viceroy of India",
+      "start": 1899,
+      "end": 1905,
+      "note": "Partition of Bengal (1905)"
+    },
+    {
+      "ruler": "Edward VII",
+      "title": "Emperor of India",
+      "start": 1901,
+      "end": 1910
+    },
+    {
+      "ruler": "Lord Minto II",
+      "title": "Viceroy of India",
+      "start": 1905,
+      "end": 1910,
+      "note": "Morley-Minto Reforms"
+    },
+    {
+      "ruler": "Lord Hardinge",
+      "title": "Viceroy of India",
+      "start": 1910,
+      "end": 1916,
+      "note": "Capital moved to New Delhi"
+    },
+    {
+      "ruler": "George V",
+      "title": "Emperor of India",
+      "start": 1910,
+      "end": 1936,
+      "note": "Attended the 1911 Delhi Durbar"
+    },
+    {
+      "ruler": "Lord Chelmsford",
+      "title": "Viceroy of India",
+      "start": 1916,
+      "end": 1921,
+      "note": "Jallianwala Bagh (1919)"
+    },
+    {
+      "ruler": "Lord Reading",
+      "title": "Viceroy of India",
+      "start": 1921,
+      "end": 1926
+    },
+    {
+      "ruler": "Lord Irwin",
+      "title": "Viceroy of India",
+      "start": 1926,
+      "end": 1931,
+      "note": "The Gandhi-Irwin Pact"
+    },
+    {
+      "ruler": "Lord Willingdon",
+      "title": "Viceroy of India",
+      "start": 1931,
+      "end": 1936
+    },
+    {
+      "ruler": "Lord Linlithgow",
+      "title": "Viceroy of India",
+      "start": 1936,
+      "end": 1943,
+      "note": "Quit India Movement (1942)"
+    },
+    {
+      "ruler": "Edward VIII",
+      "title": "Emperor of India",
+      "start": 1936,
+      "end": 1936,
+      "note": "Abdicated"
+    },
+    {
+      "ruler": "George VI",
+      "title": "Emperor of India",
+      "start": 1936,
+      "end": 1947,
+      "note": "Last Emperor of India"
+    },
+    {
+      "ruler": "Lord Wavell",
+      "title": "Viceroy of India",
+      "start": 1943,
+      "end": 1947
+    },
+    {
+      "ruler": "Lord Mountbatten",
+      "title": "Viceroy of India",
+      "start": 1947,
+      "end": 1947,
+      "note": "Last Viceroy; oversaw independence and partition"
+    }
+  ],
+  "Jaunpur Sultanate": [
+    {
+      "ruler": "Malik Sarwar / Khwaja-i-Jahan",
+      "start": 1394,
+      "end": 1399
+    },
+    {
+      "ruler": "Mubarak Shah Sharqi",
+      "start": 1399,
+      "end": 1402
+    },
+    {
+      "ruler": "Ibrahim Shah Sharqi",
+      "start": 1402,
+      "end": 1440
+    },
+    {
+      "ruler": "Mahmud Shah Sharqi",
+      "start": 1440,
+      "end": 1457
+    },
+    {
+      "ruler": "Muhammad Shah Sharqi",
+      "start": 1457,
+      "end": 1458
+    },
+    {
+      "ruler": "Hussain Shah Sharqi",
+      "start": 1458,
+      "end": 1479
+    }
+  ],
+  "Kamata Kingdom": [
+    {
+      "ruler": "Niladhwaj",
+      "title": "Raja",
+      "start": 1440,
+      "end": 1460,
+      "note": "Khen dynasty of Kamata (Kamatapur)"
+    },
+    {
+      "ruler": "Chakradhwaj",
+      "title": "Raja",
+      "start": 1460,
+      "end": 1480
+    },
+    {
+      "ruler": "Nilambar",
+      "title": "Raja",
+      "start": 1480,
+      "end": 1498,
+      "note": "Last Khen king; conquered by Alauddin Hussain Shah of Bengal"
+    }
+  ],
+  "Kingdom of Sikkim (Namgyal)": [
+    {
+      "ruler": "Phuntsog Namgyal",
+      "title": "Chogyal",
+      "start": 1642,
+      "end": 1670,
+      "note": "First Chogyal; founder of the Namgyal dynasty"
+    },
+    {
+      "ruler": "Tensung Namgyal",
+      "title": "Chogyal",
+      "start": 1670,
+      "end": 1700,
+      "note": "Moved the capital to Rabdentse"
+    },
+    {
+      "ruler": "Chakdor Namgyal",
+      "title": "Chogyal",
+      "start": 1700,
+      "end": 1717
+    },
+    {
+      "ruler": "Gyurmed Namgyal",
+      "title": "Chogyal",
+      "start": 1717,
+      "end": 1733
+    },
+    {
+      "ruler": "Phuntsog Namgyal II",
+      "title": "Chogyal",
+      "start": 1733,
+      "end": 1780
+    },
+    {
+      "ruler": "Tenzing Namgyal",
+      "title": "Chogyal",
+      "start": 1780,
+      "end": 1793
+    },
+    {
+      "ruler": "Tsugphud Namgyal",
+      "title": "Chogyal",
+      "start": 1793,
+      "end": 1863,
+      "note": "Long reign; ceded Darjeeling to the British (1835)"
+    },
+    {
+      "ruler": "Sidkeong Namgyal",
+      "title": "Chogyal",
+      "start": 1863,
+      "end": 1874
+    },
+    {
+      "ruler": "Thutob Namgyal",
+      "title": "Chogyal",
+      "start": 1874,
+      "end": 1914
+    },
+    {
+      "ruler": "Sidkeong Tulku Namgyal",
+      "title": "Chogyal",
+      "start": 1914,
+      "end": 1914,
+      "note": "Reigned ten months"
+    },
+    {
+      "ruler": "Tashi Namgyal",
+      "title": "Chogyal",
+      "start": 1914,
+      "end": 1963,
+      "note": "Modernising ruler under British/Indian paramountcy"
+    },
+    {
+      "ruler": "Palden Thondup Namgyal",
+      "title": "Chogyal (regent from 1963)",
+      "start": 1963,
+      "end": 1965,
+      "note": "Regent before formal coronation"
+    },
+    {
+      "ruler": "Palden Thondup Namgyal",
+      "title": "Chogyal",
+      "start": 1965,
+      "end": 1975,
+      "note": "Last Chogyal; Sikkim merged with India in 1975"
+    }
+  ],
+  "Baro-Bhuyan confederacy": [
+    {
+      "ruler": "Isa Khan",
+      "title": "Masnad-i-Ala (de-facto)",
+      "start": 1576,
+      "end": 1599,
+      "note": "Leader of the Baro-Bhuyans; repelled Mughal attacks under Man Singh"
+    },
+    {
+      "ruler": "Pratapaditya",
+      "title": "Raja of Jessore",
+      "start": 1576,
+      "end": 1611,
+      "note": "Baro-Bhuyan of the southwest delta; allied with the Portuguese"
+    },
+    {
+      "ruler": "Musa Khan",
+      "title": "Masnad-i-Ala",
+      "start": 1599,
+      "end": 1611,
+      "note": "Son of Isa Khan; final resister, subdued by Islam Khan (1611)"
+    }
+  ],
+  "Eastern Ganga dynasty": [
+    {
+      "ruler": "Rajaraja Deva II",
+      "start": 1170,
+      "end": 1190
+    },
+    {
+      "ruler": "Anangabhima Deva II",
+      "start": 1190,
+      "end": 1198
+    },
+    {
+      "ruler": "Rajaraja Deva III",
+      "start": 1198,
+      "end": 1211
+    },
+    {
+      "ruler": "Anangabhima Deva III",
+      "start": 1211,
+      "end": 1238
+    },
+    {
+      "ruler": "Narasimha Deva I",
+      "start": 1238,
+      "end": 1264
+    },
+    {
+      "ruler": "Bhanu Deva I",
+      "start": 1264,
+      "end": 1278
+    },
+    {
+      "ruler": "Narasimha Deva II",
+      "start": 1279,
+      "end": 1306
+    },
+    {
+      "ruler": "Bhanu Deva II",
+      "start": 1306,
+      "end": 1328
+    },
+    {
+      "ruler": "Narasimha Deva III",
+      "start": 1328,
+      "end": 1352
+    },
+    {
+      "ruler": "Bhanu Deva III",
+      "start": 1352,
+      "end": 1378
+    },
+    {
+      "ruler": "Narasimha Deva IV",
+      "start": 1378,
+      "end": 1425
+    },
+    {
+      "ruler": "Bhanu Deva IV",
+      "start": 1425,
+      "end": 1434
+    }
+  ],
+  "Tomara dynasty of Gwalior": [
+    {
+      "ruler": "Virasimha-deva",
+      "start": 1375,
+      "end": 1400,
+      "note": "Some chronologies place effective rule c.1394–1400"
+    },
+    {
+      "ruler": "Uddharana-deva",
+      "start": 1400,
+      "end": 1402
+    },
+    {
+      "ruler": "Virama-deva",
+      "start": 1402,
+      "end": 1423
+    },
+    {
+      "ruler": "Ganapati-deva",
+      "start": 1423,
+      "end": 1425
+    },
+    {
+      "ruler": "Dungarendra-deva",
+      "start": 1425,
+      "end": 1459
+    },
+    {
+      "ruler": "Kirtisimha-deva",
+      "start": 1459,
+      "end": 1480
+    },
+    {
+      "ruler": "Kalyanamalla",
+      "start": 1480,
+      "end": 1486
+    },
+    {
+      "ruler": "Manasimha Tomar",
+      "start": 1486,
+      "end": 1516
+    },
+    {
+      "ruler": "Vikramaditya Tomar",
+      "start": 1516,
+      "end": 1523
+    }
+  ],
+  "Kakatiya dynasty": [
+    {
+      "ruler": "Beta I",
+      "title": "Ruler",
+      "start": 1000,
+      "end": 1030,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Prola I",
+      "title": "Ruler",
+      "start": 1030,
+      "end": 1075,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Beta II",
+      "title": "Ruler",
+      "start": 1075,
+      "end": 1110,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Prola II",
+      "title": "Ruler",
+      "start": 1110,
+      "end": 1158,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rudradeva (Prataparudra I)",
+      "title": "Raja",
+      "start": 1158,
+      "end": 1195,
+      "note": "Warangal; consolidated Kakatiya sovereignty"
+    },
+    {
+      "ruler": "Mahadeva",
+      "title": "Raja",
+      "start": 1195,
+      "end": 1199
+    },
+    {
+      "ruler": "Ganapati Deva",
+      "title": "Maharaja",
+      "start": 1199,
+      "end": 1262,
+      "note": "Greatest Kakatiya; unified Telugu country"
+    },
+    {
+      "ruler": "Rudrama Devi",
+      "title": "Maharani",
+      "start": 1262,
+      "end": 1289,
+      "note": "One of few reigning queens; met by Marco Polo's account"
+    },
+    {
+      "ruler": "Prataparudra II",
+      "title": "Maharaja",
+      "start": 1289,
+      "end": 1323,
+      "note": "Last Kakatiya; fell to the Delhi Sultanate (1323)"
+    }
+  ],
+  "Seuna (Yadava)": [
+    {
+      "ruler": "Bhillama V",
+      "start": 1173,
+      "end": 1192
+    },
+    {
+      "ruler": "Jaitugi I",
+      "start": 1192,
+      "end": 1200
+    },
+    {
+      "ruler": "Singhana II",
+      "start": 1200,
+      "end": 1247
+    },
+    {
+      "ruler": "Kannara",
+      "start": 1247,
+      "end": 1261
+    },
+    {
+      "ruler": "Mahadeva",
+      "start": 1261,
+      "end": 1271
+    },
+    {
+      "ruler": "Amana",
+      "start": 1271,
+      "end": 1271,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Ramachandra",
+      "start": 1271,
+      "end": 1312
+    },
+    {
+      "ruler": "Singhana III",
+      "start": 1312,
+      "end": 1313
+    },
+    {
+      "ruler": "Harapaladeva",
+      "start": 1313,
+      "end": 1318
+    },
+    {
+      "ruler": "Mallugi III",
+      "start": 1318,
+      "end": 1334
+    }
+  ],
+  "Hoysala Kingdom": [
+    {
+      "ruler": "Veera Ballala II",
+      "title": "Maharaja",
+      "start": 1173,
+      "end": 1220,
+      "note": "Extended Hoysala power across the south"
+    },
+    {
+      "ruler": "Vira Narasimha II",
+      "title": "Maharaja",
+      "start": 1220,
+      "end": 1235
+    },
+    {
+      "ruler": "Vira Someshwara",
+      "title": "Maharaja",
+      "start": 1235,
+      "end": 1263
+    },
+    {
+      "ruler": "Narasimha III",
+      "title": "Maharaja",
+      "start": 1263,
+      "end": 1292
+    },
+    {
+      "ruler": "Veera Ballala III",
+      "title": "Maharaja",
+      "start": 1292,
+      "end": 1343,
+      "note": "Last great Hoysala; died fighting the Madurai Sultanate"
+    }
+  ],
+  "Pandya dynasty": [
+    {
+      "ruler": "Jatavarman Kulasekaran I",
+      "start": 1190,
+      "end": 1216
+    },
+    {
+      "ruler": "Parakrama Pandyan II",
+      "start": 1212,
+      "end": 1215,
+      "title": "Co-ruler",
+      "note": "Co-ruler/contested chronology"
+    },
+    {
+      "ruler": "Maravarman Sundara Pandyan I",
+      "start": 1216,
+      "end": 1238
+    },
+    {
+      "ruler": "Sadayavarman Kulasekaran II",
+      "start": 1238,
+      "end": 1240
+    },
+    {
+      "ruler": "Maravarman Sundara Pandyan II",
+      "start": 1238,
+      "end": 1251,
+      "title": "Co-ruler",
+      "note": "Overlapping reign in source chronology"
+    },
+    {
+      "ruler": "Jatavarman Sundara Pandyan I",
+      "start": 1251,
+      "end": 1268
+    },
+    {
+      "ruler": "Maravarman Kulasekara Pandyan I",
+      "start": 1268,
+      "end": 1308
+    },
+    {
+      "ruler": "Sundara Pandyan IV",
+      "start": 1309,
+      "end": 1327,
+      "title": "Contested ruler",
+      "note": "Civil-war claimant/branch"
+    },
+    {
+      "ruler": "Vira Pandyan IV",
+      "start": 1309,
+      "end": 1345,
+      "title": "Contested ruler",
+      "note": "Civil-war claimant/branch"
+    },
+    {
+      "ruler": "Cataiyavarman Parakrama Pandyan",
+      "start": 1422,
+      "end": 1463,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Cataiyavarman III Kulasekara Pandyan",
+      "start": 1429,
+      "end": 1473,
+      "title": "Co-ruler",
+      "note": "Overlapping Tenkasi line"
+    },
+    {
+      "ruler": "Azhagan Perumal Parakrama Pandyan",
+      "start": 1473,
+      "end": 1506,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Kulasekara Pandyan",
+      "start": 1479,
+      "end": 1499,
+      "title": "Co-ruler",
+      "note": "Overlapping Tenkasi line"
+    },
+    {
+      "ruler": "Cataiyavarman Civallappa Pandyan",
+      "start": 1534,
+      "end": 1543,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Parakrama Kulasekara Pandyan",
+      "start": 1543,
+      "end": 1552,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Nelveli Maran",
+      "start": 1552,
+      "end": 1564,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Cataiyavarman Adiveerama Pandyan",
+      "start": 1564,
+      "end": 1604,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Varathunga Pandyan",
+      "start": 1588,
+      "end": 1612,
+      "title": "Co-ruler",
+      "note": "Overlapping Tenkasi line"
+    },
+    {
+      "ruler": "Varakunarama Pandyan",
+      "start": 1613,
+      "end": 1618,
+      "note": "Tenkasi Pandya line"
+    },
+    {
+      "ruler": "Kollankondan",
+      "start": 1618,
+      "end": 1650,
+      "note": "Tenkasi Pandya line"
+    }
+  ],
+  "Chola dynasty": [
+    {
+      "ruler": "Vijayalaya",
+      "title": "Ruler",
+      "start": 848,
+      "end": 871,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Aditya I",
+      "title": "Ruler",
+      "start": 871,
+      "end": 907,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Parantaka I",
+      "title": "Ruler",
+      "start": 907,
+      "end": 955,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Gandaraditya",
+      "title": "Ruler",
+      "start": 955,
+      "end": 957,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Arinjaya",
+      "start": 956,
+      "end": 957
+    },
+    {
+      "ruler": "Sundara/Parantaka II",
+      "title": "Ruler",
+      "start": 957,
+      "end": 970,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Uttama",
+      "title": "Ruler",
+      "start": 970,
+      "end": 985,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rajaraja I",
+      "title": "Ruler",
+      "start": 985,
+      "end": 1014,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rajendra I",
+      "title": "Ruler",
+      "start": 1012,
+      "end": 1044,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rajadhiraja I",
+      "title": "Ruler",
+      "start": 1044,
+      "end": 1052,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rajendra II",
+      "title": "Ruler",
+      "start": 1052,
+      "end": 1063,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Virarajendra",
+      "title": "Ruler",
+      "start": 1063,
+      "end": 1070,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Athirajendra",
+      "title": "Ruler",
+      "start": 1070,
+      "end": 1070,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Kulottunga I",
+      "title": "Ruler",
+      "start": 1070,
+      "end": 1122,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Vikrama",
+      "title": "Ruler",
+      "start": 1118,
+      "end": 1135,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Kulottunga II",
+      "title": "Ruler",
+      "start": 1133,
+      "end": 1150,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rajaraja II",
+      "title": "Ruler",
+      "start": 1146,
+      "end": 1173,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Rajadhiraja II",
+      "title": "Ruler",
+      "start": 1166,
+      "end": 1178,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Kulothunga Chola III",
+      "title": "Emperor",
+      "start": 1178,
+      "end": 1218,
+      "note": "Late Chola resurgence"
+    },
+    {
+      "ruler": "Rajaraja Chola III",
+      "title": "Emperor",
+      "start": 1216,
+      "end": 1246,
+      "note": "Chola power waning under Hoysala/Pandya pressure"
+    },
+    {
+      "ruler": "Rajendra Chola III",
+      "title": "Emperor",
+      "start": 1246,
+      "end": 1279,
+      "note": "Last Chola sovereign"
+    }
+  ],
+  "Paramara (Malwa)": [
+    {
+      "ruler": "Vindhyavarman",
+      "title": "Raja",
+      "start": 1175,
+      "end": 1193,
+      "note": "Malwa; recovered Paramara territory"
+    },
+    {
+      "ruler": "Subhatavarman",
+      "title": "Raja",
+      "start": 1193,
+      "end": 1210
+    },
+    {
+      "ruler": "Arjunavarman I",
+      "title": "Raja",
+      "start": 1210,
+      "end": 1218
+    },
+    {
+      "ruler": "Devapala",
+      "title": "Raja",
+      "start": 1218,
+      "end": 1239
+    },
+    {
+      "ruler": "Jaitugideva",
+      "title": "Raja",
+      "start": 1239,
+      "end": 1256
+    },
+    {
+      "ruler": "Jayasimha (Jayavarman II)",
+      "title": "Raja",
+      "start": 1256,
+      "end": 1269
+    },
+    {
+      "ruler": "Arjunavarman II",
+      "title": "Raja",
+      "start": 1274,
+      "end": 1285
+    },
+    {
+      "ruler": "Bhoja II",
+      "title": "Raja",
+      "start": 1285,
+      "end": 1301
+    },
+    {
+      "ruler": "Mahalakadeva",
+      "title": "Raja",
+      "start": 1290,
+      "end": 1305,
+      "note": "Last Paramara; Malwa annexed by Alauddin Khalji (1305)"
+    }
+  ],
+  "Reddy kingdom": [
+    {
+      "ruler": "Prolaya Vema Reddy",
+      "start": 1325,
+      "end": 1353
+    },
+    {
+      "ruler": "Anavota Reddy",
+      "start": 1353,
+      "end": 1364
+    },
+    {
+      "ruler": "Anavema Reddy",
+      "start": 1364,
+      "end": 1386
+    },
+    {
+      "ruler": "Kumaragiri Reddy",
+      "start": 1386,
+      "end": 1402
+    },
+    {
+      "ruler": "Kataya Vema Reddy",
+      "start": 1395,
+      "end": 1414,
+      "title": "Branch ruler",
+      "note": "Parallel Rajahmundry branch"
+    },
+    {
+      "ruler": "Pedda Komati Vema Reddy",
+      "start": 1402,
+      "end": 1420
+    },
+    {
+      "ruler": "Allada Reddy",
+      "start": 1414,
+      "end": 1423,
+      "title": "Branch ruler",
+      "note": "Rajahmundry branch"
+    },
+    {
+      "ruler": "Racha Vema Reddy",
+      "start": 1420,
+      "end": 1424
+    },
+    {
+      "ruler": "Veera Bhadra Reddy",
+      "start": 1423,
+      "end": 1448,
+      "title": "Branch ruler",
+      "note": "Rajahmundry branch"
+    }
+  ],
+  "Sena dynasty": [
+    {
+      "ruler": "Samanta Sena",
+      "title": "Ruler",
+      "start": 1070,
+      "end": 1095,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Hemanta Sena",
+      "title": "Ruler",
+      "start": 1095,
+      "end": 1096,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Vijaya Sena",
+      "title": "Ruler",
+      "start": 1096,
+      "end": 1159,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Ballala Sena",
+      "title": "Ruler",
+      "start": 1159,
+      "end": 1160,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Lakshmana Sena",
+      "title": "Maharaja",
+      "start": 1178,
+      "end": 1206,
+      "note": "Bakhtiyar Khalji's raid on Nadia (~1204) during his reign"
+    },
+    {
+      "ruler": "Vishvarupa Sena",
+      "title": "Maharaja",
+      "start": 1206,
+      "end": 1225,
+      "note": "Held eastern Bengal (Vikrampura) after losing the west"
+    },
+    {
+      "ruler": "Keshava Sena",
+      "title": "Maharaja",
+      "start": 1225,
+      "end": 1230,
+      "note": "Last effective Sena ruler"
+    }
+  ],
+  "Vaghela Gujarat": [
+    {
+      "ruler": "Visala-deva",
+      "start": 1244,
+      "end": 1262
+    },
+    {
+      "ruler": "Arjuna-deva",
+      "start": 1262,
+      "end": 1275
+    },
+    {
+      "ruler": "Rama",
+      "start": 1275,
+      "end": 1275,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Saranga-deva",
+      "start": 1275,
+      "end": 1296
+    },
+    {
+      "ruler": "Karna-deva",
+      "start": 1296,
+      "end": 1304
+    }
+  ],
+  "Ghurid Empire": [
+    {
+      "ruler": "Ghiyath al-Din Muhammad",
+      "title": "Sultan",
+      "start": 1163,
+      "end": 1203,
+      "note": "Senior Ghurid sultan; elder brother of Muhammad of Ghor"
+    },
+    {
+      "ruler": "Mu'izz ad-Din Muhammad (Muhammad of Ghor)",
+      "title": "Sultan",
+      "start": 1173,
+      "end": 1206,
+      "note": "Conqueror of the Indo-Gangetic plain; assassinated 1206"
+    }
+  ],
+  "Chaulukya (Solanki)": [
+    {
+      "ruler": "Kumarapala",
+      "title": "Maharaja",
+      "start": 1143,
+      "end": 1172,
+      "note": "Patron of Jainism; the Chaulukya golden age in Gujarat"
+    },
+    {
+      "ruler": "Ajayapala",
+      "title": "Maharaja",
+      "start": 1172,
+      "end": 1175
+    },
+    {
+      "ruler": "Mularaja II",
+      "title": "Maharaja",
+      "start": 1175,
+      "end": 1178,
+      "note": "Repelled a Ghurid raid as a child-king (1178)"
+    },
+    {
+      "ruler": "Bhima II",
+      "title": "Maharaja",
+      "start": 1178,
+      "end": 1240,
+      "note": "Repelled Muhammad of Ghor's 1178 invasion of Gujarat"
+    },
+    {
+      "ruler": "Tribhuvanapala",
+      "title": "Maharaja",
+      "start": 1240,
+      "end": 1244,
+      "note": "Last Chaulukya; succeeded by the Vaghelas"
+    }
+  ],
+  "Gondwana (Gond kingdoms)": [
+    {
+      "ruler": "Sangram Shah",
+      "title": "Raja",
+      "start": 1480,
+      "end": 1541,
+      "note": "Greatest Garha-Katanga ruler; the 'fifty-two garhs'"
+    },
+    {
+      "ruler": "Dalpat Shah",
+      "title": "Raja",
+      "start": 1541,
+      "end": 1548
+    },
+    {
+      "ruler": "Rani Durgavati",
+      "title": "Rani (regent)",
+      "start": 1550,
+      "end": 1564,
+      "note": "Defended Garha against the Mughals; died in battle, 1564"
+    },
+    {
+      "ruler": "Chandra Shah",
+      "title": "Raja",
+      "start": 1564,
+      "end": 1590,
+      "note": "Ruled as a Mughal tributary after Durgavati's fall"
+    }
+  ],
+  "Nepal": [
+    {
+      "ruler": "Prithvi Narayan Shah",
+      "title": "King",
+      "start": 1743,
+      "end": 1775,
+      "note": "Unifier of modern Nepal"
+    },
+    {
+      "ruler": "Pratap Singh Shah",
+      "title": "King",
+      "start": 1775,
+      "end": 1777
+    },
+    {
+      "ruler": "Rana Bahadur Shah",
+      "title": "King",
+      "start": 1777,
+      "end": 1799
+    },
+    {
+      "ruler": "Girvan Yuddha Bikram Shah",
+      "title": "King",
+      "start": 1799,
+      "end": 1816,
+      "note": "Anglo-Nepalese War (1814-16) during his reign"
+    },
+    {
+      "ruler": "Rajendra Bikram Shah",
+      "title": "King",
+      "start": 1816,
+      "end": 1847
+    },
+    {
+      "ruler": "Surendra Bikram Shah",
+      "title": "King",
+      "start": 1847,
+      "end": 1881,
+      "note": "Real power held by the Rana prime ministers from 1846"
+    },
+    {
+      "ruler": "Prithvi Bir Bikram Shah",
+      "title": "King",
+      "start": 1881,
+      "end": 1911
+    },
+    {
+      "ruler": "Tribhuvan Bir Bikram Shah",
+      "title": "King",
+      "start": 1911,
+      "end": 1955,
+      "note": "Ended Rana rule in 1951"
+    }
+  ],
+  "Kalhora (Sindh)": [
+    {
+      "ruler": "Mian Yar Muhammad Kalhoro",
+      "title": "Mian",
+      "start": 1701,
+      "end": 1718,
+      "note": "Founder of Kalhora rule in Sindh"
+    },
+    {
+      "ruler": "Mian Nur Muhammad Kalhoro",
+      "title": "Mian",
+      "start": 1719,
+      "end": 1753
+    },
+    {
+      "ruler": "Mian Ghulam Shah Kalhoro",
+      "title": "Mian",
+      "start": 1757,
+      "end": 1772,
+      "note": "Founded Hyderabad, Sindh"
+    },
+    {
+      "ruler": "Mian Abdul Nabi Kalhoro",
+      "title": "Mian",
+      "start": 1776,
+      "end": 1783,
+      "note": "Last Kalhora; overthrown by the Talpurs"
+    }
+  ],
+  "Sindh (Talpur Amirs)": [
+    {
+      "ruler": "Mir Fateh Ali Khan Talpur",
+      "title": "Mir",
+      "start": 1783,
+      "end": 1802,
+      "note": "Founder of Talpur rule after Halani (1782)"
+    },
+    {
+      "ruler": "Mir Ghulam Ali Khan Talpur",
+      "title": "Mir",
+      "start": 1802,
+      "end": 1811
+    },
+    {
+      "ruler": "Mir Murad Ali Khan Talpur",
+      "title": "Mir",
+      "start": 1811,
+      "end": 1833
+    },
+    {
+      "ruler": "Mir Nur Muhammad Talpur",
+      "title": "Mir",
+      "start": 1833,
+      "end": 1840
+    },
+    {
+      "ruler": "Mir Naseer Khan Talpur",
+      "title": "Mir",
+      "start": 1840,
+      "end": 1843,
+      "note": "Defeated by Napier at Miani; British annex Sindh"
+    }
+  ],
+  "Madurai Sultanate": [
+    {
+      "ruler": "Jalaluddin Ahsan Khan",
+      "title": "Sultan",
+      "start": 1335,
+      "end": 1340,
+      "note": "Founder; broke away from the Delhi Sultanate"
+    },
+    {
+      "ruler": "Ghiyath al-Din Muhammad Damghani",
+      "title": "Sultan",
+      "start": 1340,
+      "end": 1345,
+      "note": "Ibn Battuta served at his court"
+    },
+    {
+      "ruler": "Sikandar Shah",
+      "title": "Sultan",
+      "start": 1357,
+      "end": 1378,
+      "note": "Last sultan; conquered by Vijayanagara (Kumara Kampana)"
+    }
+  ],
+  "Kampili Kingdom": [
+    {
+      "ruler": "Singeya Nayaka III",
+      "title": "Ruler",
+      "start": 1280,
+      "end": 1300,
+      "note": "Research catalogue v1.1"
+    },
+    {
+      "ruler": "Mummadi Singeya Nayaka",
+      "title": "Raja",
+      "start": 1313,
+      "end": 1320,
+      "note": "Founded the Kampili kingdom on the Tungabhadra as the Yadava-Kakatiya order collapsed"
+    },
+    {
+      "ruler": "Kampilideva (Kampila Raya)",
+      "title": "Raja",
+      "start": 1320,
+      "end": 1327,
+      "note": "Defied Muhammad bin Tughlaq and fell in 1327; his officers Harihara and Bukka founded Vijayanagara"
+    }
+  ],
+  "Gingee (Senji) Nayak": [
+    {
+      "ruler": "Vaiyappa Nayaka",
+      "start": 1464,
+      "end": 1490
+    },
+    {
+      "ruler": "Tubaki Krishnappa Nayaka",
+      "start": 1490,
+      "end": 1520
+    },
+    {
+      "ruler": "Achyutavijaya Ramachandra Nayaka",
+      "start": 1520,
+      "end": 1540
+    },
+    {
+      "ruler": "Muthialu Nayaka",
+      "start": 1540,
+      "end": 1570
+    },
+    {
+      "ruler": "Venkatappa Nayaka",
+      "start": 1570,
+      "end": 1600
+    },
+    {
+      "ruler": "Varadappa Nayaka",
+      "start": 1600,
+      "end": 1620
+    },
+    {
+      "ruler": "Appa Nayaka",
+      "start": 1620,
+      "end": 1649
+    }
+  ],
+  "Gahadavala (Kannauj)": [
+    {
+      "ruler": "Govindachandra",
+      "title": "Maharaja",
+      "start": 1114,
+      "end": 1155,
+      "note": "Height of Gahadavala power at Kannauj and Varanasi"
+    },
+    {
+      "ruler": "Vijayachandra",
+      "title": "Maharaja",
+      "start": 1155,
+      "end": 1170
+    },
+    {
+      "ruler": "Jayachandra (Jaichand)",
+      "title": "Maharaja",
+      "start": 1170,
+      "end": 1194,
+      "note": "Last Gahadavala; killed by the Ghurids at Chandawar, 1194"
+    }
+  ],
+  "Chahamana (Chauhan) of Shakambhari": [
+    {
+      "ruler": "Prithviraja III (Prithviraj Chauhan)",
+      "title": "Maharaja",
+      "start": 1178,
+      "end": 1192,
+      "note": "Won First Tarain (1191); defeated and slain at Second Tarain (1192)"
+    }
+  ],
+  "Chahamana (Chauhan)": [
+    {
+      "ruler": "Govindaraja",
+      "title": "Maharaja",
+      "start": 1194,
+      "end": 1198,
+      "note": "Founded the Ranthambore Chahamana line after Tarain"
+    },
+    {
+      "ruler": "Hammira Deva",
+      "title": "Maharaja",
+      "start": 1283,
+      "end": 1301,
+      "note": "Last Chahamana of Ranthambore; fell to Alauddin Khalji, 1301"
+    }
+  ],
+  "Dogra J&K": [
+    {
+      "ruler": "Gulab Singh",
+      "title": "Maharaja",
+      "start": 1846,
+      "end": 1857,
+      "note": "Founder of the Dogra dynasty (Treaty of Amritsar, 1846)"
+    },
+    {
+      "ruler": "Ranbir Singh",
+      "title": "Maharaja",
+      "start": 1857,
+      "end": 1885
+    },
+    {
+      "ruler": "Pratap Singh",
+      "title": "Maharaja",
+      "start": 1885,
+      "end": 1925
+    },
+    {
+      "ruler": "Hari Singh",
+      "title": "Maharaja",
+      "start": 1925,
+      "end": 1952,
+      "note": "Last ruling Maharaja; acceded to India, 1947"
+    }
+  ],
+  "Tirhut": [
+    {
+      "ruler": "Ramasimhadeva",
+      "title": "Maharaja",
+      "start": 1227,
+      "end": 1285,
+      "note": "Karnata (Simraon) dynasty of Mithila"
+    },
+    {
+      "ruler": "Harisimhadeva",
+      "title": "Maharaja",
+      "start": 1295,
+      "end": 1324,
+      "note": "Last Karnata king; fled the Tughlaq invasion of Tirhut, 1324"
+    }
+  ],
+  "Oiniwar": [
+    {
+      "ruler": "Kameshvara Thakur",
+      "title": "Maharaja",
+      "start": 1325,
+      "end": 1345,
+      "note": "Founder of the Oiniwar dynasty of Mithila"
+    },
+    {
+      "ruler": "Shivasimha",
+      "title": "Maharaja",
+      "start": 1412,
+      "end": 1416,
+      "note": "Patron of the Maithili poet Vidyapati"
+    },
+    {
+      "ruler": "Lakshminatha (Kamsanarayana)",
+      "title": "Maharaja",
+      "start": 1497,
+      "end": 1526,
+      "note": "Last Oiniwar ruler of Mithila"
+    }
+  ],
+  "Kalat (Khanate)": [
+    {
+      "ruler": "Mir Ahmad Khan I",
+      "title": "Khan",
+      "start": 1666,
+      "end": 1695,
+      "note": "Founder of the Ahmadzai Khanate of Kalat"
+    },
+    {
+      "ruler": "Mir Mehrab Khan I",
+      "title": "Khan",
+      "start": 1695,
+      "end": 1697
+    },
+    {
+      "ruler": "Mir Samandar Khan",
+      "title": "Khan",
+      "start": 1697,
+      "end": 1714
+    },
+    {
+      "ruler": "Mir Ahmad Khan II",
+      "title": "Khan",
+      "start": 1714,
+      "end": 1716
+    },
+    {
+      "ruler": "Mir Abdullah Khan",
+      "title": "Khan",
+      "start": 1716,
+      "end": 1731,
+      "note": "The \"Mountain Hawk\" — greatly expanded the Khanate; fell in battle against Nadir Shah's forces"
+    },
+    {
+      "ruler": "Mir Muhabbat Khan",
+      "title": "Khan",
+      "start": 1731,
+      "end": 1749
+    },
+    {
+      "ruler": "Mir Nasir Khan I (Noori)",
+      "title": "Khan",
+      "start": 1749,
+      "end": 1794,
+      "note": "Greatest Khan of Kalat"
+    },
+    {
+      "ruler": "Mir Mehrab Khan",
+      "title": "Khan",
+      "start": 1817,
+      "end": 1839,
+      "note": "Killed when the British stormed Kalat, 1839"
+    },
+    {
+      "ruler": "Mir Khudadad Khan",
+      "title": "Khan",
+      "start": 1857,
+      "end": 1893
+    }
+  ],
+  "Kingdom of Polonnaruwa": [
+    {
+      "ruler": "Nissanka Malla",
+      "title": "King",
+      "start": 1187,
+      "end": 1196,
+      "note": "Last strong king of Polonnaruwa before its decline"
+    },
+    {
+      "ruler": "Sahasa Malla",
+      "title": "King",
+      "start": 1200,
+      "end": 1202,
+      "note": "Post-Nissanka Malla decline of Polonnaruwa"
+    },
+    {
+      "ruler": "Kalyanavati",
+      "title": "Queen",
+      "start": 1202,
+      "end": 1208
+    }
+  ],
+  "Sikh misls": [
+    {
+      "ruler": "Jassa Singh Ahluwalia",
+      "title": "Sardar",
+      "start": 1748,
+      "end": 1783,
+      "note": "Foremost misl leader; hailed 'Sultan-ul-Qaum'"
+    },
+    {
+      "ruler": "Charat Singh Sukerchakia",
+      "title": "Sardar",
+      "start": 1758,
+      "end": 1774,
+      "note": "Grandfather of Ranjit Singh"
+    },
+    {
+      "ruler": "Maha Singh Sukerchakia",
+      "title": "Sardar",
+      "start": 1774,
+      "end": 1790,
+      "note": "Father of Ranjit Singh"
+    }
+  ],
+  "Najib-ud-Daula (Rohilla)": [
+    {
+      "ruler": "Najib-ud-Daula",
+      "title": "Regent",
+      "start": 1761,
+      "end": 1770,
+      "note": "Rohilla regent of Delhi after Panipat (1761)"
+    },
+    {
+      "ruler": "Zabita Khan",
+      "title": "Regent",
+      "start": 1770,
+      "end": 1785
+    }
+  ],
+  "Khasa Malla Kingdom": [
+    {
+      "ruler": "Ashokachalla",
+      "title": "King",
+      "start": 1255,
+      "end": 1278,
+      "note": "Khasa (Malla) kingdom of the Karnali basin"
+    },
+    {
+      "ruler": "Jitarimalla",
+      "title": "King",
+      "start": 1287,
+      "end": 1293
+    },
+    {
+      "ruler": "Prithvimalla",
+      "title": "King",
+      "start": 1338,
+      "end": 1358,
+      "note": "Last great Khasa Malla ruler"
+    }
+  ],
+  "Recherla Velama (Rachakonda)": [
+    {
+      "ruler": "Singama Nayaka II",
+      "title": "Nayak",
+      "start": 1361,
+      "end": 1384,
+      "note": "Founder of the Rachakonda Velama line"
+    },
+    {
+      "ruler": "Anapota Nayaka",
+      "title": "Nayak",
+      "start": 1384,
+      "end": 1399
+    },
+    {
+      "ruler": "Kumara Anapota",
+      "title": "Nayak",
+      "start": 1399,
+      "end": 1421
+    },
+    {
+      "ruler": "Madha Nayaka",
+      "title": "Nayak",
+      "start": 1450,
+      "end": 1475,
+      "note": "Last Rachakonda Velama; absorbed by the Bahmanis"
+    }
+  ],
+  "Mallabhum (Bishnupur)": [
+    {
+      "ruler": "Bir Hambir",
+      "title": "Raja",
+      "start": 1565,
+      "end": 1620,
+      "note": "Greatest Malla king; embraced Vaishnavism"
+    },
+    {
+      "ruler": "Raghunath Singha",
+      "title": "Raja",
+      "start": 1626,
+      "end": 1656
+    },
+    {
+      "ruler": "Bir Singha II",
+      "title": "Raja",
+      "start": 1656,
+      "end": 1682,
+      "note": "Built the Bishnupur terracotta temples"
+    }
+  ],
+  "Tarkhan (Sindh)": [
+    {
+      "ruler": "Mirza Isa Khan Tarkhan I",
+      "title": "Mirza",
+      "start": 1555,
+      "end": 1567,
+      "note": "Took Thatta from the Arghuns"
+    },
+    {
+      "ruler": "Muhammad Baqi Tarkhan",
+      "title": "Mirza",
+      "start": 1567,
+      "end": 1585
+    },
+    {
+      "ruler": "Jani Beg Tarkhan",
+      "title": "Mirza",
+      "start": 1585,
+      "end": 1601,
+      "note": "Submitted to Akbar; Mughal governor of Sindh"
+    }
+  ],
+  "Sitawaka": [
+    {
+      "ruler": "Mayadunne",
+      "title": "King",
+      "start": 1521,
+      "end": 1581,
+      "note": "Founded Sitawaka in defiance of Kotte and the Portuguese"
+    },
+    {
+      "ruler": "Rajasinha I",
+      "title": "King",
+      "start": 1581,
+      "end": 1593,
+      "note": "Nearly drove the Portuguese from Ceylon"
+    }
+  ],
+  "Soomra dynasty of Sindh": [
+    {
+      "ruler": "Soomar (founder)",
+      "title": "Amir",
+      "start": 1024,
+      "end": 1053,
+      "note": "Traditional founder of the Soomra dynasty of Sindh (chronology approximate)"
+    },
+    {
+      "ruler": "Dodo I",
+      "title": "Amir",
+      "start": 1092,
+      "end": 1140,
+      "note": "Traditional chronology; dates approximate"
+    },
+    {
+      "ruler": "Hamir (Umar Soomro)",
+      "title": "Amir",
+      "start": 1290,
+      "end": 1332,
+      "note": "Of the Umar-Marvi tradition; last strong Soomra before the Sammas (approximate)"
+    }
+  ],
+  "Chutia (Sadiya) Kingdom": [
+    {
+      "ruler": "Birpal",
+      "start": 1187,
+      "end": 1224
+    },
+    {
+      "ruler": "Ratnadhwajpal",
+      "start": 1224,
+      "end": 1250
+    },
+    {
+      "ruler": "Vijayadhwajpal",
+      "start": 1250,
+      "end": 1278
+    },
+    {
+      "ruler": "Vikramadhwajpal",
+      "start": 1278,
+      "end": 1302
+    },
+    {
+      "ruler": "Gauradhwajpal",
+      "start": 1302,
+      "end": 1322
+    },
+    {
+      "ruler": "Sankhadhwajpal",
+      "start": 1322,
+      "end": 1343
+    },
+    {
+      "ruler": "Mayuradhwajpal",
+      "start": 1343,
+      "end": 1361
+    },
+    {
+      "ruler": "Jayadhwajpal",
+      "start": 1361,
+      "end": 1383
+    },
+    {
+      "ruler": "Karmadhwajpal",
+      "start": 1383,
+      "end": 1401
+    },
+    {
+      "ruler": "Satyanarayan",
+      "start": 1401,
+      "end": 1421
+    },
+    {
+      "ruler": "Laksminarayan",
+      "start": 1421,
+      "end": 1439
+    },
+    {
+      "ruler": "Dharmanarayan",
+      "start": 1439,
+      "end": 1458
+    },
+    {
+      "ruler": "Pratyashnarayan",
+      "start": 1458,
+      "end": 1480
+    },
+    {
+      "ruler": "Purnadhabnarayan",
+      "start": 1480,
+      "end": 1502
+    },
+    {
+      "ruler": "Dharmadhajpal",
+      "start": 1502,
+      "end": 1522
+    },
+    {
+      "ruler": "Nitypal",
+      "start": 1522,
+      "end": 1524
+    }
+  ],
+  "Manipur": [
+    {
+      "ruler": "Senbi Kiyamba",
+      "start": 1467,
+      "end": 1508,
+      "title": "Meidingu",
+      "note": "Expanded the Meitei state; Cheitharol Kumbaba chronicle"
+    },
+    {
+      "ruler": "Khagemba",
+      "start": 1597,
+      "end": 1652,
+      "title": "Meidingu",
+      "note": "Golden age; repelled early Burmese raids"
+    },
+    {
+      "ruler": "Charairongba",
+      "start": 1697,
+      "end": 1709,
+      "title": "Meidingu"
+    },
+    {
+      "ruler": "Pamheiba (Garib Niwaz)",
+      "start": 1709,
+      "end": 1748,
+      "title": "Maharaja",
+      "note": "Adopted Hinduism; raided deep into Burma"
+    },
+    {
+      "ruler": "Bhagyachandra (Ching-Thang Khomba)",
+      "start": 1763,
+      "end": 1798,
+      "title": "Maharaja",
+      "note": "Devised the Ras Lila dance; resisted Burmese occupation"
+    },
+    {
+      "ruler": "Gambhir Singh",
+      "start": 1825,
+      "end": 1834,
+      "title": "Maharaja",
+      "note": "Freed Manipur from Burmese rule after the Seven Years Devastation"
+    },
+    {
+      "ruler": "Nara Singh",
+      "start": 1844,
+      "end": 1850,
+      "title": "Maharaja"
+    },
+    {
+      "ruler": "Chandrakirti Singh",
+      "start": 1850,
+      "end": 1886,
+      "title": "Maharaja"
+    },
+    {
+      "ruler": "Surchandra Singh",
+      "start": 1886,
+      "end": 1890,
+      "title": "Maharaja"
+    },
+    {
+      "ruler": "Kulachandra Singh",
+      "start": 1890,
+      "end": 1891,
+      "title": "Maharaja",
+      "note": "Anglo-Manipur War of 1891"
+    },
+    {
+      "ruler": "Churachand Singh",
+      "start": 1891,
+      "end": 1941,
+      "title": "Maharaja",
+      "note": "Installed after 1891 under British paramountcy"
+    },
+    {
+      "ruler": "Bodhchandra Singh",
+      "start": 1941,
+      "end": 1949,
+      "title": "Maharaja",
+      "note": "Signed the merger with India, 1949"
+    }
+  ],
+  "Tripura": [
+    {
+      "ruler": "Ratna Manikya (early traditional)",
+      "start": 1280,
+      "end": 1280,
+      "note": "Traditional date; not continuous with later Manikya chronology"
+    },
+    {
+      "ruler": "Pratap Manikya (early traditional)",
+      "start": 1350,
+      "end": 1350,
+      "note": "Traditional date"
+    },
+    {
+      "ruler": "Mukul Manikya (early traditional)",
+      "start": 1400,
+      "end": 1400,
+      "note": "Traditional date"
+    },
+    {
+      "ruler": "Maha Manikya",
+      "start": 1400,
+      "end": 1431,
+      "note": "Approximate start"
+    },
+    {
+      "ruler": "Dharma Manikya I",
+      "start": 1431,
+      "end": 1462
+    },
+    {
+      "ruler": "Ratna Manikya I",
+      "start": 1462,
+      "end": 1487
+    },
+    {
+      "ruler": "Pratap Manikya",
+      "start": 1487,
+      "end": 1487,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Vijaya Manikya I",
+      "start": 1488,
+      "end": 1488,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Mukut Manikya",
+      "start": 1489,
+      "end": 1489,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Dhanya Manikya",
+      "start": 1490,
+      "end": 1515
+    },
+    {
+      "ruler": "Dhwaja Manikya",
+      "start": 1515,
+      "end": 1520
+    },
+    {
+      "ruler": "Deva Manikya",
+      "start": 1520,
+      "end": 1530
+    },
+    {
+      "ruler": "Indra Manikya I",
+      "start": 1530,
+      "end": 1532
+    },
+    {
+      "ruler": "Vijaya Manikya II",
+      "start": 1532,
+      "end": 1563
+    },
+    {
+      "ruler": "Ananta Manikya",
+      "start": 1563,
+      "end": 1567
+    },
+    {
+      "ruler": "Udai Manikya I",
+      "start": 1567,
+      "end": 1573
+    },
+    {
+      "ruler": "Joy Manikya I",
+      "start": 1573,
+      "end": 1577
+    },
+    {
+      "ruler": "Amar Manikya",
+      "start": 1577,
+      "end": 1585
+    },
+    {
+      "ruler": "Rajdhar Manikya I",
+      "start": 1586,
+      "end": 1600
+    },
+    {
+      "ruler": "Ishwar Manikya",
+      "start": 1600,
+      "end": 1600,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Yashodhar Manikya",
+      "start": 1600,
+      "end": 1623
+    },
+    {
+      "ruler": "Kalyan Manikya",
+      "start": 1626,
+      "end": 1660
+    },
+    {
+      "ruler": "Govinda Manikya (first reign)",
+      "start": 1660,
+      "end": 1661
+    },
+    {
+      "ruler": "Chhatra Manikya",
+      "start": 1661,
+      "end": 1667
+    },
+    {
+      "ruler": "Govinda Manikya (second reign)",
+      "start": 1667,
+      "end": 1673
+    },
+    {
+      "ruler": "Rama Manikya",
+      "start": 1673,
+      "end": 1685
+    },
+    {
+      "ruler": "Ratna Manikya II (first reign)",
+      "start": 1685,
+      "end": 1693
+    },
+    {
+      "ruler": "Narendra Manikya",
+      "start": 1693,
+      "end": 1695
+    },
+    {
+      "ruler": "Ratna Manikya II (second reign)",
+      "start": 1695,
+      "end": 1712
+    },
+    {
+      "ruler": "Mahendra Manikya",
+      "start": 1712,
+      "end": 1714
+    },
+    {
+      "ruler": "Dharma Manikya II",
+      "start": 1714,
+      "end": 1725
+    },
+    {
+      "ruler": "Jagat Manikya",
+      "start": 1725,
+      "end": 1729
+    },
+    {
+      "ruler": "Dharma Manikya II (restored)",
+      "start": 1729,
+      "end": 1729,
+      "note": "Brief restoration"
+    },
+    {
+      "ruler": "Mukunda Manikya",
+      "start": 1729,
+      "end": 1739
+    },
+    {
+      "ruler": "Joy Manikya II (first reign)",
+      "start": 1739,
+      "end": 1744
+    },
+    {
+      "ruler": "Udai Manikya II",
+      "start": 1744,
+      "end": 1744,
+      "title": "Contested ruler",
+      "note": "Overlapping brief claimant"
+    },
+    {
+      "ruler": "Indra Manikya II",
+      "start": 1744,
+      "end": 1746
+    },
+    {
+      "ruler": "Joy Manikya II (restored)",
+      "start": 1746,
+      "end": 1746,
+      "note": "Brief restoration"
+    },
+    {
+      "ruler": "Vijaya Manikya III",
+      "start": 1746,
+      "end": 1748
+    },
+    {
+      "ruler": "Krishna Manikya",
+      "start": 1760,
+      "end": 1783
+    },
+    {
+      "ruler": "Rajdhar Manikya II",
+      "start": 1785,
+      "end": 1806
+    },
+    {
+      "ruler": "Rama Ganga Manikya (first reign)",
+      "start": 1806,
+      "end": 1809
+    },
+    {
+      "ruler": "Durga Manikya",
+      "start": 1809,
+      "end": 1813
+    },
+    {
+      "ruler": "Rama Ganga Manikya (second reign)",
+      "start": 1813,
+      "end": 1826
+    },
+    {
+      "ruler": "Kashi Chandra Manikya",
+      "start": 1826,
+      "end": 1829
+    },
+    {
+      "ruler": "Krishna Kishore Manikya",
+      "start": 1829,
+      "end": 1849
+    },
+    {
+      "ruler": "Ishan Chandra Manikya",
+      "start": 1849,
+      "end": 1862
+    },
+    {
+      "ruler": "Bir Chandra Manikya",
+      "start": 1862,
+      "end": 1896
+    },
+    {
+      "ruler": "Radha Kishore Manikya",
+      "start": 1896,
+      "end": 1909
+    },
+    {
+      "ruler": "Birendra Kishore Manikya",
+      "start": 1909,
+      "end": 1923
+    },
+    {
+      "ruler": "Bir Bikram Kishore Manikya",
+      "start": 1923,
+      "end": 1947
+    },
+    {
+      "ruler": "Kirit Bikram Kishore Manikya",
+      "start": 1947,
+      "end": 1949
+    }
+  ],
+  "Kingdom of Kandy": [
+    {
+      "ruler": "Senasammata Vikramabahu",
+      "start": 1469,
+      "end": 1511,
+      "title": "King",
+      "note": "First independent king of the hill country"
+    },
+    {
+      "ruler": "Jayaweera Astana",
+      "start": 1511,
+      "end": 1552,
+      "title": "King"
+    },
+    {
+      "ruler": "Karaliyadde Bandara",
+      "start": 1552,
+      "end": 1582,
+      "title": "King"
+    },
+    {
+      "ruler": "Vimaladharmasuriya I",
+      "start": 1592,
+      "end": 1604,
+      "title": "King",
+      "note": "Defeated the Portuguese at Danture, 1594"
+    },
+    {
+      "ruler": "Senarat",
+      "start": 1604,
+      "end": 1635,
+      "title": "King"
+    },
+    {
+      "ruler": "Rajasinha II",
+      "start": 1635,
+      "end": 1687,
+      "title": "King",
+      "note": "Invited the Dutch to expel the Portuguese"
+    },
+    {
+      "ruler": "Vimaladharmasuriya II",
+      "start": 1687,
+      "end": 1707,
+      "title": "King"
+    },
+    {
+      "ruler": "Vira Narendra Sinha",
+      "start": 1707,
+      "end": 1739,
+      "title": "King",
+      "note": "Last of the Sinhalese line"
+    },
+    {
+      "ruler": "Sri Vijaya Rajasinha",
+      "start": 1739,
+      "end": 1747,
+      "title": "King",
+      "note": "First Nayakkar king"
+    },
+    {
+      "ruler": "Kirti Sri Rajasinha",
+      "start": 1747,
+      "end": 1782,
+      "title": "King",
+      "note": "Buddhist revival; repelled the Dutch, 1765"
+    },
+    {
+      "ruler": "Rajadhi Rajasinha",
+      "start": 1782,
+      "end": 1798,
+      "title": "King"
+    },
+    {
+      "ruler": "Sri Vikrama Rajasinha",
+      "start": 1798,
+      "end": 1815,
+      "title": "King",
+      "note": "Last king of Kandy; deposed by the British"
+    }
+  ],
+  "Kingdom of Kotte": [
+    {
+      "ruler": "Parakramabahu VI",
+      "start": 1412,
+      "end": 1467,
+      "title": "King",
+      "note": "Last ruler to unify all of Sri Lanka"
+    },
+    {
+      "ruler": "Jayabahu II",
+      "start": 1467,
+      "end": 1472,
+      "title": "King"
+    },
+    {
+      "ruler": "Bhuvanekabahu VI",
+      "start": 1472,
+      "end": 1480,
+      "title": "King"
+    },
+    {
+      "ruler": "Parakramabahu VIII",
+      "start": 1484,
+      "end": 1508,
+      "title": "King",
+      "note": "Portuguese first landed, 1505"
+    },
+    {
+      "ruler": "Vijayabahu VII",
+      "start": 1509,
+      "end": 1521,
+      "title": "King"
+    },
+    {
+      "ruler": "Bhuvanekabahu VII",
+      "start": 1521,
+      "end": 1551,
+      "title": "King",
+      "note": "Client of the Portuguese"
+    },
+    {
+      "ruler": "Dharmapala",
+      "start": 1551,
+      "end": 1597,
+      "title": "King",
+      "note": "Baptised Catholic; bequeathed Kotte to Portugal"
+    }
+  ],
+  "Jaffna Kingdom": [
+    {
+      "ruler": "Aryacakravarti kings (successive)",
+      "start": 1215,
+      "end": 1519,
+      "title": "King",
+      "note": "Individual reigns imperfectly attested in the chronicles"
+    },
+    {
+      "ruler": "Cankili I",
+      "start": 1519,
+      "end": 1561,
+      "title": "King",
+      "note": "Resisted Portuguese conversion drives"
+    },
+    {
+      "ruler": "Puviraja Pandaram",
+      "start": 1561,
+      "end": 1591,
+      "title": "King",
+      "note": "Reigned twice amid Portuguese interventions"
+    },
+    {
+      "ruler": "Ethirimana Cinkam",
+      "start": 1591,
+      "end": 1616,
+      "title": "King"
+    },
+    {
+      "ruler": "Cankili II",
+      "start": 1616,
+      "end": 1619,
+      "title": "King",
+      "note": "Last king; kingdom annexed by Portugal"
+    }
+  ],
+  "Garhwal Kingdom": [
+    {
+      "ruler": "Ajaya Pala",
+      "start": 1500,
+      "end": 1547,
+      "title": "Raja",
+      "note": "Unified the 52 forts of Garhwal; capital at Srinagar (Garhwal)"
+    },
+    {
+      "ruler": "Man Shah",
+      "start": 1591,
+      "end": 1611,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Mahipat Shah",
+      "start": 1622,
+      "end": 1631,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Prithvipati Shah",
+      "start": 1631,
+      "end": 1660,
+      "title": "Raja",
+      "note": "Queen-regent Karnavati repelled a Mughal force in 1640"
+    },
+    {
+      "ruler": "Fateh Shah",
+      "start": 1684,
+      "end": 1716,
+      "title": "Raja",
+      "note": "Fought Sikhs and Kumaon; patron of poets"
+    },
+    {
+      "ruler": "Pradip Shah",
+      "start": 1717,
+      "end": 1772,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Lalit Shah",
+      "start": 1772,
+      "end": 1780,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Pradyumna Shah",
+      "start": 1786,
+      "end": 1804,
+      "title": "Raja",
+      "note": "Died fighting the Gorkha invasion at Khurbura"
+    }
+  ],
+  "Kumaon Chand": [
+    {
+      "ruler": "Bharati Chand",
+      "start": 1437,
+      "end": 1450,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Ratna Chand",
+      "start": 1450,
+      "end": 1488,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Kirti Chand",
+      "start": 1488,
+      "end": 1503,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Rudra Chand",
+      "start": 1565,
+      "end": 1597,
+      "title": "Raja",
+      "note": "Consolidated Kumaon; founded Almora fort"
+    },
+    {
+      "ruler": "Lakshmi Chand",
+      "start": 1597,
+      "end": 1621,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Baz Bahadur Chand",
+      "start": 1638,
+      "end": 1678,
+      "title": "Raja",
+      "note": "Expanded into western Tibet trade routes"
+    },
+    {
+      "ruler": "Udyot Chand",
+      "start": 1678,
+      "end": 1698,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Jagat Chand",
+      "start": 1708,
+      "end": 1720,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Deep Chand",
+      "start": 1748,
+      "end": 1777,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Mahendra Chand",
+      "start": 1789,
+      "end": 1790,
+      "title": "Raja",
+      "note": "Last Chand raja; Gorkha conquest of Kumaon"
+    }
+  ],
+  "Garha-Katanga": [
+    {
+      "ruler": "Sangram Shah",
+      "start": 1480,
+      "end": 1541,
+      "title": "Raja",
+      "note": "Gond kingdom at its height — 52 forts (garhs)"
+    },
+    {
+      "ruler": "Dalpat Shah",
+      "start": 1541,
+      "end": 1550,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Rani Durgavati",
+      "start": 1550,
+      "end": 1564,
+      "title": "Rani (regent)",
+      "note": "Died sword in hand against Asaf Khan’s Mughal army, 1564"
+    }
+  ],
+  "Malla (Kathmandu Valley)": [
+    {
+      "ruler": "Jayasthiti Malla",
+      "start": 1382,
+      "end": 1395,
+      "title": "King",
+      "note": "Codifier of Newar society"
+    },
+    {
+      "ruler": "Jayajyotir Malla",
+      "start": 1408,
+      "end": 1428,
+      "title": "King"
+    },
+    {
+      "ruler": "Yaksha Malla",
+      "start": 1428,
+      "end": 1482,
+      "title": "King",
+      "note": "Valley empire at its widest"
+    },
+    {
+      "ruler": "Malla kings of Kathmandu, Patan & Bhaktapur",
+      "start": 1482,
+      "end": 1768,
+      "title": "Kings",
+      "note": "Valley divided among three rival Malla courts until the Gorkha conquest"
+    }
+  ],
+  "Kachari Kingdom": [
+    {
+      "ruler": "Dimasa kings (Dimapur & Maibang lines)",
+      "start": 1188,
+      "end": 1790,
+      "title": "King",
+      "note": "Long line imperfectly attested; capitals at Dimapur, then Maibang"
+    },
+    {
+      "ruler": "Krishnachandra Narayan",
+      "start": 1790,
+      "end": 1813,
+      "title": "Raja"
+    },
+    {
+      "ruler": "Govinda Chandra Narayan",
+      "start": 1813,
+      "end": 1830,
+      "title": "Raja",
+      "note": "Last king; kingdom annexed by the British, 1832"
+    }
+  ],
+  "Calicut (Zamorin)": [
+    {
+      "ruler": "Samoothiri (Zamorin) rajas of Calicut",
+      "start": 1188,
+      "end": 1766,
+      "title": "Samoothiri",
+      "note": "Matrilineal succession; individual reigns not standardised. Hosts of Vasco da Gama, 1498; fell to Mysore, 1766"
+    }
+  ],
+  "Ratanpur Kalachuri kingdom": [
+    {
+      "ruler": "Haihaiyavamsi Kalachuri rajas of Ratanpur",
+      "start": 1188,
+      "end": 1649,
+      "title": "Raja",
+      "note": "Cadet line of the Tripuri Kalachuris; reign-by-reign dates uncertain"
+    }
+  ],
+  "Dambadeniya Kingdom": [
+    {
+      "ruler": "Vijayabahu III",
+      "start": 1233,
+      "end": 1236,
+      "title": "King",
+      "note": "Founded the Dambadeniya line"
+    },
+    {
+      "ruler": "Parakramabahu II",
+      "start": 1236,
+      "end": 1270,
+      "title": "King",
+      "note": "Repelled the Javaka invasion of Chandrabhanu"
+    },
+    {
+      "ruler": "Vijayabahu IV",
+      "start": 1270,
+      "end": 1272,
+      "title": "King"
+    },
+    {
+      "ruler": "Bhuvanekabahu I",
+      "start": 1272,
+      "end": 1284,
+      "title": "King"
+    },
+    {
+      "ruler": "Parakramabahu III",
+      "start": 1287,
+      "end": 1293,
+      "title": "King"
+    },
+    {
+      "ruler": "Later Dambadeniya kings",
+      "start": 1293,
+      "end": 1345,
+      "title": "King"
+    }
+  ],
+  "Sri Lanka": [
+    {
+      "ruler": "D. S. Senanayake",
+      "start": 1948,
+      "end": 1952,
+      "title": "Prime Minister",
+      "note": "Father of the nation"
+    },
+    {
+      "ruler": "Dudley Senanayake",
+      "start": 1952,
+      "end": 1953,
+      "title": "Prime Minister"
+    },
+    {
+      "ruler": "John Kotelawala",
+      "start": 1953,
+      "end": 1956,
+      "title": "Prime Minister"
+    },
+    {
+      "ruler": "S. W. R. D. Bandaranaike",
+      "start": 1956,
+      "end": 1959,
+      "title": "Prime Minister"
+    },
+    {
+      "ruler": "Sirimavo Bandaranaike",
+      "start": 1960,
+      "end": 1965,
+      "title": "Prime Minister",
+      "note": "World's first woman prime minister"
+    },
+    {
+      "ruler": "Dudley Senanayake",
+      "start": 1965,
+      "end": 1970,
+      "title": "Prime Minister"
+    },
+    {
+      "ruler": "Sirimavo Bandaranaike",
+      "start": 1970,
+      "end": 1977,
+      "title": "Prime Minister"
+    },
+    {
+      "ruler": "J. R. Jayewardene",
+      "start": 1978,
+      "end": 1989,
+      "title": "President",
+      "note": "First executive president"
+    },
+    {
+      "ruler": "Ranasinghe Premadasa",
+      "start": 1989,
+      "end": 1993,
+      "title": "President"
+    },
+    {
+      "ruler": "Chandrika Bandaranaike Kumaratunga",
+      "start": 1994,
+      "end": 2005,
+      "title": "President"
+    },
+    {
+      "ruler": "Mahinda Rajapaksa",
+      "start": 2005,
+      "end": 2015,
+      "title": "President",
+      "note": "End of the civil war, 2009"
+    },
+    {
+      "ruler": "Maithripala Sirisena",
+      "start": 2015,
+      "end": 2019,
+      "title": "President"
+    },
+    {
+      "ruler": "Gotabaya Rajapaksa",
+      "start": 2019,
+      "end": 2022,
+      "title": "President",
+      "note": "Resigned amid the 2022 crisis"
+    },
+    {
+      "ruler": "Ranil Wickremesinghe",
+      "start": 2022,
+      "end": 2024,
+      "title": "President"
+    },
+    {
+      "ruler": "Anura Kumara Dissanayake",
+      "start": 2024,
+      "end": 2026,
+      "title": "President"
+    }
+  ],
+  "British Ceylon": [
+    {
+      "ruler": "British governors of Ceylon",
+      "start": 1796,
+      "end": 1948,
+      "title": "Governor",
+      "note": "Crown colony from 1802; Frederick North first governor, D. S. Senanayake led it to independence"
+    }
+  ],
+  "Dutch Ceylon": [
+    {
+      "ruler": "Dutch VOC governors of Ceylon",
+      "start": 1658,
+      "end": 1796,
+      "title": "Governor",
+      "note": "Vereenigde Oostindische Compagnie rule of the maritime provinces"
+    }
+  ],
+  "Portuguese India": [
+    {
+      "ruler": "Francisco de Almeida",
+      "title": "Viceroy",
+      "start": 1505,
+      "end": 1509,
+      "note": "First Viceroy of the Estado da Índia"
+    },
+    {
+      "ruler": "Afonso de Albuquerque",
+      "title": "Governor and Captain-General",
+      "start": 1509,
+      "end": 1515,
+      "note": "Took Goa (1510), Malacca (1511), Hormuz (1515)"
+    },
+    {
+      "ruler": "Lopo Soares de Albergaria",
+      "title": "Governor",
+      "start": 1515,
+      "end": 1518
+    },
+    {
+      "ruler": "Diogo Lopes de Sequeira",
+      "title": "Governor",
+      "start": 1518,
+      "end": 1522
+    },
+    {
+      "ruler": "Duarte de Menezes",
+      "title": "Governor",
+      "start": 1522,
+      "end": 1524
+    },
+    {
+      "ruler": "Vasco da Gama",
+      "title": "Viceroy",
+      "start": 1524,
+      "end": 1524
+    },
+    {
+      "ruler": "Henrique de Menezes",
+      "title": "Governor",
+      "start": 1525,
+      "end": 1526
+    },
+    {
+      "ruler": "Lopo Vaz de Sampaio",
+      "title": "Governor",
+      "start": 1526,
+      "end": 1529
+    },
+    {
+      "ruler": "Nuno da Cunha",
+      "title": "Governor",
+      "start": 1529,
+      "end": 1538
+    },
+    {
+      "ruler": "Garcia de Noronha",
+      "title": "Viceroy",
+      "start": 1538,
+      "end": 1540
+    },
+    {
+      "ruler": "Estêvão da Gama",
+      "title": "Governor",
+      "start": 1540,
+      "end": 1542
+    },
+    {
+      "ruler": "Martim Afonso de Sousa",
+      "title": "Governor",
+      "start": 1542,
+      "end": 1545
+    },
+    {
+      "ruler": "João de Castro",
+      "title": "Governor",
+      "start": 1545,
+      "end": 1548
+    },
+    {
+      "ruler": "João de Castro",
+      "title": "Viceroy",
+      "start": 1548,
+      "end": 1548
+    },
+    {
+      "ruler": "Garcia de Sá",
+      "title": "Governor",
+      "start": 1548,
+      "end": 1549
+    },
+    {
+      "ruler": "Jorge Cabral",
+      "title": "Governor",
+      "start": 1549,
+      "end": 1550
+    },
+    {
+      "ruler": "Afonso de Noronha",
+      "title": "Viceroy",
+      "start": 1550,
+      "end": 1554
+    },
+    {
+      "ruler": "Pedro Mascarenhas",
+      "title": "Viceroy",
+      "start": 1554,
+      "end": 1555
+    },
+    {
+      "ruler": "Francisco Barreto",
+      "title": "Governor",
+      "start": 1555,
+      "end": 1558
+    },
+    {
+      "ruler": "Constantino de Braganza",
+      "title": "Viceroy",
+      "start": 1558,
+      "end": 1561
+    },
+    {
+      "ruler": "Francisco Coutinho",
+      "title": "Viceroy",
+      "start": 1561,
+      "end": 1564
+    },
+    {
+      "ruler": "João de Mendonça",
+      "title": "Governor",
+      "start": 1564,
+      "end": 1564
+    },
+    {
+      "ruler": "António de Noronha",
+      "title": "Viceroy",
+      "start": 1564,
+      "end": 1568
+    },
+    {
+      "ruler": "Luís de Ataíde",
+      "title": "Viceroy",
+      "start": 1568,
+      "end": 1571
+    },
+    {
+      "ruler": "António de Noronha",
+      "title": "Viceroy",
+      "start": 1571,
+      "end": 1573
+    },
+    {
+      "ruler": "António Moniz Barreto",
+      "title": "Viceroy",
+      "start": 1573,
+      "end": 1576
+    },
+    {
+      "ruler": "Diogo de Menezes",
+      "title": "Governor",
+      "start": 1576,
+      "end": 1578
+    },
+    {
+      "ruler": "Luís de Ataíde",
+      "title": "Viceroy",
+      "start": 1578,
+      "end": 1581
+    },
+    {
+      "ruler": "Fernão Teles de Menezes",
+      "title": "Governor",
+      "start": 1581,
+      "end": 1581
+    },
+    {
+      "ruler": "Francisco de Mascarenhas",
+      "title": "Viceroy",
+      "start": 1581,
+      "end": 1584
+    },
+    {
+      "ruler": "Duarte de Menezes",
+      "title": "Viceroy",
+      "start": 1584,
+      "end": 1588
+    },
+    {
+      "ruler": "Manuel de Sousa Coutinho",
+      "title": "Governor",
+      "start": 1588,
+      "end": 1591
+    },
+    {
+      "ruler": "Matias de Albuquerque",
+      "title": "Viceroy",
+      "start": 1591,
+      "end": 1597
+    },
+    {
+      "ruler": "Francisco da Gama",
+      "title": "Viceroy",
+      "start": 1597,
+      "end": 1600
+    },
+    {
+      "ruler": "Aires de Saldanha",
+      "title": "Viceroy",
+      "start": 1600,
+      "end": 1605
+    },
+    {
+      "ruler": "Martim Afonso de Castro",
+      "title": "Viceroy",
+      "start": 1605,
+      "end": 1607
+    },
+    {
+      "ruler": "Aleixo de Meneses",
+      "title": "Governor",
+      "start": 1607,
+      "end": 1609
+    },
+    {
+      "ruler": "Rui Lourenço de Távora",
+      "title": "Viceroy",
+      "start": 1609,
+      "end": 1612
+    },
+    {
+      "ruler": "Jerónimo de Azevedo",
+      "title": "Viceroy",
+      "start": 1612,
+      "end": 1617
+    },
+    {
+      "ruler": "João Coutinho",
+      "title": "Viceroy",
+      "start": 1617,
+      "end": 1619
+    },
+    {
+      "ruler": "Fernando de Albuquerque",
+      "title": "Governor",
+      "start": 1619,
+      "end": 1622
+    },
+    {
+      "ruler": "Francisco da Gama",
+      "title": "Viceroy",
+      "start": 1622,
+      "end": 1628
+    },
+    {
+      "ruler": "Luís de Brito e Meneses",
+      "title": "Viceroy",
+      "start": 1628,
+      "end": 1629
+    },
+    {
+      "ruler": "Miguel de Noronha",
+      "title": "Viceroy",
+      "start": 1629,
+      "end": 1635
+    },
+    {
+      "ruler": "Pedro da Silva",
+      "title": "Viceroy",
+      "start": 1635,
+      "end": 1639
+    },
+    {
+      "ruler": "António Teles de Meneses",
+      "title": "Governor",
+      "start": 1639,
+      "end": 1640
+    },
+    {
+      "ruler": "João Telo e Meneses",
+      "title": "Viceroy",
+      "start": 1640,
+      "end": 1644
+    },
+    {
+      "ruler": "Filipe Mascarenhas",
+      "title": "Viceroy",
+      "start": 1644,
+      "end": 1651
+    },
+    {
+      "ruler": "Francisco dos Mártires & Francisco de Melo e Castro & António de Sousa Coutinho",
+      "title": "Governing Council",
+      "start": 1651,
+      "end": 1652
+    },
+    {
+      "ruler": "Vasco Mascarenhas",
+      "title": "Viceroy",
+      "start": 1652,
+      "end": 1655
+    },
+    {
+      "ruler": "Rodrigo Lobo da Silveira",
+      "title": "Governor",
+      "start": 1655,
+      "end": 1656
+    },
+    {
+      "ruler": "Manuel Mascarenhas Homem",
+      "title": "Governor",
+      "start": 1656,
+      "end": 1656
+    },
+    {
+      "ruler": "Manuel Mascarenhas Homem & Francisco de Melo e Castro & António de Sousa Coutinho",
+      "title": "Governing Council",
+      "start": 1656,
+      "end": 1661
+    },
+    {
+      "ruler": "Luís Furtado e Albuquerque & António de Melo e Castro & Pedro de Lencastre",
+      "title": "Governing Council",
+      "start": 1661,
+      "end": 1662
+    },
+    {
+      "ruler": "António de Melo e Castro",
+      "title": "Viceroy",
+      "start": 1662,
+      "end": 1666
+    },
+    {
+      "ruler": "João Nunes da Cunha",
+      "title": "Viceroy",
+      "start": 1666,
+      "end": 1668
+    },
+    {
+      "ruler": "António de Melo e Castro & Manuel Corte-Real de Sampaio & Luís de Miranda Henriques",
+      "title": "Governing Council",
+      "start": 1668,
+      "end": 1671
+    },
+    {
+      "ruler": "Luís Furtado e Albuquerque",
+      "title": "Viceroy",
+      "start": 1671,
+      "end": 1676
+    },
+    {
+      "ruler": "Pedro de Almeida",
+      "title": "Viceroy",
+      "start": 1676,
+      "end": 1678
+    },
+    {
+      "ruler": "António Brandão",
+      "title": "Interim Governor",
+      "start": 1678,
+      "end": 1681
+    },
+    {
+      "ruler": "Francisco de Távora",
+      "title": "Viceroy",
+      "start": 1681,
+      "end": 1686
+    },
+    {
+      "ruler": "Rodrigo da Costa",
+      "title": "Governor",
+      "start": 1686,
+      "end": 1690
+    },
+    {
+      "ruler": "Miguel de Almeida",
+      "title": "Governor",
+      "start": 1690,
+      "end": 1691
+    },
+    {
+      "ruler": "Fernando Mascarenhas Lencastre & Agostinho da Anunciação",
+      "title": "Governing Council",
+      "start": 1691,
+      "end": 1692
+    },
+    {
+      "ruler": "Pedro Noronha de Albuquerque",
+      "title": "Viceroy",
+      "start": 1692,
+      "end": 1697
+    },
+    {
+      "ruler": "António Câmara Coutinho",
+      "title": "Viceroy",
+      "start": 1697,
+      "end": 1701
+    },
+    {
+      "ruler": "Agostinho da Anunciação & Vasco Lima Coutinho",
+      "title": "Governing Council",
+      "start": 1701,
+      "end": 1702
+    },
+    {
+      "ruler": "Caetano de Melo e Castro",
+      "title": "Viceroy",
+      "start": 1702,
+      "end": 1707
+    },
+    {
+      "ruler": "Rodrigo da Costa",
+      "title": "Viceroy",
+      "start": 1707,
+      "end": 1712
+    },
+    {
+      "ruler": "Vasco César de Meneses",
+      "title": "Viceroy",
+      "start": 1712,
+      "end": 1717
+    },
+    {
+      "ruler": "Sebastião de Andrade Pessanha",
+      "title": "Governor",
+      "start": 1717,
+      "end": 1717
+    },
+    {
+      "ruler": "Luís Xavier de Meneses",
+      "title": "Viceroy",
+      "start": 1717,
+      "end": 1720
+    },
+    {
+      "ruler": "Francisco Sampaio e Castro",
+      "title": "Viceroy",
+      "start": 1720,
+      "end": 1723
+    },
+    {
+      "ruler": "Cristóvão de Melo & Inácio de Santa Teresa & Cristóvão Luís de Andrade",
+      "title": "Governing Council",
+      "start": 1723,
+      "end": 1725
+    },
+    {
+      "ruler": "João de Saldanha da Gama",
+      "title": "Viceroy",
+      "start": 1725,
+      "end": 1732
+    },
+    {
+      "ruler": "Pedro Mascarenhas",
+      "title": "Viceroy",
+      "start": 1732,
+      "end": 1740
+    },
+    {
+      "ruler": "Luís Xavier de Meneses",
+      "title": "Viceroy",
+      "start": 1740,
+      "end": 1742
+    },
+    {
+      "ruler": "Francisco de Vasconcelos & Lourenço de Noronha & Luís Caetano de Almeida",
+      "title": "Governing Council",
+      "start": 1742,
+      "end": 1744
+    },
+    {
+      "ruler": "Pedro Portugal e Vasconcelos",
+      "title": "Viceroy",
+      "start": 1744,
+      "end": 1750
+    },
+    {
+      "ruler": "Francisco de Assis de Távora",
+      "title": "Viceroy",
+      "start": 1750,
+      "end": 1754
+    },
+    {
+      "ruler": "Luís Mascarenhas",
+      "title": "Viceroy",
+      "start": 1754,
+      "end": 1756
+    },
+    {
+      "ruler": "António Brum da Silveira & João Matos Teixeira & Filipe de Valadares",
+      "title": "Governing Council",
+      "start": 1756,
+      "end": 1757
+    },
+    {
+      "ruler": "Manuel de Saldanha e Albuquerque",
+      "title": "Viceroy",
+      "start": 1758,
+      "end": 1765
+    },
+    {
+      "ruler": "António Brum da Silveira & João Baptista Vaz Pereira & João José de Melo",
+      "title": "Council",
+      "start": 1765,
+      "end": 1768
+    },
+    {
+      "ruler": "João José de Melo",
+      "title": "Governor",
+      "start": 1768,
+      "end": 1771
+    },
+    {
+      "ruler": "João José de Melo",
+      "title": "Governor and  Captain-General",
+      "start": 1771,
+      "end": 1774
+    },
+    {
+      "ruler": "José Pedro da Câmara",
+      "title": "Governor and Captain-General of India",
+      "start": 1774,
+      "end": 1779
+    },
+    {
+      "ruler": "Frederico Sousa Holstein",
+      "title": "Governor and Captain-General of India",
+      "start": 1779,
+      "end": 1786
+    },
+    {
+      "ruler": "Francisco da Cunha e Meneses",
+      "title": "Governor and Captain-General of India",
+      "start": 1786,
+      "end": 1794
+    },
+    {
+      "ruler": "Francisco Cabral da Câmara",
+      "title": "Governor and Captain-General of India",
+      "start": 1794,
+      "end": 1806
+    },
+    {
+      "ruler": "Bernardo Silveira e Lorena",
+      "title": "Viceroy and Captain-General of India",
+      "start": 1806,
+      "end": 1816
+    },
+    {
+      "ruler": "Diogo de Sousa",
+      "title": "Viceroy and Captain-General of India",
+      "start": 1816,
+      "end": 1821
+    },
+    {
+      "ruler": "Manuel da Câmara",
+      "title": "Provisional Junta",
+      "start": 1821,
+      "end": 1822
+    },
+    {
+      "ruler": "Manuel da Câmara",
+      "title": "Provisional Junta",
+      "start": 1822,
+      "end": 1823
+    },
+    {
+      "ruler": "Manuel da Câmara",
+      "title": "Viceroy and Captain-General of India",
+      "start": 1823,
+      "end": 1825
+    },
+    {
+      "ruler": "Frei Manuel de São Galdino",
+      "title": "Government Council",
+      "start": 1825,
+      "end": 1826
+    },
+    {
+      "ruler": "Manuel Portugal e Castro",
+      "title": "Governor and Captain-General of India",
+      "start": 1826,
+      "end": 1830
+    },
+    {
+      "ruler": "Manuel Portugal e Castro",
+      "title": "Viceroy and Captain-General of India",
+      "start": 1830,
+      "end": 1835
+    },
+    {
+      "ruler": "João Rocha de Vasconcelos",
+      "title": "Government Council",
+      "start": 1835,
+      "end": 1837
+    },
+    {
+      "ruler": "Bernardo Peres da Silva",
+      "title": "Governor",
+      "start": 1836,
+      "end": 1837
+    },
+    {
+      "ruler": "Simão Sousa Tavares",
+      "title": "Governor",
+      "start": 1837,
+      "end": 1839
+    },
+    {
+      "ruler": "Manuel José Mendes",
+      "title": "Governor",
+      "start": 1839,
+      "end": 1840
+    },
+    {
+      "ruler": "José Joaquim Lopes Lima",
+      "title": "Interim Governor",
+      "start": 1840,
+      "end": 1842
+    },
+    {
+      "ruler": "Francisco Silva Pereira",
+      "title": "Governor",
+      "start": 1842,
+      "end": 1843
+    },
+    {
+      "ruler": "Joaquim Garcez Palha",
+      "title": "Governor",
+      "start": 1843,
+      "end": 1844
+    },
+    {
+      "ruler": "José Ferreira Pestana",
+      "title": "Governor",
+      "start": 1844,
+      "end": 1851
+    },
+    {
+      "ruler": "José Joaquim Januário Lapa",
+      "title": "Governor",
+      "start": 1851,
+      "end": 1855
+    },
+    {
+      "ruler": "António Vasconcelos Correia",
+      "title": "Governor",
+      "start": 1855,
+      "end": 1864
+    },
+    {
+      "ruler": "José Ferreira Pestana",
+      "title": "Governor",
+      "start": 1864,
+      "end": 1870
+    },
+    {
+      "ruler": "Januário Correia de Almeida",
+      "title": "Governor",
+      "start": 1870,
+      "end": 1871
+    },
+    {
+      "ruler": "Joaquim Macedo e Couto",
+      "title": "Governor",
+      "start": 1871,
+      "end": 1875
+    },
+    {
+      "ruler": "João Tavares de Almeida",
+      "title": "Governor",
+      "start": 1875,
+      "end": 1877
+    },
+    {
+      "ruler": "António Sérgio de Sousa",
+      "title": "Governor",
+      "start": 1877,
+      "end": 1878
+    },
+    {
+      "ruler": "Caetano Almeida e Albuquerque",
+      "title": "Governor",
+      "start": 1878,
+      "end": 1882
+    },
+    {
+      "ruler": "Carlos Correia da Silva",
+      "title": "Governor",
+      "start": 1882,
+      "end": 1886
+    },
+    {
+      "ruler": "Augusto Cardoso de Carvalho",
+      "title": "Governor",
+      "start": 1886,
+      "end": 1889
+    },
+    {
+      "ruler": "Vasco Carvalho e Meneses",
+      "title": "Governor",
+      "start": 1889,
+      "end": 1891
+    },
+    {
+      "ruler": "João Correia Taborda",
+      "title": "Interim Governor",
+      "start": 1891,
+      "end": 1892
+    },
+    {
+      "ruler": "Francisco Teixeira da Silva",
+      "title": "Governor",
+      "start": 1892,
+      "end": 1893
+    },
+    {
+      "ruler": "Rafael Jácome de Andrade",
+      "title": "Governor",
+      "start": 1893,
+      "end": 1894
+    },
+    {
+      "ruler": "Elesbão Bettencourt Lapa",
+      "title": "Governor",
+      "start": 1894,
+      "end": 1895
+    },
+    {
+      "ruler": "Rafael Jácome de Andrade",
+      "title": "Governor",
+      "start": 1895,
+      "end": 1896
+    },
+    {
+      "ruler": "João Neves Ferreira",
+      "title": "Interim Governor",
+      "start": 1896,
+      "end": 1897
+    },
+    {
+      "ruler": "Joaquim José Machado",
+      "title": "Governor",
+      "start": 1897,
+      "end": 1900
+    },
+    {
+      "ruler": "Eduardo Rodrigues Galhardo",
+      "title": "Governor",
+      "start": 1900,
+      "end": 1905
+    },
+    {
+      "ruler": "Arnaldo Guedes Rebelo",
+      "title": "Governor",
+      "start": 1905,
+      "end": 1907
+    },
+    {
+      "ruler": "José Horta e Costa",
+      "title": "Governor",
+      "start": 1907,
+      "end": 1910
+    },
+    {
+      "ruler": "Francisco Couceiro da Costa",
+      "title": "Governor-General",
+      "start": 1910,
+      "end": 1917
+    },
+    {
+      "ruler": "José de Freitas Ribeiro",
+      "title": "Governor-General",
+      "start": 1917,
+      "end": 1919
+    },
+    {
+      "ruler": "Augusto Bobela da Mota",
+      "title": "Interim Governor-General",
+      "start": 1919,
+      "end": 1920
+    },
+    {
+      "ruler": "Jaime Castro Morais",
+      "title": "Governador-General",
+      "start": 1920,
+      "end": 1925
+    },
+    {
+      "ruler": "Mariano Martins",
+      "title": "Governor-General",
+      "start": 1925,
+      "end": 1926
+    },
+    {
+      "ruler": "Acúrcio Rocha Dinis",
+      "title": "Interim Governor-General",
+      "start": 1926,
+      "end": 1927
+    },
+    {
+      "ruler": "Pedro Massano de Amorim",
+      "title": "Governor-General",
+      "start": 1927,
+      "end": 1929
+    },
+    {
+      "ruler": "Alfredo Pedro de Almeida",
+      "title": "Governor-General",
+      "start": 1929,
+      "end": 1930
+    },
+    {
+      "ruler": "João Carlos Craveiro Lopes",
+      "title": "Governor-General",
+      "start": 1930,
+      "end": 1936
+    },
+    {
+      "ruler": "Francisco Craveiro Lopes",
+      "title": "Interim Governor-General",
+      "start": 1936,
+      "end": 1938
+    },
+    {
+      "ruler": "José Pereira Cabral",
+      "title": "Governor-General",
+      "start": 1938,
+      "end": 1945
+    },
+    {
+      "ruler": "Paulo Bénard Guedes",
+      "title": "Interim Governor-General",
+      "start": 1945,
+      "end": 1946
+    },
+    {
+      "ruler": "José Ferreira Bossa",
+      "title": "Governor-General",
+      "start": 1946,
+      "end": 1947
+    },
+    {
+      "ruler": "José Alves Ferreira",
+      "title": "Interim Governor-General",
+      "start": 1947,
+      "end": 1948
+    },
+    {
+      "ruler": "Fernando Mendonça Dias",
+      "title": "Governor-General",
+      "start": 1948,
+      "end": 1952
+    },
+    {
+      "ruler": "Paulo Bénard Guedes",
+      "title": "Governor-General",
+      "start": 1952,
+      "end": 1958
+    },
+    {
+      "ruler": "Manuel Vassalo e Silva",
+      "title": "Governor-General",
+      "start": 1958,
+      "end": 1961,
+      "note": "Last Governor-General; Goa annexed by India, Dec 1961"
+    }
+  ],
+  "Arunachal tribal chiefs": [
+    {
+      "ruler": "Adi, Nyishi, Apatani & allied clan councils",
+      "start": 1188,
+      "end": 1649,
+      "note": "Acephalous societies — authority vested in village councils, not kings"
+    }
+  ],
+  "Nyishi": [
+    {
+      "ruler": "Nyishi clan councils",
+      "start": 1650,
+      "end": 1947,
+      "note": "Village-level chiefship; no central monarchy"
+    }
+  ],
+  "Pashtun tribal areas": [
+    {
+      "ruler": "Pashtun tribal jirgas",
+      "start": 1206,
+      "end": 1849,
+      "note": "Authority held by tribal assemblies (jirgas) and maliks"
+    }
+  ],
+  "Baloch": [
+    {
+      "ruler": "Baloch tribal sardars",
+      "start": 1188,
+      "end": 1649,
+      "note": "Tuman chiefs; later loosely confederated under Kalat"
+    }
+  ],
+  "Brahui": [
+    {
+      "ruler": "Brahui tribal chiefs",
+      "start": 1188,
+      "end": 1649,
+      "note": "Precursors of the Ahmadzai khans of Kalat"
+    }
+  ],
+  "Nagvanshi": [
+    {
+      "ruler": "Nagvanshi rajas of Chotanagpur",
+      "start": 1188,
+      "end": 1585,
+      "title": "Raja",
+      "note": "Ancient line at Sutiambe/Khukhra; reign-by-reign dates uncertain"
+    }
+  ],
+  "Baise": [
+    {
+      "ruler": "The Baise (22) rajas",
+      "start": 1401,
+      "end": 1789,
+      "title": "Raja",
+      "note": "Twenty-two petty hill kingdoms of the Karnali basin, absorbed by Gorkha"
+    }
+  ],
+  "Chaubisi hill kingdoms": [
+    {
+      "ruler": "The Chaubisi (24) rajas",
+      "start": 1401,
+      "end": 1805,
+      "title": "Raja",
+      "note": "Twenty-four Gandaki-basin kingdoms, absorbed by Gorkha"
+    }
+  ],
+  "Limbuwan": [
+    {
+      "ruler": "Limbu subba chiefs of the ten Yakthung kingdoms",
+      "start": 1188,
+      "end": 1773,
+      "note": "Kipat self-rule retained under treaty with Gorkha, 1774"
+    }
+  ],
+  "Baltistan & Gilgit (local rulers)": [
+    {
+      "ruler": "Maqpon rajas of Skardu & Trakhan rajas of Gilgit",
+      "start": 1188,
+      "end": 1842,
+      "title": "Raja",
+      "note": "Ali Sher Khan Anchan (c. 1590–1625) the most celebrated"
+    }
+  ],
+  "Local Dardic": [
+    {
+      "ruler": "Dardic valley chiefs",
+      "start": 1188,
+      "end": 1525,
+      "note": "Chitral, Yasin and Indus-valley principalities"
+    }
+  ],
+  "Lushai (Mizo) chiefs": [
+    {
+      "ruler": "Sailo chiefs of the Lushai hills",
+      "start": 1188,
+      "end": 1890,
+      "title": "Lal",
+      "note": "Village chiefship under the Sailo clan"
+    }
+  ],
+  "Garo (A'chik)": [
+    {
+      "ruler": "A’chik nokma chiefs",
+      "start": 1188,
+      "end": 1873,
+      "title": "Nokma",
+      "note": "Matrilineal village headship; never a united kingdom"
+    }
+  ],
+  "Khasi States": [
+    {
+      "ruler": "Syiems of the 25 Khasi states",
+      "start": 1188,
+      "end": 1946,
+      "title": "Syiem",
+      "note": "Elected chiefs (syiems) of Khyrim, Mylliem, Nongkhlaw and others; U Tirot Sing fought the British, 1829–33"
+    }
+  ],
+  "Lepcha": [
+    {
+      "ruler": "Lepcha panu chiefs",
+      "start": 1188,
+      "end": 1641,
+      "note": "Pre-Chogyal chiefs of the Sikkim hills"
+    }
+  ],
+  "Twipra": [
+    {
+      "ruler": "Early Twipra kings",
+      "start": 1188,
+      "end": 1400,
+      "title": "King",
+      "note": "Semi-legendary predecessors of the Manikya dynasty"
+    }
+  ],
+  "Jammu hill states": [
+    {
+      "ruler": "Dev dynasty rajas of Jammu & allied hill rajas",
+      "start": 1188,
+      "end": 1649,
+      "title": "Raja",
+      "note": "Jammu, Kishtwar, Bhadarwah and neighbouring courts"
+    }
+  ],
+  "Western Himalayan hill states": [
+    {
+      "ruler": "Katoch of Kangra, Chamba, Kullu, Mandi & allied rajas",
+      "start": 1188,
+      "end": 1649,
+      "title": "Raja",
+      "note": "Ancient Rajput hill lineages; Kangra’s Katoch line among the oldest in India"
+    }
+  ],
+  "Kumaon & Garhwal (local)": [
+    {
+      "ruler": "Later Chand & Panwar rajas",
+      "start": 1650,
+      "end": 1790,
+      "title": "Raja",
+      "note": "See Kumaon Chand and Garhwal Kingdom for the main lines"
+    }
+  ],
+  "Makwanpur Sen Kingdom": [
+    {
+      "ruler": "Sen rajas of Makwanpur",
+      "start": 1325,
+      "end": 1773,
+      "title": "Raja",
+      "note": "Branch of the Sen dynasty of Palpa"
+    }
+  ],
+  "Palpa Sen Kingdom": [
+    {
+      "ruler": "Sen rajas of Palpa",
+      "start": 1501,
+      "end": 1805,
+      "title": "Raja",
+      "note": "Mukunda Sen I (c. 1518–53) raided as far as the Kathmandu Valley"
+    }
+  ],
+  "Bundela chiefs": [
+    {
+      "ruler": "Bundela rajas of Orchha & Mahoba country",
+      "start": 1526,
+      "end": 1649,
+      "title": "Raja",
+      "note": "Rudra Pratap Deo founded Orchha, 1531; Bir Singh Deo built its great palaces"
+    }
+  ],
+  "Chauhan chiefs of western Odisha": [
+    {
+      "ruler": "Chauhan rajas of Patna-Sambalpur",
+      "start": 1301,
+      "end": 1541,
+      "title": "Raja",
+      "note": "Ramai Deva founded the Patna (Bolangir) line, c. 1360"
+    }
+  ],
+  "Bastar Kakatiya dynasty": [
+    {
+      "ruler": "Kakatiya rajas of Bastar",
+      "start": 1324,
+      "end": 1649,
+      "title": "Raja",
+      "note": "Annamadeva, brother of Warangal’s last king, founded the line c. 1324"
+    }
+  ],
+  "Bastar State": [
+    {
+      "ruler": "Kakatiya rajas of Bastar (princely period)",
+      "start": 1650,
+      "end": 1947,
+      "title": "Raja",
+      "note": "Line continued under Maratha and British paramountcy"
+    }
+  ],
+  "Orissa Princely States": [
+    {
+      "ruler": "Rajas of the Garhjat states",
+      "start": 1650,
+      "end": 1947,
+      "title": "Raja",
+      "note": "Mayurbhanj, Kalahandi, Patna, Keonjhar and two dozen more"
+    }
+  ],
+  "Chhattisgarh Princely States": [
+    {
+      "ruler": "Rajas of the Chhattisgarh feudatories",
+      "start": 1650,
+      "end": 1947,
+      "title": "Raja",
+      "note": "Surguja, Raigarh, Kanker, Kawardha and neighbours"
+    }
+  ],
+  "Kalachuri": [
+    {
+      "ruler": "Jaya-simha",
+      "start": 1163,
+      "end": 1188
+    },
+    {
+      "ruler": "Vijaya-simha",
+      "start": 1188,
+      "end": 1210
+    },
+    {
+      "ruler": "Trailokya-malla",
+      "start": 1210,
+      "end": 1212,
+      "note": "Attested to at least 1212; end is not securely known"
+    }
+  ],
+  "Baroda (Gaekwad)": [
+    {
+      "ruler": "Pilaji Rao Gaekwad",
+      "start": 1721,
+      "end": 1732
+    },
+    {
+      "ruler": "Damaji Rao Gaekwad",
+      "start": 1732,
+      "end": 1768
+    },
+    {
+      "ruler": "Sayaji Rao I Gaekwad",
+      "start": 1768,
+      "end": 1778
+    },
+    {
+      "ruler": "Fateh Singh Rao Gaekwad",
+      "start": 1778,
+      "end": 1789
+    },
+    {
+      "ruler": "Manaji Rao Gaekwad",
+      "start": 1789,
+      "end": 1793
+    },
+    {
+      "ruler": "Govind Rao Gaekwad",
+      "start": 1793,
+      "end": 1800
+    },
+    {
+      "ruler": "Anand Rao Gaekwad",
+      "start": 1800,
+      "end": 1818
+    },
+    {
+      "ruler": "Sayaji Rao Gaekwad II",
+      "start": 1818,
+      "end": 1847
+    },
+    {
+      "ruler": "Ganpat Rao Gaekwad",
+      "start": 1847,
+      "end": 1856
+    },
+    {
+      "ruler": "Khande Rao Gaekwad",
+      "start": 1856,
+      "end": 1870
+    },
+    {
+      "ruler": "Malhar Rao Gaekwad",
+      "start": 1870,
+      "end": 1875
+    },
+    {
+      "ruler": "Sayajirao Gaekwad III",
+      "start": 1875,
+      "end": 1939
+    },
+    {
+      "ruler": "Pratap Singh Rao Gaekwad",
+      "start": 1939,
+      "end": 1951,
+      "note": "Actual reign continued beyond 1947"
+    }
+  ],
+  "Bharatpur": [
+    {
+      "ruler": "Raja Ram Sinsinwar",
+      "start": 1683,
+      "end": 1688
+    },
+    {
+      "ruler": "Churaman",
+      "start": 1695,
+      "end": 1721
+    },
+    {
+      "ruler": "Muhkam Singh",
+      "start": 1721,
+      "end": 1722
+    },
+    {
+      "ruler": "Badan Singh",
+      "start": 1722,
+      "end": 1755
+    },
+    {
+      "ruler": "Suraj Mal",
+      "start": 1755,
+      "end": 1763
+    },
+    {
+      "ruler": "Jawahar Singh",
+      "start": 1764,
+      "end": 1768
+    },
+    {
+      "ruler": "Ratan Singh",
+      "start": 1768,
+      "end": 1769
+    },
+    {
+      "ruler": "Kehri Singh",
+      "start": 1769,
+      "end": 1778
+    },
+    {
+      "ruler": "Ranjit Singh",
+      "start": 1778,
+      "end": 1805
+    },
+    {
+      "ruler": "Randhir Singh",
+      "start": 1805,
+      "end": 1823
+    },
+    {
+      "ruler": "Baldeo Singh",
+      "start": 1823,
+      "end": 1825
+    },
+    {
+      "ruler": "Balwant Singh",
+      "start": 1825,
+      "end": 1853
+    },
+    {
+      "ruler": "Jaswant Singh",
+      "start": 1853,
+      "end": 1893
+    },
+    {
+      "ruler": "Ram Singh",
+      "start": 1893,
+      "end": 1900
+    },
+    {
+      "ruler": "Kishan Singh",
+      "start": 1918,
+      "end": 1929
+    },
+    {
+      "ruler": "Brijendra Singh",
+      "start": 1929,
+      "end": 1947
+    }
+  ],
+  "Bhoi": [
+    {
+      "ruler": "Govinda Vidyadhara",
+      "start": 1541,
+      "end": 1548
+    },
+    {
+      "ruler": "Chakrapratapa",
+      "start": 1548,
+      "end": 1557
+    },
+    {
+      "ruler": "Narasimha Ray Jena",
+      "start": 1557,
+      "end": 1558
+    },
+    {
+      "ruler": "Raghuram Ray Chotaraya",
+      "start": 1558,
+      "end": 1560
+    },
+    {
+      "ruler": "Ramachandra Deva I",
+      "start": 1568,
+      "end": 1600
+    },
+    {
+      "ruler": "Purusottam Deva",
+      "start": 1600,
+      "end": 1621
+    },
+    {
+      "ruler": "Narasingha Deva",
+      "start": 1621,
+      "end": 1647
+    },
+    {
+      "ruler": "Balabhadra Deva",
+      "start": 1647,
+      "end": 1657
+    },
+    {
+      "ruler": "Mukunda Deva I",
+      "start": 1657,
+      "end": 1689
+    },
+    {
+      "ruler": "Divyasingha Deva I",
+      "start": 1689,
+      "end": 1716
+    },
+    {
+      "ruler": "Harekrushna Deva",
+      "start": 1716,
+      "end": 1720
+    },
+    {
+      "ruler": "Gopinath Deva",
+      "start": 1720,
+      "end": 1727
+    },
+    {
+      "ruler": "Ramachandra Deva II",
+      "start": 1727,
+      "end": 1736
+    },
+    {
+      "ruler": "Birakesari Deva I",
+      "start": 1736,
+      "end": 1793
+    },
+    {
+      "ruler": "Divyasingha Deva II",
+      "start": 1793,
+      "end": 1798
+    },
+    {
+      "ruler": "Mukundeva Deva II",
+      "start": 1798,
+      "end": 1804,
+      "note": "Titular continuity to 1809"
+    },
+    {
+      "ruler": "Mukundeva Deva II (Puri estate)",
+      "start": 1809,
+      "end": 1817,
+      "title": "Titular / estate ruler",
+      "note": "Post-sovereign princely/estate ruler"
+    },
+    {
+      "ruler": "Ramachandra Deva III",
+      "start": 1817,
+      "end": 1854,
+      "title": "Titular / estate ruler",
+      "note": "Puri estate ruler"
+    },
+    {
+      "ruler": "Birakesari Deva II",
+      "start": 1854,
+      "end": 1859,
+      "title": "Titular / estate ruler",
+      "note": "Puri estate ruler"
+    },
+    {
+      "ruler": "Divyasingha Deva III",
+      "start": 1859,
+      "end": 1882,
+      "title": "Titular / estate ruler",
+      "note": "Puri estate ruler"
+    },
+    {
+      "ruler": "Mukundeva Deva III",
+      "start": 1882,
+      "end": 1926,
+      "title": "Titular / estate ruler",
+      "note": "Puri estate ruler"
+    },
+    {
+      "ruler": "Ramachandra Deva IV",
+      "start": 1926,
+      "end": 1956,
+      "title": "Titular / estate ruler",
+      "note": "Puri estate ruler"
+    }
+  ],
+  "Bikaner": [
+    {
+      "ruler": "Rao Bika",
+      "start": 1465,
+      "end": 1504
+    },
+    {
+      "ruler": "Rao Nar Singh",
+      "start": 1504,
+      "end": 1505
+    },
+    {
+      "ruler": "Rao Lunkaran",
+      "start": 1505,
+      "end": 1526
+    },
+    {
+      "ruler": "Rao Jait Singh",
+      "start": 1526,
+      "end": 1542
+    },
+    {
+      "ruler": "Rao Kalyan Mal",
+      "start": 1542,
+      "end": 1571,
+      "note": "A family-tree section gives a later terminal date; ruler table used here"
+    },
+    {
+      "ruler": "Rai Singh",
+      "start": 1571,
+      "end": 1612
+    },
+    {
+      "ruler": "Dalpat Singh",
+      "start": 1612,
+      "end": 1613
+    },
+    {
+      "ruler": "Sur Singh",
+      "start": 1613,
+      "end": 1631
+    },
+    {
+      "ruler": "Karan Singh",
+      "start": 1631,
+      "end": 1667
+    },
+    {
+      "ruler": "Anup Singh",
+      "start": 1669,
+      "end": 1698
+    },
+    {
+      "ruler": "Swarup Singh",
+      "start": 1698,
+      "end": 1700
+    },
+    {
+      "ruler": "Sujan Singh",
+      "start": 1700,
+      "end": 1735
+    },
+    {
+      "ruler": "Zorawar Singh",
+      "start": 1735,
+      "end": 1746
+    },
+    {
+      "ruler": "Gaj Singh",
+      "start": 1746,
+      "end": 1787
+    },
+    {
+      "ruler": "Pratap Singh",
+      "start": 1787,
+      "end": 1787,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Raj Singh",
+      "start": 1787,
+      "end": 1787,
+      "note": "Brief reign"
+    },
+    {
+      "ruler": "Surat Singh",
+      "start": 1787,
+      "end": 1828
+    },
+    {
+      "ruler": "Ratan Singh",
+      "start": 1828,
+      "end": 1851
+    },
+    {
+      "ruler": "Sardar Singh",
+      "start": 1851,
+      "end": 1872
+    },
+    {
+      "ruler": "Dungar Singh",
+      "start": 1872,
+      "end": 1887
+    },
+    {
+      "ruler": "Ganga Singh",
+      "start": 1887,
+      "end": 1943
+    },
+    {
+      "ruler": "Sadul Singh",
+      "start": 1943,
+      "end": 1950
+    }
+  ],
+  "Chandela dynasty": [
+    {
+      "ruler": "Paramardi-deva",
+      "start": 1165,
+      "end": 1203
+    },
+    {
+      "ruler": "Trailokya-varman",
+      "start": 1203,
+      "end": 1245
+    },
+    {
+      "ruler": "Vira-varman",
+      "start": 1245,
+      "end": 1285
+    },
+    {
+      "ruler": "Bhoja-varman",
+      "start": 1285,
+      "end": 1288
+    },
+    {
+      "ruler": "Hammira-varman",
+      "start": 1288,
+      "end": 1311
+    },
+    {
+      "ruler": "Vira-varman II",
+      "start": 1311,
+      "end": 1315
+    }
+  ],
+  "Hoysala Empire": [
+    {
+      "ruler": "Veera Ballala II",
+      "start": 1173,
+      "end": 1220
+    },
+    {
+      "ruler": "Vira Narasimha II",
+      "start": 1220,
+      "end": 1235
+    },
+    {
+      "ruler": "Vira Someshwara",
+      "start": 1235,
+      "end": 1263
+    },
+    {
+      "ruler": "Narasimha III",
+      "start": 1263,
+      "end": 1292
+    },
+    {
+      "ruler": "Veera Ramanatha",
+      "start": 1263,
+      "end": 1297,
+      "title": "Co-ruler",
+      "note": "Parallel southern branch/co-ruler"
+    },
+    {
+      "ruler": "Veera Ballala III",
+      "start": 1292,
+      "end": 1343
+    },
+    {
+      "ruler": "Veera Ballala IV",
+      "start": 1342,
+      "end": 1355,
+      "title": "Contested ruler",
+      "note": "Late claimant/successor; chronology overlaps"
+    }
+  ],
+  "Jhansi": [
+    {
+      "ruler": "Raghunath Rao Newalkar",
+      "start": 1769,
+      "end": 1796
+    },
+    {
+      "ruler": "Shiv Hari Rao",
+      "start": 1796,
+      "end": 1811
+    },
+    {
+      "ruler": "Ramchandra Rao",
+      "start": 1811,
+      "end": 1835
+    },
+    {
+      "ruler": "Raghunath Rao III",
+      "start": 1835,
+      "end": 1838
+    },
+    {
+      "ruler": "Sakku Bai Rao",
+      "start": 1838,
+      "end": 1839,
+      "title": "Regent / claimant",
+      "note": "Regent/claimant"
+    },
+    {
+      "ruler": "Gangadhar Rao",
+      "start": 1843,
+      "end": 1853
+    },
+    {
+      "ruler": "Rani Lakshmibai (regency and claim)",
+      "start": 1853,
+      "end": 1854,
+      "title": "Regent / claimant",
+      "note": "Regent for adopted heir; annexation followed"
+    },
+    {
+      "ruler": "Rani Lakshmibai (rebellion rule)",
+      "start": 1857,
+      "end": 1858,
+      "title": "Rebel / claimant ruler",
+      "note": "Reasserted rule during the 1857 rebellion"
+    }
+  ],
+  "Kadambas of Goa": [
+    {
+      "ruler": "Jayakeshi III",
+      "start": 1188,
+      "end": 1216
+    },
+    {
+      "ruler": "Sovideva / Tribhuvanamalla",
+      "start": 1216,
+      "end": 1246,
+      "note": "End date is approximate"
+    },
+    {
+      "ruler": "Shashthadeva III",
+      "start": 1246,
+      "end": 1265,
+      "note": "Start date is approximate"
+    },
+    {
+      "ruler": "Kamadeva",
+      "start": 1265,
+      "end": 1310
+    }
+  ],
+  "Marwar Rathore chiefs": [
+    {
+      "ruler": "Rao Siha",
+      "start": 1226,
+      "end": 1273
+    },
+    {
+      "ruler": "Rao Asthan",
+      "start": 1273,
+      "end": 1292
+    },
+    {
+      "ruler": "Rao Doohad",
+      "start": 1292,
+      "end": 1309
+    },
+    {
+      "ruler": "Rao Raipal",
+      "start": 1309,
+      "end": 1313
+    },
+    {
+      "ruler": "Rao Kanhapal",
+      "start": 1313,
+      "end": 1323
+    },
+    {
+      "ruler": "Rao Jalansi",
+      "start": 1323,
+      "end": 1328
+    },
+    {
+      "ruler": "Rao Chado",
+      "start": 1328,
+      "end": 1344
+    },
+    {
+      "ruler": "Rao Tida",
+      "start": 1344,
+      "end": 1357
+    },
+    {
+      "ruler": "Rao Kanha Dev",
+      "start": 1357,
+      "end": 1374
+    },
+    {
+      "ruler": "Rao Viram Dev",
+      "start": 1374,
+      "end": 1383
+    },
+    {
+      "ruler": "Rao Chandra",
+      "start": 1383,
+      "end": 1424
+    },
+    {
+      "ruler": "Rao Kanha",
+      "start": 1424,
+      "end": 1427
+    },
+    {
+      "ruler": "Rao Ranmal",
+      "start": 1427,
+      "end": 1438
+    },
+    {
+      "ruler": "Rao Jodha",
+      "start": 1438,
+      "end": 1489
+    }
+  ],
+  "Jodhpur (Marwar)": [
+    {
+      "ruler": "Jaswant Singh",
+      "start": 1638,
+      "end": 1678
+    },
+    {
+      "ruler": "Indra Singh",
+      "start": 1679,
+      "end": 1679,
+      "title": "Contested ruler",
+      "note": "Brief Mughal-backed claimant"
+    },
+    {
+      "ruler": "Ajit Singh",
+      "start": 1679,
+      "end": 1724
+    },
+    {
+      "ruler": "Abhai Singh",
+      "start": 1724,
+      "end": 1749
+    },
+    {
+      "ruler": "Ram Singh I",
+      "start": 1749,
+      "end": 1751
+    },
+    {
+      "ruler": "Bakht Singh",
+      "start": 1751,
+      "end": 1752
+    },
+    {
+      "ruler": "Vijay Singh I",
+      "start": 1752,
+      "end": 1753
+    },
+    {
+      "ruler": "Ram Singh II",
+      "start": 1753,
+      "end": 1772
+    },
+    {
+      "ruler": "Vijay Singh II",
+      "start": 1772,
+      "end": 1793
+    },
+    {
+      "ruler": "Bhim Singh",
+      "start": 1793,
+      "end": 1803
+    },
+    {
+      "ruler": "Man Singh",
+      "start": 1803,
+      "end": 1843
+    },
+    {
+      "ruler": "Takht Singh",
+      "start": 1843,
+      "end": 1873
+    },
+    {
+      "ruler": "Jaswant Singh II",
+      "start": 1873,
+      "end": 1895
+    },
+    {
+      "ruler": "Sardar Singh",
+      "start": 1895,
+      "end": 1911
+    },
+    {
+      "ruler": "Sumair Singh",
+      "start": 1911,
+      "end": 1918
+    },
+    {
+      "ruler": "Umaid Singh",
+      "start": 1918,
+      "end": 1947
+    },
+    {
+      "ruler": "Hanwant Singh",
+      "start": 1947,
+      "end": 1949
+    }
+  ],
+  "Udaipur (Mewar)": [
+    {
+      "ruler": "Maharana Jagat Singh I",
+      "start": 1628,
+      "end": 1652
+    },
+    {
+      "ruler": "Maharana Raj Singh I",
+      "start": 1652,
+      "end": 1680
+    },
+    {
+      "ruler": "Maharana Jai Singh",
+      "start": 1680,
+      "end": 1698
+    },
+    {
+      "ruler": "Maharana Amar Singh II",
+      "start": 1698,
+      "end": 1710
+    },
+    {
+      "ruler": "Maharana Sangram Singh II",
+      "start": 1710,
+      "end": 1734
+    },
+    {
+      "ruler": "Maharana Jagat Singh II",
+      "start": 1734,
+      "end": 1751
+    },
+    {
+      "ruler": "Maharana Pratap Singh II",
+      "start": 1751,
+      "end": 1754
+    },
+    {
+      "ruler": "Maharana Raj Singh II",
+      "start": 1754,
+      "end": 1762
+    },
+    {
+      "ruler": "Maharana Ari Singh II",
+      "start": 1762,
+      "end": 1772
+    },
+    {
+      "ruler": "Maharana Hamir Singh II",
+      "start": 1772,
+      "end": 1778
+    },
+    {
+      "ruler": "Maharana Bhim Singh",
+      "start": 1778,
+      "end": 1828
+    },
+    {
+      "ruler": "Maharana Jawan Singh",
+      "start": 1828,
+      "end": 1838
+    },
+    {
+      "ruler": "Maharana Sardar Singh",
+      "start": 1838,
+      "end": 1842
+    },
+    {
+      "ruler": "Maharana Swarup Singh",
+      "start": 1842,
+      "end": 1861
+    },
+    {
+      "ruler": "Maharana Shambhu Singh",
+      "start": 1861,
+      "end": 1874
+    },
+    {
+      "ruler": "Maharana Sajjan Singh",
+      "start": 1874,
+      "end": 1884
+    },
+    {
+      "ruler": "Maharana Fateh Singh",
+      "start": 1884,
+      "end": 1930
+    },
+    {
+      "ruler": "Maharana Bhupal Singh",
+      "start": 1930,
+      "end": 1948
+    }
+  ],
+  "Pudukkottai (Tondaiman)": [
+    {
+      "ruler": "Raghunatha Raya Tondaiman",
+      "start": 1686,
+      "end": 1730
+    },
+    {
+      "ruler": "Vijaya Raghunatha Raya Tondaiman I",
+      "start": 1730,
+      "end": 1769
+    },
+    {
+      "ruler": "Raya Raghunatha Tondaiman",
+      "start": 1769,
+      "end": 1789
+    },
+    {
+      "ruler": "Vijaya Raghunatha Tondaiman",
+      "start": 1789,
+      "end": 1807
+    },
+    {
+      "ruler": "Vijaya Raghunatha Raya Tondaiman II",
+      "start": 1807,
+      "end": 1825
+    },
+    {
+      "ruler": "Raghunatha Tondaiman",
+      "start": 1825,
+      "end": 1839
+    },
+    {
+      "ruler": "Ramachandra Tondaiman",
+      "start": 1839,
+      "end": 1886
+    },
+    {
+      "ruler": "Martanda Bhairava Tondaiman",
+      "start": 1886,
+      "end": 1928
+    },
+    {
+      "ruler": "Rajagopala Tondaiman",
+      "start": 1928,
+      "end": 1948
+    }
+  ],
+  "Sivaganga (Marava)": [
+    {
+      "ruler": "Muthu Vijaya Raghunatha Periyavudaya Thevar",
+      "start": 1725,
+      "end": 1750
+    },
+    {
+      "ruler": "Muthu Vaduganatha Periyavudaya Thevar",
+      "start": 1750,
+      "end": 1780
+    },
+    {
+      "ruler": "Velu Nachiyar",
+      "start": 1780,
+      "end": 1790
+    },
+    {
+      "ruler": "Vellacci",
+      "start": 1790,
+      "end": 1793
+    },
+    {
+      "ruler": "Vangam Periya Udaya Thevar",
+      "start": 1793,
+      "end": 1801
+    }
+  ],
+  "French India": [
+    {
+      "ruler": "François Martin",
+      "title": "Governor General",
+      "start": 1699,
+      "end": 1706,
+      "note": "Founder of French Pondichéry; first Governor General"
+    },
+    {
+      "ruler": "Pierre Dulivier",
+      "title": "Acting Governor",
+      "start": 1707,
+      "end": 1708
+    },
+    {
+      "ruler": "Guillaume André d'Hébert",
+      "title": "Governor General",
+      "start": 1708,
+      "end": 1712
+    },
+    {
+      "ruler": "Pierre Dulivier",
+      "title": "Governor General",
+      "start": 1713,
+      "end": 1715
+    },
+    {
+      "ruler": "Guillaume André d'Hébert",
+      "title": "Governor General",
+      "start": 1715,
+      "end": 1718
+    },
+    {
+      "ruler": "Pierre Prévost de La Prévostière",
+      "title": "Governor General",
+      "start": 1718,
+      "end": 1721
+    },
+    {
+      "ruler": "Pierre Christoph Le Noir",
+      "title": "Acting Governor",
+      "start": 1721,
+      "end": 1723
+    },
+    {
+      "ruler": "Joseph Beauvollier de Courchant",
+      "title": "Governor General",
+      "start": 1723,
+      "end": 1726
+    },
+    {
+      "ruler": "Pierre Christoph Le Noir",
+      "title": "Governor General",
+      "start": 1727,
+      "end": 1734
+    },
+    {
+      "ruler": "Pierre Benoît Dumas",
+      "title": "Governor General",
+      "start": 1735,
+      "end": 1741,
+      "note": "Won Karikal and the friendship of the Nawabs"
+    },
+    {
+      "ruler": "Joseph François Dupleix",
+      "title": "Governor General",
+      "start": 1742,
+      "end": 1754,
+      "note": "The great dreamer of a French India; recalled in 1754"
+    },
+    {
+      "ruler": "Charles Godeheu",
+      "title": "Acting Commissioner",
+      "start": 1754,
+      "end": 1754,
+      "note": "Signed the truce that undid Dupleix"
+    },
+    {
+      "ruler": "Georges Duval de Leyrit",
+      "title": "Governor General",
+      "start": 1756,
+      "end": 1758
+    },
+    {
+      "ruler": "Thomas Arthur",
+      "title": "Governor General",
+      "start": 1758,
+      "end": 1761,
+      "note": "Defeated at Wandiwash; executed in Paris, later exonerated"
+    },
+    {
+      "ruler": "First British occupation",
+      "title": "Occupation",
+      "start": 1761,
+      "end": 1765,
+      "note": "Restored by the Treaty of Paris (1763)"
+    },
+    {
+      "ruler": "Jean Law de Lauriston",
+      "title": "Governor General",
+      "start": 1765,
+      "end": 1766
+    },
+    {
+      "ruler": "Antoine Boyellau",
+      "title": "Acting Governor",
+      "start": 1766,
+      "end": 1767
+    },
+    {
+      "ruler": "Jean Law de Lauriston",
+      "title": "Governor General",
+      "start": 1767,
+      "end": 1777
+    },
+    {
+      "ruler": "Guillaume de Bellecombe",
+      "title": "Governor General",
+      "start": 1777,
+      "end": 1778
+    },
+    {
+      "ruler": "Second British occupation",
+      "title": "Occupation",
+      "start": 1778,
+      "end": 1783,
+      "note": "Restored by the Peace of Paris (1783)"
+    },
+    {
+      "ruler": "Marquis de Bussy-Castelnau",
+      "title": "Governor General",
+      "start": 1783,
+      "end": 1785,
+      "note": "Bussy of the Deccan campaigns, in his last command"
+    },
+    {
+      "ruler": "François de Souillac",
+      "title": "Governor General",
+      "start": 1785,
+      "end": 1785
+    },
+    {
+      "ruler": "David Charpentier de Cossigny",
+      "title": "Governor General",
+      "start": 1785,
+      "end": 1787
+    },
+    {
+      "ruler": "Thomas Conway",
+      "title": "Governor General",
+      "start": 1787,
+      "end": 1789
+    },
+    {
+      "ruler": "Camille Charles Leclerc",
+      "title": "Governor General",
+      "start": 1789,
+      "end": 1792
+    },
+    {
+      "ruler": "Dominique Prosper de Chermont",
+      "title": "Governor General",
+      "start": 1792,
+      "end": 1793
+    },
+    {
+      "ruler": "Leroux de Touffreville",
+      "title": "Governor General",
+      "start": 1793,
+      "end": 1793
+    },
+    {
+      "ruler": "Third British occupation",
+      "title": "Occupation",
+      "start": 1793,
+      "end": 1802,
+      "note": "Restored by the Treaty of Amiens (1802)"
+    },
+    {
+      "ruler": "Charles Isidore Decaen",
+      "title": "Governor General",
+      "start": 1802,
+      "end": 1803
+    },
+    {
+      "ruler": "Louis Binot",
+      "title": "Governor General",
+      "start": 1803,
+      "end": 1803
+    },
+    {
+      "ruler": "Fourth British occupation",
+      "title": "Occupation",
+      "start": 1803,
+      "end": 1816,
+      "note": "Restored by the Treaty of Paris (1814)"
+    },
+    {
+      "ruler": "André Julien",
+      "title": "Governor General",
+      "start": 1816,
+      "end": 1825
+    },
+    {
+      "ruler": "Joseph Cordier",
+      "title": "Acting Governor",
+      "start": 1825,
+      "end": 1826
+    },
+    {
+      "ruler": "Eugène Desbassayns de Richemont",
+      "title": "Governor General",
+      "start": 1826,
+      "end": 1828
+    },
+    {
+      "ruler": "Joseph Cordier",
+      "title": "Acting Governor",
+      "start": 1828,
+      "end": 1829
+    },
+    {
+      "ruler": "Auguste Peureux de Mélay",
+      "title": "Governor General",
+      "start": 1829,
+      "end": 1835
+    },
+    {
+      "ruler": "Henri Jean de Rouvroy",
+      "title": "Governor General",
+      "start": 1835,
+      "end": 1840
+    },
+    {
+      "ruler": "Paul de Nourquer du Camper",
+      "title": "Governor General",
+      "start": 1840,
+      "end": 1844
+    },
+    {
+      "ruler": "Louis Pujol",
+      "title": "Governor General",
+      "start": 1844,
+      "end": 1849
+    },
+    {
+      "ruler": "Hyacinthe Lalande de Calan",
+      "title": "Governor General",
+      "start": 1849,
+      "end": 1850
+    },
+    {
+      "ruler": "Philippe Achille Bédier",
+      "title": "Governor General",
+      "start": 1851,
+      "end": 1852
+    },
+    {
+      "ruler": "Raymond de Saint-Maur",
+      "title": "Governor General",
+      "start": 1852,
+      "end": 1857
+    },
+    {
+      "ruler": "Alexandre Durand d'Ubraye",
+      "title": "Governor General",
+      "start": 1857,
+      "end": 1863
+    },
+    {
+      "ruler": "Napoléon Louis Bontemps",
+      "title": "Governor General",
+      "start": 1863,
+      "end": 1871
+    },
+    {
+      "ruler": "Antoine-Léonce Michaux",
+      "title": "Governor General",
+      "start": 1871,
+      "end": 1871
+    },
+    {
+      "ruler": "Pierre Aristide Faron",
+      "title": "Governor General",
+      "start": 1871,
+      "end": 1875
+    },
+    {
+      "ruler": "Adolphe Trillard",
+      "title": "Governor General",
+      "start": 1875,
+      "end": 1878
+    },
+    {
+      "ruler": "Léonce Laugier",
+      "title": "Governor General",
+      "start": 1879,
+      "end": 1881
+    },
+    {
+      "ruler": "Théodore Drouhet",
+      "title": "Governor General",
+      "start": 1881,
+      "end": 1884
+    },
+    {
+      "ruler": "Étienne Richaud",
+      "title": "Governor General",
+      "start": 1884,
+      "end": 1886
+    },
+    {
+      "ruler": "Édouard Manès",
+      "title": "Governor General",
+      "start": 1886,
+      "end": 1888
+    },
+    {
+      "ruler": "Georges Jules Piquet",
+      "title": "Governor General",
+      "start": 1888,
+      "end": 1889
+    },
+    {
+      "ruler": "Louis Marie Nouet",
+      "title": "Governor General",
+      "start": 1889,
+      "end": 1891
+    },
+    {
+      "ruler": "Léon Émile Clément-Thomas",
+      "title": "Governor General",
+      "start": 1891,
+      "end": 1896
+    },
+    {
+      "ruler": "Louis Jean Girod",
+      "title": "Governor General",
+      "start": 1896,
+      "end": 1898
+    },
+    {
+      "ruler": "François Pierre Rodier",
+      "title": "Governor General",
+      "start": 1898,
+      "end": 1902
+    },
+    {
+      "ruler": "Louis Pelletan",
+      "title": "Acting Governor",
+      "start": 1902,
+      "end": 1902
+    },
+    {
+      "ruler": "Victor Marie Lanrezac",
+      "title": "Governor General",
+      "start": 1902,
+      "end": 1904
+    },
+    {
+      "ruler": "Philema Lemaire",
+      "title": "Governor General",
+      "start": 1904,
+      "end": 1905
+    },
+    {
+      "ruler": "Joseph Pascal François",
+      "title": "Governor General",
+      "start": 1905,
+      "end": 1906
+    },
+    {
+      "ruler": "Gabriel Louis Angoulvant",
+      "title": "Governor General",
+      "start": 1906,
+      "end": 1907
+    },
+    {
+      "ruler": "Adrien Jules Jean Bonhoure",
+      "title": "Governor General",
+      "start": 1908,
+      "end": 1909
+    },
+    {
+      "ruler": "Ernest Fernand Lévecque",
+      "title": "Governor General",
+      "start": 1909,
+      "end": 1910
+    },
+    {
+      "ruler": "Alfred Albert Martineau",
+      "title": "Governor General",
+      "start": 1910,
+      "end": 1911,
+      "note": "Governor and historian of French India"
+    },
+    {
+      "ruler": "Pierre Louis Alfred Duprat",
+      "title": "Governor General",
+      "start": 1911,
+      "end": 1913
+    },
+    {
+      "ruler": "Alfred Albert Martineau",
+      "title": "Governor General",
+      "start": 1913,
+      "end": 1918
+    },
+    {
+      "ruler": "Pierre Étienne Clayssen",
+      "title": "Acting Governor",
+      "start": 1918,
+      "end": 1919
+    },
+    {
+      "ruler": "Louis Innocent Gerbinis",
+      "title": "Governor General",
+      "start": 1919,
+      "end": 1926
+    },
+    {
+      "ruler": "Henri Léo Eugène Lagroua",
+      "title": "Acting Governor",
+      "start": 1926,
+      "end": 1926
+    },
+    {
+      "ruler": "Pierre Jean Henri Didelot",
+      "title": "Governor General",
+      "start": 1926,
+      "end": 1928
+    },
+    {
+      "ruler": "Robert Paul Marie de Guise",
+      "title": "Governor General",
+      "start": 1928,
+      "end": 1931
+    },
+    {
+      "ruler": "Adrien Juvanon",
+      "title": "Governor General",
+      "start": 1931,
+      "end": 1934
+    },
+    {
+      "ruler": "Léon Solomiac",
+      "title": "Governor General",
+      "start": 1934,
+      "end": 1936
+    },
+    {
+      "ruler": "Horace Valentin Crocicchia",
+      "title": "Governor General",
+      "start": 1936,
+      "end": 1938
+    },
+    {
+      "ruler": "Louis Bonvin",
+      "title": "Governor General",
+      "start": 1938,
+      "end": 1945
+    },
+    {
+      "ruler": "Nicolas Maurice Jeandin",
+      "title": "Governor General",
+      "start": 1945,
+      "end": 1946
+    },
+    {
+      "ruler": "Charles Marie Baron",
+      "title": "Governor General",
+      "start": 1946,
+      "end": 1947,
+      "note": "Last colonial-era governor before the union with India process began"
+    }
+  ],
+  "Ladakh (Namgyal)": [
+    {
+      "ruler": "Lhachen Bhagan",
+      "title": "Gyalpo",
+      "start": 1460,
+      "end": 1485,
+      "note": "Founded the Namgyal dynasty by uniting Leh and Basgo"
+    },
+    {
+      "ruler": "Unrecorded king",
+      "title": "Gyalpo",
+      "start": 1485,
+      "end": 1510,
+      "note": "Name lost to the chronicles (Petech)"
+    },
+    {
+      "ruler": "Lata Jughdan",
+      "title": "Gyalpo",
+      "start": 1510,
+      "end": 1535
+    },
+    {
+      "ruler": "Kunga Namgyal I",
+      "title": "Gyalpo",
+      "start": 1535,
+      "end": 1555
+    },
+    {
+      "ruler": "Tashi Namgyal I",
+      "title": "Gyalpo",
+      "start": 1555,
+      "end": 1575,
+      "note": "Repelled Central Asian raids; built Namgyal Tsemo above Leh"
+    },
+    {
+      "ruler": "Tsewang Namgyal I",
+      "title": "Gyalpo",
+      "start": 1575,
+      "end": 1595,
+      "note": "Briefly extended Ladakhi power over neighbouring valleys"
+    },
+    {
+      "ruler": "Namgyal Gonpo",
+      "title": "Gyalpo",
+      "start": 1595,
+      "end": 1600
+    },
+    {
+      "ruler": "Jamyang Namgyal",
+      "title": "Gyalpo",
+      "start": 1595,
+      "end": 1616,
+      "note": "Defeated and captured by the Balti prince Ali Sher Khan; restored by marriage to Gyal Khatun"
+    },
+    {
+      "ruler": "Sengge Namgyal",
+      "title": "Gyalpo",
+      "start": 1616,
+      "end": 1623,
+      "note": "The Lion King, first reign"
+    },
+    {
+      "ruler": "Norbu Namgyal",
+      "title": "Gyalpo",
+      "start": 1623,
+      "end": 1624
+    },
+    {
+      "ruler": "Sengge Namgyal (restored)",
+      "title": "Gyalpo",
+      "start": 1624,
+      "end": 1642,
+      "note": "Builder of Leh Palace and Hemis monastery; Ladakh at its widest"
+    },
+    {
+      "ruler": "Deldan Namgyal",
+      "title": "Gyalpo",
+      "start": 1647,
+      "end": 1694,
+      "note": "Fought the Tibet-Ladakh-Mughal war; Treaty of Temisgam, 1684"
+    },
+    {
+      "ruler": "Delek Namgyal",
+      "title": "Prince regent",
+      "start": 1678,
+      "end": 1691,
+      "note": "Ruled alongside his father during the Tibetan war"
+    },
+    {
+      "ruler": "Nyima Namgyal",
+      "title": "Gyalpo",
+      "start": 1691,
+      "end": 1729
+    },
+    {
+      "ruler": "Deskyong Namgyal",
+      "title": "Gyalpo",
+      "start": 1729,
+      "end": 1739
+    },
+    {
+      "ruler": "Phuntsog Namgyal",
+      "title": "Gyalpo",
+      "start": 1739,
+      "end": 1753
+    },
+    {
+      "ruler": "Tsewang Namgyal II",
+      "title": "Gyalpo",
+      "start": 1753,
+      "end": 1782
+    },
+    {
+      "ruler": "Tseten Namgyal",
+      "title": "Gyalpo",
+      "start": 1782,
+      "end": 1802
+    },
+    {
+      "ruler": "Tsepal Dondup Namgyal",
+      "title": "Gyalpo",
+      "start": 1802,
+      "end": 1837,
+      "note": "Reigned through Zorawar Singh's Dogra invasion of 1834"
+    },
+    {
+      "ruler": "Tsepal Dondup Namgyal (restored)",
+      "title": "Gyalpo",
+      "start": 1839,
+      "end": 1840
+    },
+    {
+      "ruler": "Kunga Namgyal II",
+      "title": "Gyalpo",
+      "start": 1840,
+      "end": 1842,
+      "note": "Last king; Ladakh annexed to Gulab Singh's Dogra state, 1842"
+    }
+  ]
+}

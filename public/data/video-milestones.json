@@ -1,0 +1,17 @@
+{
+  "_readme": "Curated milestone captions for timelapse videos. KRISHNA CAN EDIT THIS FILE FREELY. Each entry: year + one-line caption (the renderer prefixes the year, so don't repeat it). When the video passes a milestone year, the year counter pauses ~2.5s and the caption appears as a lower-third. Aim for 4-8 milestones per minute of final video. This scaffold covers 1700-1785; add entries for any range you export.",
+  "milestones": [
+    { "year": 1707, "caption": "Aurangzeb dies; the Mughal decline begins" },
+    { "year": 1713, "caption": "Farrukhsiyar takes the throne as kingmakers rise behind it" },
+    { "year": 1724, "caption": "Nizam-ul-Mulk founds the Hyderabad state in the Deccan" },
+    { "year": 1739, "caption": "Nadir Shah sacks Delhi; the Peacock Throne leaves India" },
+    { "year": 1746, "caption": "The Carnatic Wars begin — France and Britain fight through Indian allies" },
+    { "year": 1757, "caption": "Battle of Plassey — the East India Company takes Bengal" },
+    { "year": 1761, "caption": "Third Battle of Panipat: the Durranis break the Maratha army" },
+    { "year": 1764, "caption": "Battle of Buxar — Company power reaches up the Ganga" },
+    { "year": 1767, "caption": "Hyder Ali's Mysore fights the Company to a standstill" },
+    { "year": 1775, "caption": "The First Anglo-Maratha War begins" },
+    { "year": 1782, "caption": "Hyder Ali dies; Tipu Sultan takes Mysore" },
+    { "year": 1784, "caption": "Pitt's India Act puts the Company under Crown oversight" }
+  ]
+}

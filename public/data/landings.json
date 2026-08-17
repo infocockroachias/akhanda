@@ -1,0 +1,67 @@
+[
+  {
+    "year": 1406,
+    "who": "Zheng He",
+    "power": "Ming China",
+    "flag": "🇨🇳",
+    "place": "Calicut (Kozhikode)",
+    "lat": 11.2588,
+    "lng": 75.7804,
+    "text": "Zheng He's treasure fleet reaches Calicut",
+    "detail": "The Ming admiral's first voyage (1405–07) anchors at Calicut, then the greatest pepper port in the world. He returned repeatedly and died near Calicut in 1433 — a century before any European empire took root.",
+    "wiki": "https://en.wikipedia.org/wiki/Zheng_He",
+    "source": "Ming shi; Dreyer, Zheng He (2007)"
+  },
+  {
+    "year": 1498,
+    "who": "Vasco da Gama",
+    "power": "Portugal",
+    "flag": "🇵🇹",
+    "place": "Kappad, near Calicut",
+    "lat": 11.3833,
+    "lng": 75.7167,
+    "text": "Vasco da Gama lands at Kappad, near Calicut",
+    "detail": "20 May 1498. The first sea route from Europe to India opens. Everything after — Goa, the Estado da Índia, and by extension every European empire in the subcontinent — begins on this beach.",
+    "wiki": "https://en.wikipedia.org/wiki/Vasco_da_Gama",
+    "source": "Roteiro da primeira viagem de Vasco da Gama"
+  },
+  {
+    "year": 1608,
+    "who": "William Hawkins",
+    "power": "England (East India Company)",
+    "flag": "🇬🇧",
+    "place": "Surat",
+    "lat": 21.1702,
+    "lng": 72.8311,
+    "text": "William Hawkins reaches Surat aboard the Hector",
+    "detail": "24 August 1608. The first English East India Company captain to make landfall in India; he carried a letter from James I and went on to Jahangir's court at Agra.",
+    "wiki": "https://en.wikipedia.org/wiki/William_Hawkins_(East_India_Company_officer)",
+    "source": "Foster, Early Travels in India"
+  },
+  {
+    "year": 1620,
+    "who": "Ove Gjedde",
+    "power": "Denmark–Norway",
+    "flag": "🇩🇰",
+    "place": "Tharangambadi (Tranquebar), Tanjore",
+    "lat": 11.0286,
+    "lng": 79.856,
+    "text": "Ove Gjedde lands at Tharangambadi (Tranquebar)",
+    "detail": "November 1620. The Danish admiral treats with Raghunatha Nayak of Thanjavur and founds Dansborg — the least remembered European foothold in India, and one of the longest-lived.",
+    "wiki": "https://en.wikipedia.org/wiki/Ove_Gjedde",
+    "source": "Danish East India Company records"
+  },
+  {
+    "year": 1668,
+    "who": "François Caron",
+    "power": "France",
+    "flag": "🇫🇷",
+    "place": "Surat",
+    "lat": 21.1702,
+    "lng": 72.8311,
+    "text": "François Caron arrives at Surat for the Compagnie des Indes",
+    "detail": "The French arrive last of the great powers, at the same port the English chose sixty years earlier. Pondicherry, and the long duel with the English that ends at Wandiwash, follow from here.",
+    "wiki": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Caron",
+    "source": "Compagnie française des Indes orientales records"
+  }
+]

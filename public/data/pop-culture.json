@@ -1,0 +1,170 @@
+{
+  "_readme": "Pop-culture layer for events (KRISHNA CAN EDIT FREELY). Each entry: keywords (lowercase; an event matches if its text contains ANY of them), optional years [from,to] to stop lookalike matches, an optional one-line 'note' (historical memory/legend), and 'works' — films, series, epics, books that retell it. Shown as an 'On screen & in story' line under matching events. First matching entry wins, so keep specific entries above general ones. This file changes NO historical data — it only decorates the display.",
+  "entries": [
+    { "keywords": ["siege of chittor:"], "years": [1300, 1310],
+      "note": "Remembered through the legend of Rani Padmini's jauhar.",
+      "works": [
+        { "title": "Padmavat", "type": "epic poem", "year": 1540, "by": "Malik Muhammad Jayasi" },
+        { "title": "Padmaavat", "type": "film", "year": 2018, "by": "Bhansali — Deepika Padukone, Ranveer Singh" }
+      ] },
+    { "keywords": ["siege of chittorgarh"], "years": [1560, 1572],
+      "note": "The third jauhar of Chittor; the defiance it bred shaped Maharana Pratap.",
+      "works": [
+        { "title": "Bharat Ka Veer Putra — Maharana Pratap", "type": "TV series", "year": 2013 }
+      ] },
+    { "keywords": ["battle of kili", "siege of ranthambore"], "years": [1295, 1310],
+      "note": "Alauddin Khalji's conquests frame the world of Padmaavat.",
+      "works": [
+        { "title": "Padmaavat", "type": "film", "year": 2018, "by": "Ranveer Singh as Alauddin Khalji" }
+      ] },
+    { "keywords": ["baji rao", "bajirao"], "years": [1715, 1745],
+      "note": "The Peshwa who never lost a battle — and the love story Pune still argues about.",
+      "works": [
+        { "title": "Bajirao Mastani", "type": "film", "year": 2015, "by": "Bhansali — Ranveer Singh, Deepika Padukone, Priyanka Chopra" },
+        { "title": "Peshwa Bajirao", "type": "TV series", "year": 2017 }
+      ] },
+    { "keywords": ["first battle of panipat"], "years": [1520, 1530],
+      "works": [
+        { "title": "The Empire", "type": "web series", "year": 2021, "by": "on Babur, from Alex Rutherford's novels" },
+        { "title": "Baburnama", "type": "memoir", "by": "Babur's own account of the campaign" }
+      ] },
+    { "keywords": ["third battle of panipat"], "years": [1755, 1765],
+      "works": [
+        { "title": "Panipat", "type": "film", "year": 2019, "by": "Arjun Kapoor as Sadashivrao Bhau, Sanjay Dutt as Abdali" },
+        { "title": "Panipat", "type": "novel", "year": 1988, "by": "Vishwas Patil (Marathi classic)" }
+      ] },
+    { "keywords": ["battle of sinhagad", "battle of kondhana"], "years": [1665, 1675],
+      "note": "\"Gad ala, pan Sinha gela\" — the fort is won, but the lion is gone.",
+      "works": [
+        { "title": "Tanhaji: The Unsung Warrior", "type": "film", "year": 2020, "by": "Ajay Devgn as Tanaji Malusare" }
+      ] },
+    { "keywords": ["pavan khind", "siege of panhala"], "years": [1655, 1665],
+      "note": "Baji Prabhu's last stand at the pass while Shivaji escaped to Vishalgad.",
+      "works": [
+        { "title": "Pawankhind", "type": "Marathi film", "year": 2022 },
+        { "title": "Har Har Mahadev", "type": "Marathi film", "year": 2022 }
+      ] },
+    { "keywords": ["battle of pratapgarh"], "years": [1655, 1663],
+      "note": "Shivaji and Afzal Khan's fatal embrace — retold in every Marathi powada.",
+      "works": [
+        { "title": "Sher Shivraj", "type": "Marathi film", "year": 2022 }
+      ] },
+    { "keywords": ["battle of haldighati"], "years": [1570, 1580],
+      "note": "Maharana Pratap and his horse Chetak ride straight into folk memory.",
+      "works": [
+        { "title": "Bharat Ka Veer Putra — Maharana Pratap", "type": "TV series", "year": 2013 },
+        { "title": "Maharana Pratap ki Katha", "type": "Rajasthani folk tradition" }
+      ] },
+    { "keywords": ["akbar-rajput war"], "years": [1570, 1580],
+      "works": [
+        { "title": "Jodhaa Akbar", "type": "film", "year": 2008, "by": "Hrithik Roshan, Aishwarya Rai" },
+        { "title": "Mughal-e-Azam", "type": "film", "year": 1960, "by": "the grandest Mughal court ever filmed" }
+      ] },
+    { "keywords": ["sambhaji"], "years": [1675, 1692],
+      "note": "Shivaji's fiery heir — 2025's biggest Indian film retold his defiance of Aurangzeb.",
+      "works": [
+        { "title": "Chhaava", "type": "film", "year": 2025, "by": "Vicky Kaushal as Sambhaji Maharaj" }
+      ] },
+    { "keywords": ["sacking of burhanpur", "siege of janjira", "siege of ramsej"], "years": [1678, 1692],
+      "works": [
+        { "title": "Chhaava", "type": "film", "year": 2025, "by": "Vicky Kaushal as Sambhaji Maharaj" }
+      ] },
+    { "keywords": ["battle of plassey"], "years": [1750, 1760],
+      "works": [
+        { "title": "Clive of India", "type": "Hollywood film", "year": 1935 },
+        { "title": "Ami Sirajer Begum", "type": "Bengali TV series", "year": 2018 }
+      ] },
+    { "keywords": ["battle of tarain"], "years": [1185, 1195],
+      "note": "The last Hindu emperor of Delhi, sung by his court poet ever since.",
+      "works": [
+        { "title": "Prithviraj Raso", "type": "epic poem", "by": "Chand Bardai" },
+        { "title": "Samrat Prithviraj", "type": "film", "year": 2022, "by": "Akshay Kumar" }
+      ] },
+    { "keywords": ["fall of srirangapatna", "tipu sultan dies"], "years": [1795, 1805],
+      "works": [
+        { "title": "The Sword of Tipu Sultan", "type": "TV series", "year": 1990, "by": "Doordarshan's landmark epic" }
+      ] },
+    { "keywords": ["battle of saragarhi"], "years": [1895, 1900],
+      "note": "Twenty-one against thousands — the Sikh Regiment still honours the day.",
+      "works": [
+        { "title": "Kesari", "type": "film", "year": 2019, "by": "Akshay Kumar" },
+        { "title": "21 Sarfarosh: Saragarhi 1897", "type": "TV series", "year": 2018 }
+      ] },
+    { "keywords": ["jallianwala bagh"], "years": [1915, 1925],
+      "works": [
+        { "title": "Sardar Udham", "type": "film", "year": 2021, "by": "Vicky Kaushal" },
+        { "title": "Kesari Chapter 2", "type": "film", "year": 2025, "by": "the Nair vs Crown court battle" },
+        { "title": "Rang De Basanti", "type": "film", "year": 2006 }
+      ] },
+    { "keywords": ["indian rebellion of 1857", "rebellion of 1857"], "years": [1855, 1860],
+      "works": [
+        { "title": "Mangal Pandey: The Rising", "type": "film", "year": 2005, "by": "Aamir Khan" },
+        { "title": "Manikarnika: The Queen of Jhansi", "type": "film", "year": 2019, "by": "Kangana Ranaut" },
+        { "title": "Junoon", "type": "film", "year": 1978, "by": "Shyam Benegal" }
+      ] },
+    { "keywords": ["battle of koregaon"], "years": [1815, 1822],
+      "note": "The Bhima-Koregaon obelisk remains a site of memory and assertion today.",
+      "works": [] },
+    { "keywords": ["anglo-sikh war", "battle of gujrat", "siege of multan", "battle of mudki"], "years": [1840, 1852],
+      "works": [
+        { "title": "The Black Prince", "type": "film", "year": 2017, "by": "Duleep Singh's story — the war's aftermath" }
+      ] },
+    { "keywords": ["salt march", "dandi"], "years": [1928, 1934],
+      "works": [
+        { "title": "Gandhi", "type": "film", "year": 1982, "by": "Attenborough; Ben Kingsley — 8 Academy Awards" }
+      ] },
+    { "keywords": ["quit india"], "years": [1940, 1945],
+      "works": [
+        { "title": "Gandhi", "type": "film", "year": 1982 },
+        { "title": "1942: A Love Story", "type": "film", "year": 1994 }
+      ] },
+    { "keywords": ["bhagat singh"], "years": [1925, 1935],
+      "works": [
+        { "title": "The Legend of Bhagat Singh", "type": "film", "year": 2002, "by": "Ajay Devgn" },
+        { "title": "Rang De Basanti", "type": "film", "year": 2006 }
+      ] },
+    { "keywords": ["subhas chandra bose"], "years": [1895, 1950],
+      "works": [
+        { "title": "Bose: The Forgotten Hero", "type": "film", "year": 2005, "by": "Shyam Benegal" },
+        { "title": "Bose: Dead/Alive", "type": "web series", "year": 2017 }
+      ] },
+    { "keywords": ["independence on 15 august", "partition creates"], "years": [1945, 1950],
+      "works": [
+        { "title": "Gandhi", "type": "film", "year": 1982 },
+        { "title": "Tamas", "type": "TV film", "year": 1988, "by": "Govind Nihalani, from Bhisham Sahni's novel" },
+        { "title": "Garam Hawa", "type": "film", "year": 1973 },
+        { "title": "Train to Pakistan", "type": "novel", "year": 1956, "by": "Khushwant Singh" }
+      ] },
+    { "keywords": ["kargil war"], "years": [1997, 2002],
+      "works": [
+        { "title": "Shershaah", "type": "film", "year": 2021, "by": "Capt. Vikram Batra's story" },
+        { "title": "LOC: Kargil", "type": "film", "year": 2003 },
+        { "title": "Lakshya", "type": "film", "year": 2004 }
+      ] },
+    { "keywords": ["chola invasion of srivijaya", "south-east asia campaign of rajendra", "chola invasion of kedah"], "years": [1000, 1030],
+      "note": "Rajendra Chola's blue-water navy — the golden age Ponniyin Selvan springs from.",
+      "works": [
+        { "title": "Ponniyin Selvan", "type": "Tamil novel", "year": 1955, "by": "Kalki Krishnamurthy" },
+        { "title": "Ponniyin Selvan: I & II", "type": "films", "year": 2022, "by": "Mani Ratnam" }
+      ] },
+    { "keywords": ["battle of kandalur salai", "battle of takkolam"], "years": [940, 1000],
+      "works": [
+        { "title": "Ponniyin Selvan", "type": "Tamil novel", "year": 1955, "by": "Kalki Krishnamurthy" },
+        { "title": "Ponniyin Selvan: I & II", "type": "films", "year": 2022, "by": "Mani Ratnam — Rajaraja Chola's rise" }
+      ] },
+    { "keywords": ["battle of samugarh", "battle of dharmat", "battle of deorai"], "years": [1655, 1662],
+      "note": "The war of succession that gave the throne to Aurangzeb over Dara Shikoh.",
+      "works": [
+        { "title": "The Emperor Who Never Was", "type": "book", "year": 2019, "by": "Supriya Gandhi, on Dara Shikoh" }
+      ] },
+    { "keywords": ["shivaji is crowned", "coronation of shivaji"], "years": [1670, 1678],
+      "works": [
+        { "title": "Raja Shiv Chhatrapati", "type": "Marathi TV series", "year": 2008 },
+        { "title": "Shriman Yogi", "type": "Marathi novel", "by": "Ranjit Desai" }
+      ] },
+    { "keywords": ["anglo-mysore war"], "years": [1765, 1800],
+      "works": [
+        { "title": "The Sword of Tipu Sultan", "type": "TV series", "year": 1990 }
+      ] }
+  ]
+}

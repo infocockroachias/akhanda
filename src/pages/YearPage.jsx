@@ -139,7 +139,7 @@ const YearPage = () => {
     }
   }, [])
 
-  // --- Load GeoJSON ---
+  // --- Load GeoJSON (once) ---
   useEffect(() => {
     const map = mapInstanceRef.current
     if (!map) return
@@ -169,36 +169,28 @@ const YearPage = () => {
           onEachFeature: (feature, layer) => {
             const code = feature.properties.code
             const name = feature.properties.name || feature.properties.NAME_2 || code
-            const kingdomName = districtKingdomMap[code]
-            const kingdom = kingdoms.find(k => k.name === kingdomName)
 
             layer.on({
               mouseover: (e) => {
+                const kingdomName = districtKingdomMap[code]
+                const kingdom = kingdoms.find(k => k.name === kingdomName)
                 layer.setStyle({ weight: 2, fillOpacity: 0.9, color: '#475569' })
                 layer.bringToFront()
               },
               mouseout: (e) => {
-                layer.setStyle({ weight: 1, fillOpacity: kingdomName ? 0.7 : 0.1, color: '#94a3b8' })
+                const kingdomName = districtKingdomMap[code]
+                const color = kingdomColors[kingdomName] || '#e2e8f0'
+                layer.setStyle({ weight: 1, fillOpacity: kingdomName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
               },
               click: () => {
+                const kingdomName = districtKingdomMap[code]
+                const kingdom = kingdoms.find(k => k.name === kingdomName)
                 if (kingdom) {
                   setSelectedKingdom(kingdom)
                   setHighlightKingdom(kingdom.name)
                 }
               },
             })
-
-            if (kingdomName) {
-              layer.bindTooltip(`
-                <div class="font-semibold text-slate-800">${name}</div>
-                <div class="text-sm text-slate-600">${kingdomName}</div>
-                <div class="text-xs text-slate-500">${kingdom?.capital || ''}</div>
-              `, {
-                direction: 'top',
-                offset: [0, -8],
-                className: 'modern-tooltip',
-              })
-            }
           },
         }).addTo(map)
 
@@ -209,7 +201,20 @@ const YearPage = () => {
     }
 
     loadGeoJSON()
-  }, [mapInstanceRef.current, districtKingdomMap, kingdoms, kingdomColors])
+  }, [mapInstanceRef.current])
+
+  // --- Update styles when year changes ---
+  useEffect(() => {
+    const layer = geoJSONLayerRef.current
+    if (!layer) return
+
+    layer.eachLayer(l => {
+      const code = l.feature.properties.code
+      const kName = districtKingdomMap[code]
+      const color = kingdomColors[kName] || '#e2e8f0'
+      l.setStyle({ weight: 1, fillOpacity: kName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
+    })
+  }, [districtKingdomMap, kingdomColors])
 
   // --- Highlight Kingdom ---
   useEffect(() => {

@@ -133,6 +133,11 @@ const YearPage = () => {
 
     mapInstanceRef.current = map
 
+    // Fix map size after layout settles
+    setTimeout(() => {
+      map.invalidateSize()
+    }, 100)
+
     return () => {
       map.remove()
       mapInstanceRef.current = null
@@ -202,6 +207,17 @@ const YearPage = () => {
 
     loadGeoJSON()
   }, [mapInstanceRef.current])
+
+  // --- Update map size on window resize ---
+  useEffect(() => {
+    const handleResize = () => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.invalidateSize()
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   // --- Update styles when year changes ---
   useEffect(() => {
@@ -327,7 +343,7 @@ const YearPage = () => {
   return (
     <div className="h-full w-full flex flex-col bg-white">
       {/* Main Content */}
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex min-h-0 overflow-hidden">
         {/* Left Sidebar - Rulers & Events */}
         <div className="w-[320px] border-r border-gray-200 flex flex-col bg-white overflow-hidden">
           {/* Search */}
@@ -484,8 +500,8 @@ const YearPage = () => {
         </div>
 
         {/* Center - Map */}
-        <div className="flex-1 relative">
-          <div ref={mapContainerRef} className="h-full w-full" />
+        <div className="flex-1 relative min-h-[400px]">
+          <div ref={mapContainerRef} className="absolute inset-0 w-full h-full" />
 
           {/* Year Display Overlay */}
           <div className="absolute top-3 right-3 z-[720] pointer-events-none">

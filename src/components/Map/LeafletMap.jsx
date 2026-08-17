@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState, useMemo } from 'react'
+import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
-// Fix Leaflet default marker icon issue
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
@@ -17,210 +16,198 @@ const LeafletMap = ({
   onDistrictClick, 
   onKingdomHover,
   highlightKingdom,
-  showDistrictBorders = true,
   isWarping = false,
-  warpedYear = null,
 }) => {
-  const mapRef = useRef(null)
   const mapContainerRef = useRef(null)
+  const mapInstanceRef = useRef(null)
   const geoJSONLayerRef = useRef(null)
-  const markersLayerRef = useRef(null)
-  const [mapInstance, setMapInstance] = useState(null)
+  const [loading, setLoading] = useState(true)
 
-  // Create a map of kingdom colors
+  // Kingdom color map
   const kingdomColors = useMemo(() => {
     const colors = {}
     kingdoms.forEach(k => {
-      colors[k.name] = k.color || '#' + Math.floor(Math.random()*16777215).toString(16)
+      colors[k.name] = k.color || '#6366f1'
     })
     return colors
   }, [kingdoms])
 
-  // Get current ruler for a district code
-  const getCurrentRuler = useCallback((districtCode) => {
-    if (!territories || !year) return null
-    return territories.find(
-      t => t.districtCode === districtCode && t.startYear <= year && t.endYear >= year
-    )
+  // Build district-to-kingdom mapping for selected year
+  const districtKingdomMap = useMemo(() => {
+    const map = {}
+    territories.forEach(t => {
+      if (t.startYear <= year && t.endYear >= year) {
+        map[t.districtCode] = t.kingdomName
+      }
+    })
+    return map
   }, [territories, year])
 
   // Initialize map
   useEffect(() => {
-    if (!mapContainerRef.current || mapInstance) return
+    if (!mapContainerRef.current || mapInstanceRef.current) return
 
     const map = L.map(mapContainerRef.current, {
       center: [22.5, 78.5],
       zoom: 5,
       minZoom: 4,
-      maxZoom: 12,
+      maxZoom: 10,
       zoomControl: false,
-      attributionControl: false,
+      attributionControl: true,
     })
 
-    // Add tile layer (dark theme)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-      subdomains: 'abcd',
-      maxZoom: 19,
+    // Light/white tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
     }).addTo(map)
 
-    // Add zoom control to bottom right
-    L.control.zoom({
-      position: 'bottomright',
-    }).addTo(map)
+    L.control.zoom({ position: 'bottomright' }).addTo(map)
 
-    // Add attribution
-    L.control.attribution({
-      position: 'bottomright',
-      prefix: false,
-    }).addTo(map)
-
-    mapRef.current = map
-    setMapInstance(map)
+    mapInstanceRef.current = map
 
     return () => {
       map.remove()
+      mapInstanceRef.current = null
     }
   }, [])
 
-  // Update GeoJSON layer when territories/year changes
+  // Load and render GeoJSON
   useEffect(() => {
-    if (!mapInstance || !territories || !year) return
+    const map = mapInstanceRef.current
+    if (!map) return
 
-    // Remove existing GeoJSON layer
-    if (geoJSONLayerRef.current) {
-      mapInstance.removeLayer(geoJSONLayerRef.current)
-    }
+    const loadGeoJSON = async () => {
+      try {
+        setLoading(true)
+        const response = await fetch('/data/districts.geojson')
+        const geojson = await response.json()
 
-    // Create features from territories data
-    // Group territories by district and get current ruler
-    const districtRulers = {}
-    territories.forEach(t => {
-      if (t.startYear <= year && t.endYear >= year) {
-        districtRulers[t.districtCode] = t.kingdomName
+        if (geoJSONLayerRef.current) {
+          map.removeLayer(geoJSONLayerRef.current)
+        }
+
+        const layer = L.geoJSON(geojson, {
+          style: (feature) => {
+            const code = feature.properties.code
+            const kingdomName = districtKingdomMap[code]
+            const color = kingdomColors[kingdomName] || '#e2e8f0'
+            return {
+              fillColor: color,
+              fillOpacity: kingdomName ? 0.7 : 0.1,
+              color: '#94a3b8',
+              weight: 1,
+              opacity: 0.6,
+            }
+          },
+          onEachFeature: (feature, layer) => {
+            const code = feature.properties.code
+            const name = feature.properties.name || feature.properties.NAME_2 || code
+            const kingdomName = districtKingdomMap[code]
+            const kingdom = kingdoms.find(k => k.name === kingdomName)
+
+            layer.on({
+              mouseover: (e) => {
+                layer.setStyle({ weight: 2, fillOpacity: 0.9, color: '#475569' })
+                layer.bringToFront()
+                if (kingdomName) {
+                  onKingdomHover?.(kingdomName)
+                }
+              },
+              mouseout: (e) => {
+                layer.setStyle({ weight: 1, fillOpacity: kingdomName ? 0.7 : 0.1, color: '#94a3b8' })
+              },
+              click: () => {
+                if (kingdom) {
+                  onDistrictClick?.({
+                    districtCode: code,
+                    name,
+                    kingdomName: kingdom.name,
+                    capital: kingdom.capital,
+                    description: kingdom.description,
+                    color: kingdom.color,
+                  })
+                }
+              },
+            })
+
+            if (kingdomName) {
+              layer.bindTooltip(`
+                <div class="font-semibold text-slate-800">${name}</div>
+                <div class="text-sm text-slate-600">${kingdomName}</div>
+                <div class="text-xs text-slate-500">${kingdom?.capital || ''}</div>
+              `, {
+                direction: 'top',
+                offset: [0, -8],
+                className: 'modern-tooltip',
+              })
+
+              layer.bindPopup(`
+                <div class="p-3 min-w-[200px]">
+                  <h3 class="font-bold text-lg text-slate-800">${kingdomName}</h3>
+                  <p class="text-sm text-slate-600">District: ${name}</p>
+                  <p class="text-sm text-slate-600">Capital: ${kingdom?.capital || 'N/A'}</p>
+                  <p class="text-sm text-slate-500 mt-2">${kingdom?.description || ''}</p>
+                  <p class="text-xs text-slate-400 mt-2">Year: ${year}</p>
+                </div>
+              `, { maxWidth: 280 })
+            }
+          },
+        }).addTo(map)
+
+        geoJSONLayerRef.current = layer
+        setLoading(false)
+      } catch (err) {
+        console.error('Failed to load GeoJSON:', err)
+        setLoading(false)
       }
-    })
-
-    // Create GeoJSON features
-    const features = Object.entries(districtRulers).map(([districtCode, kingdomName]) => {
-      const kingdom = kingdoms.find(k => k.name === kingdomName)
-      return {
-        type: 'Feature',
-        properties: {
-          districtCode,
-          kingdomName,
-          color: kingdom?.color || '#6b7280',
-          capital: kingdom?.capital || '',
-          description: kingdom?.description || '',
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: [78.5, 22.5], // Placeholder - actual GeoJSON would have real coordinates
-        },
-      }
-    })
-
-    const geoJSONData = {
-      type: 'FeatureCollection',
-      features,
     }
 
-    // Add GeoJSON layer
-    const geoJSONLayer = L.geoJSON(geoJSONData, {
-      pointToLayer: (feature, latlng) => {
-        return L.circleMarker(latlng, {
-          radius: 8,
-          fillColor: feature.properties.color,
-          color: '#1e293b',
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8,
-        })
-      },
-      onEachFeature: (feature, layer) => {
-        const { districtCode, kingdomName, capital, description, color } = feature.properties
-        
-        // Tooltip on hover
-        layer.bindTooltip(
-          `<div class="font-semibold">${districtCode}</div>
-           <div class="text-sm text-gray-300">${kingdomName}</div>
-           <div class="text-xs text-gray-400">Capital: ${capital}</div>`,
-          {
-            direction: 'top',
-            offset: [0, -10],
-            className: 'custom-tooltip',
-          }
-        )
+    loadGeoJSON()
+  }, [mapInstanceRef.current, districtKingdomMap, kingdoms, year])
 
-        // Popup on click
-        layer.bindPopup(
-          `<div class="p-2">
-            <h3 class="font-bold text-lg" style="color: ${color}">${kingdomName}</h3>
-            <p class="text-sm text-gray-300">District: ${districtCode}</p>
-            <p class="text-sm text-gray-300">Capital: ${capital}</p>
-            <p class="text-sm mt-2">${description}</p>
-            <p class="text-xs text-gray-400 mt-2">Year: ${year}</p>
-          </div>`,
-          {
-            maxWidth: 300,
-            className: 'custom-popup',
-          }
-        )
-
-        // Hover effects
-        layer.on('mouseover', (e) => {
-          layer.setStyle({ weight: 3, fillOpacity: 1 })
-          layer.bringToFront()
-          onKingdomHover?.(kingdomName)
-        })
-
-        layer.on('mouseout', (e) => {
-          layer.setStyle({ weight: 1, fillOpacity: 0.8 })
-        })
-
-        layer.on('click', (e) => {
-          onDistrictClick?.({ districtCode, kingdomName, capital, description, color })
-        })
-      },
-    }).addTo(mapInstance)
-
-    geoJSONLayerRef.current = geoJSONLayer
-  }, [mapInstance, territories, year, kingdoms, onDistrictClick, onKingdomHover])
-
-  // Handle time warp animation
+  // Highlight kingdom
   useEffect(() => {
-    if (!mapInstance) return
-    
-    const mapPane = mapInstance.getPane('overlayPane')
-    if (!mapPane) return
+    const layer = geoJSONLayerRef.current
+    if (!layer || !highlightKingdom) return
 
-    if (isWarping) {
-      mapPane.classList.add('irt-blur-out')
-    } else {
-      mapPane.classList.remove('irt-blur-out')
-    }
-  }, [mapInstance, isWarping])
-
-  // Highlight specific kingdom
-  useEffect(() => {
-    if (!geoJSONLayerRef.current || !highlightKingdom) return
-    
-    geoJSONLayerRef.current.eachLayer(layer => {
-      if (layer.feature.properties.kingdomName === highlightKingdom) {
-        layer.setStyle({ weight: 4, fillOpacity: 1, stroke: '#fff', strokeWidth: 2 })
-        layer.bringToFront()
+    layer.eachLayer(l => {
+      const code = l.feature.properties.code
+      const kName = districtKingdomMap[code]
+      if (kName === highlightKingdom) {
+        l.setStyle({ weight: 3, fillOpacity: 1, color: '#1e293b' })
+        l.bringToFront()
       } else {
-        layer.setStyle({ weight: 1, fillOpacity: 0.4 })
+        l.setStyle({ weight: 1, fillOpacity: 0.3, color: '#94a3b8' })
       }
     })
-  }, [highlightKingdom])
+  }, [highlightKingdom, districtKingdomMap])
+
+  // Warp effect
+  useEffect(() => {
+    const map = mapInstanceRef.current
+    if (!map) return
+    const pane = map.getPane('overlayPane')
+    if (!pane) return
+    if (isWarping) {
+      pane.classList.add('irt-blur-out')
+    } else {
+      pane.classList.remove('irt-blur-out')
+    }
+  }, [isWarping])
 
   return (
-    <div 
-      ref={mapContainerRef} 
-      className="h-full w-full"
-      style={{ background: '#0f172a' }}
-    />
+    <div className="relative h-full w-full">
+      {loading && (
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/80">
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-10 h-10 border-3 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+            <p className="text-slate-600 text-sm font-medium">Loading map...</p>
+          </div>
+        </div>
+      )}
+      <div ref={mapContainerRef} className="h-full w-full" style={{ background: '#f8fafc' }} />
+    </div>
   )
 }
 

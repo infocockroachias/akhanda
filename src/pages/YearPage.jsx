@@ -18,7 +18,6 @@ const YearPage = () => {
   const [isWarping, setIsWarping] = useState(false)
   const [selectedKingdom, setSelectedKingdom] = useState(null)
   const [selectedDistrict, setSelectedDistrict] = useState(null)
-  const [showDistrictBorders, setShowDistrictBorders] = useState(true)
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
   const [activeTab, setActiveTab] = useState('kingdoms')
   const [highlightKingdom, setHighlightKingdom] = useState(null)
@@ -73,10 +72,10 @@ const YearPage = () => {
 
   if (loading) {
     return (
-      <div className="h-full w-full flex items-center justify-center">
+      <div className="h-full w-full flex items-center justify-center bg-surface">
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-slate-400">Loading historical data...</p>
+          <div className="w-12 h-12 border-4 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <p className="text-muted font-medium">Loading historical data...</p>
         </div>
       </div>
     )
@@ -84,17 +83,17 @@ const YearPage = () => {
 
   if (error) {
     return (
-      <div className="h-full w-full flex items-center justify-center">
+      <div className="h-full w-full flex items-center justify-center bg-surface">
         <div className="text-center">
-          <p className="text-red-400 mb-2">Error loading data</p>
-          <p className="text-slate-400 text-sm">{error}</p>
+          <p className="text-red-600 font-medium mb-2">Error loading data</p>
+          <p className="text-muted text-sm">{error}</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="h-full w-full relative overflow-hidden">
+    <div className="h-full w-full relative overflow-hidden bg-surface">
       {/* Map */}
       <div className="absolute inset-0">
         <LeafletMap
@@ -104,7 +103,6 @@ const YearPage = () => {
           onDistrictClick={handleDistrictClick}
           onKingdomHover={handleKingdomHover}
           highlightKingdom={highlightKingdom}
-          showDistrictBorders={showDistrictBorders}
           isWarping={isWarping}
           warpedYear={year}
         />
@@ -147,22 +145,24 @@ const YearPage = () => {
 
       {/* District Detail Popup */}
       {selectedDistrict && (
-        <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-20 bg-slate-800/95 backdrop-blur-sm border border-slate-700 rounded-xl px-6 py-4 shadow-2xl min-w-80">
-          <div className="flex items-start justify-between">
-            <div>
-              <h3 className="font-semibold text-white">{selectedDistrict.kingdomName}</h3>
-              <p className="text-sm text-slate-400">District: {selectedDistrict.districtCode}</p>
-              <p className="text-sm text-slate-400">Capital: {selectedDistrict.capital}</p>
-              <p className="text-xs text-slate-500 mt-2">{selectedDistrict.description}</p>
+        <div className="absolute bottom-36 left-1/2 transform -translate-x-1/2 z-30 animate-fade-in">
+          <div className="card p-5 min-w-[280px]">
+            <div className="flex items-start justify-between">
+              <div>
+                <h3 className="font-display text-lg font-semibold text-surface">{selectedDistrict.kingdomName}</h3>
+                <p className="text-sm text-muted mt-1">District: {selectedDistrict.name}</p>
+                <p className="text-sm text-muted">Capital: {selectedDistrict.capital || 'N/A'}</p>
+                <p className="text-sm text-light mt-2">{selectedDistrict.description}</p>
+              </div>
+              <button
+                onClick={() => setSelectedDistrict(null)}
+                className="p-1.5 rounded-lg hover:bg-surface-alt transition-colors"
+              >
+                <svg className="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
-            <button
-              onClick={() => setSelectedDistrict(null)}
-              className="p-1 rounded hover:bg-slate-700"
-            >
-              <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
           </div>
         </div>
       )}

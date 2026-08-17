@@ -7,43 +7,50 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'playfair': ['Playfair Display', 'Georgia', 'serif'],
-        'inter': ['Inter', 'Noto Sans', 'system-ui', 'sans-serif'],
+        'display': ['Playfair Display', 'Georgia', 'serif'],
+        'body': ['Inter', 'Noto Sans', 'system-ui', 'sans-serif'],
+        'hindi': ['Tiro Devanagari Hindi', 'serif'],
       },
       colors: {
-        'mughal': '#8B4513',
-        'maratha': '#FF9933',
-        'rajput': '#C8102E',
-        'sikh': '#0066CC',
-        'mysore': '#4B0082',
-        'british': '#1C1C1C',
+        primary: {
+          50: '#eef2ff',
+          100: '#e0e7ff',
+          200: '#c7d2fe',
+          300: '#a5b4fc',
+          400: '#818cf8',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+          900: '#312e81',
+        },
+        surface: {
+          DEFAULT: '#ffffff',
+          alt: '#f8fafc',
+          muted: '#f1f5f9',
+        },
+        border: {
+          DEFAULT: '#e2e8f0',
+          light: '#f1f5f9',
+          dark: '#cbd5e1',
+        },
+      },
+      boxShadow: {
+        'sm': '0 1px 2px rgba(0,0,0,0.04)',
+        'md': '0 4px 12px rgba(0,0,0,0.08)',
+        'lg': '0 8px 32px rgba(0,0,0,0.12)',
+        'xl': '0 20px 60px rgba(0,0,0,0.15)',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'md': '8px',
+        'lg': '12px',
+        'xl': '16px',
       },
       animation: {
+        'fade-in': 'fadeIn 0.3s ease',
+        'slide-in': 'slideIn 0.3s ease',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'spin-slow': 'spin 3s linear infinite',
-      },
-      keyframes: {
-        timeWarpMap: {
-          '0%': { filter: 'blur(0) saturate(1)', opacity: '1', transform: 'scale(1) rotate(0)' },
-          '50%': { filter: 'blur(3.5px) saturate(0.3)', opacity: '0.75', transform: 'scale(1.02)' },
-          '100%': { filter: 'blur(0) saturate(1)', opacity: '1', transform: 'scale(1) rotate(0)' },
-        },
-        warpFlash: {
-          '0%': { opacity: '0' },
-          '50%': { opacity: '0.3' },
-          '100%': { opacity: '0' },
-        },
-        warpRing: {
-          '0%': { transform: 'translate(-50%,-50%) scale(0.15)', opacity: '0' },
-          '50%': { opacity: '0.5' },
-          '100%': { transform: 'translate(-50%,-50%) scale(1)', opacity: '0' },
-        },
-        warpLabel: {
-          '0%': { opacity: '0', transform: 'translate(-50%,-50%) scale(0.9)' },
-          '20%': { opacity: '1', transform: 'translate(-50%,-50%) scale(1.1)' },
-          '80%': { opacity: '1', transform: 'translate(-50%,-50%) scale(1)' },
-          '100%': { opacity: '0', transform: 'translate(-50%,-50%) scale(0.9)' },
-        },
       },
     },
   },

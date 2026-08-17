@@ -34,7 +34,7 @@ export default function Sidebar({
       {/* Toggle Button */}
       <button
         onClick={onToggle}
-        className="fixed top-4 right-4 z-[1000] bg-slate-800 hover:bg-slate-700 text-white p-3 rounded-lg border border-slate-700 shadow-lg transition-all duration-200"
+        className="fixed top-4 right-4 z-[1000] bg-white hover:bg-surface-alt text-surface p-3 rounded-xl border border-border shadow-md transition-all duration-200"
         aria-label={isOpen ? 'Close sidebar' : 'Open sidebar'}
       >
         {isOpen ? (
@@ -51,15 +51,13 @@ export default function Sidebar({
       {/* Sidebar Panel */}
       <div
         className={`
-          fixed top-0 right-0 h-full w-96 max-w-[90vw] bg-slate-800 border-l border-slate-700
-          shadow-2xl z-[999] transform transition-transform duration-300 ease-in-out
+          fixed top-0 right-0 h-full w-96 max-w-[90vw] bg-white border-l border-border
+          shadow-xl z-[999] transform transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-          md:top-0 md:right-0 md:h-full md:w-96
-          bottom-sheet md:bottom-sheet-none
         `}
       >
         {/* Tab Navigation */}
-        <div className="flex border-b border-slate-700 bg-slate-800/95 backdrop-blur-sm sticky top-0 z-10">
+        <div className="flex border-b border-border bg-surface sticky top-0 z-10">
           {TABS.map(tab => (
             <button
               key={tab.id}
@@ -68,8 +66,8 @@ export default function Sidebar({
                 flex-1 flex items-center justify-center gap-1.5 px-3 py-3 text-xs font-medium
                 transition-all duration-200 border-b-2
                 ${activeTab === tab.id
-                  ? 'text-blue-400 border-blue-400 bg-slate-700/50'
-                  : 'text-slate-400 border-transparent hover:text-white hover:bg-slate-700/30'
+                  ? 'text-primary-600 border-primary-600 bg-primary-50'
+                  : 'text-muted border-transparent hover:text-surface hover:bg-surface-alt'
                 }
               `}
             >
@@ -115,7 +113,7 @@ export default function Sidebar({
       {/* Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-[998] md:hidden"
+          className="fixed inset-0 bg-black/20 z-[998] md:hidden"
           onClick={onToggle}
         />
       )}

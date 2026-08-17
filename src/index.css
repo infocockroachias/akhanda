@@ -210,6 +210,12 @@ body {
   transition: filter 0.4s ease;
 }
 
+/* Battle pin */
+.battle-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
 /* Modern form inputs */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -236,10 +242,10 @@ input[type="number"] {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: #4f46e5;
+  background: #d97706;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.3);
   transition: transform 0.15s ease;
 }
 
@@ -250,11 +256,11 @@ input[type="number"] {
 .timeline-slider::-moz-range-thumb {
   width: 16px;
   height: 16px;
-  background: #4f46e5;
+  background: #d97706;
   border-radius: 50%;
   cursor: pointer;
   border: none;
-  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.3);
 }
 
 /* Year selector */

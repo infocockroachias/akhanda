@@ -111,6 +111,8 @@ const YearPage = () => {
     )
   }, [kingdomsForYear, searchQuery])
 
+  const [mapReady, setMapReady] = useState(false)
+
   // --- Map Initialization ---
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return
@@ -129,9 +131,15 @@ const YearPage = () => {
     // Simple light background
     map.getContainer().style.backgroundColor = '#f8fafc'
 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
+    }).addTo(map)
+
     L.control.zoom({ position: 'bottomleft' }).addTo(map)
 
     mapInstanceRef.current = map
+    setMapReady(true)
 
     // Fix map size after layout settles
     setTimeout(() => {
@@ -141,6 +149,7 @@ const YearPage = () => {
     return () => {
       map.remove()
       mapInstanceRef.current = null
+      setMapReady(false)
     }
   }, [])
 
@@ -158,8 +167,37 @@ const YearPage = () => {
           map.removeLayer(geoJSONLayerRef.current)
         }
 
+        // Detect geo type: outline vs districts
+        const hasDistricts = geojson.features.length > 1 || 
+          geojson.features[0].properties.code || 
+          geojson.features[0].properties.NAME_2 ||
+          geojson.features[0].properties.name !== 'India'
+
+        // Get current ruling kingdom for this year
+        const getTopKingdom = () => {
+          const counts = {}
+          territories.forEach(t => {
+            if (t.startYear <= year && t.endYear >= year) {
+              counts[t.kingdomName] = (counts[t.kingdomName] || 0) + 1
+            }
+          })
+          const top = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0]
+          return kingdoms.find(k => k.name === top) || kingdoms[0]
+        }
+
         const layer = L.geoJSON(geojson, {
           style: (feature) => {
+            if (!hasDistricts) {
+              const currentKingdom = getTopKingdom()
+              const color = currentKingdom ? (kingdomColors[currentKingdom.name] || '#6366f1') : '#e2e8f0'
+              return {
+                fillColor: color,
+                fillOpacity: 0.6,
+                color: '#475569',
+                weight: 2,
+                opacity: 0.8,
+              }
+            }
             const code = feature.properties.code
             const kingdomName = districtKingdomMap[code]
             const color = kingdomColors[kingdomName] || '#e2e8f0'
@@ -172,30 +210,59 @@ const YearPage = () => {
             }
           },
           onEachFeature: (feature, layer) => {
-            const code = feature.properties.code
-            const name = feature.properties.name || feature.properties.NAME_2 || code
+            if (!hasDistricts) {
+              // Single country outline
+              const currentKingdom = getTopKingdom()
+              layer.on({
+                mouseover: (e) => {
+                  layer.setStyle({ weight: 3, fillOpacity: 0.9, color: '#1e293b' })
+                  layer.bringToFront()
+                },
+                mouseout: (e) => {
+                  layer.setStyle({ weight: 2, fillOpacity: 0.6, color: '#475569' })
+                },
+                click: () => {
+                  if (currentKingdom) {
+                    setSelectedKingdom(currentKingdom)
+                    setHighlightKingdom(currentKingdom.name)
+                  }
+                },
+              })
+              layer.bindTooltip(`
+                <div class="font-semibold text-slate-800">India</div>
+                <div class="text-sm text-slate-600">${currentKingdom ? currentKingdom.name : ''}</div>
+                <div class="text-xs text-slate-500">${currentKingdom?.capital || ''}</div>
+              `, {
+                direction: 'top',
+                offset: [0, -8],
+                className: 'modern-tooltip',
+              })
+            } else {
+              // District-level
+              const code = feature.properties.code
+              const name = feature.properties.name || feature.properties.NAME_2 || code
 
-            layer.on({
-              mouseover: (e) => {
-                const kingdomName = districtKingdomMap[code]
-                const kingdom = kingdoms.find(k => k.name === kingdomName)
-                layer.setStyle({ weight: 2, fillOpacity: 0.9, color: '#475569' })
-                layer.bringToFront()
-              },
-              mouseout: (e) => {
-                const kingdomName = districtKingdomMap[code]
-                const color = kingdomColors[kingdomName] || '#e2e8f0'
-                layer.setStyle({ weight: 1, fillOpacity: kingdomName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
-              },
-              click: () => {
-                const kingdomName = districtKingdomMap[code]
-                const kingdom = kingdoms.find(k => k.name === kingdomName)
-                if (kingdom) {
-                  setSelectedKingdom(kingdom)
-                  setHighlightKingdom(kingdom.name)
-                }
-              },
-            })
+              layer.on({
+                mouseover: (e) => {
+                  const kingdomName = districtKingdomMap[code]
+                  layer.setStyle({ weight: 2, fillOpacity: 0.9, color: '#475569' })
+                  layer.bringToFront()
+                },
+                mouseout: (e) => {
+                  const kingdomName = districtKingdomMap[code]
+                  const color = kingdomColors[kingdomName] || '#e2e8f0'
+                  layer.setStyle({ weight: 1, fillOpacity: kingdomName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
+                },
+                click: () => {
+                  const kingdomName = districtKingdomMap[code]
+                  const kingdom = kingdoms.find(k => k.name === kingdomName)
+                  if (kingdom) {
+                    setSelectedKingdom(kingdom)
+                    setHighlightKingdom(kingdom.name)
+                  }
+                },
+              })
+            }
           },
         }).addTo(map)
 
@@ -206,7 +273,7 @@ const YearPage = () => {
     }
 
     loadGeoJSON()
-  }, [mapInstanceRef.current])
+  }, [mapReady])
 
   // --- Update map size on window resize ---
   useEffect(() => {
@@ -224,11 +291,21 @@ const YearPage = () => {
     const layer = geoJSONLayerRef.current
     if (!layer) return
 
+    const hasDistricts = layer.getLayers()[0]?.feature?.properties?.code ||
+      (layer.getLayers()[0]?.feature?.properties?.name !== 'India' && layer.getLayers().length > 1)
+
     layer.eachLayer(l => {
-      const code = l.feature.properties.code
-      const kName = districtKingdomMap[code]
-      const color = kingdomColors[kName] || '#e2e8f0'
-      l.setStyle({ weight: 1, fillOpacity: kName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
+      if (!hasDistricts) {
+        // Single country outline — always show with kingdom color
+        const currentKingdom = getTopKingdom()
+        const color = currentKingdom ? (kingdomColors[currentKingdom.name] || '#6366f1') : '#e2e8f0'
+        l.setStyle({ weight: 2, fillOpacity: 0.6, color: '#475569', fillColor: color })
+      } else {
+        const code = l.feature.properties.code
+        const kName = districtKingdomMap[code]
+        const color = kingdomColors[kName] || '#e2e8f0'
+        l.setStyle({ weight: 1, fillOpacity: kName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
+      }
     })
   }, [districtKingdomMap, kingdomColors])
 
@@ -237,23 +314,39 @@ const YearPage = () => {
     const layer = geoJSONLayerRef.current
     if (!layer) return
 
+    const hasDistricts = layer.getLayers()[0]?.feature?.properties?.code ||
+      (layer.getLayers()[0]?.feature?.properties?.name !== 'India' && layer.getLayers().length > 1)
+
     if (highlightKingdom) {
       layer.eachLayer(l => {
-        const code = l.feature.properties.code
-        const kName = districtKingdomMap[code]
-        if (kName === highlightKingdom) {
+        if (!hasDistricts) {
+          // Single outline — always highlight
           l.setStyle({ weight: 3, fillOpacity: 1, color: '#1e293b' })
           l.bringToFront()
         } else {
-          l.setStyle({ weight: 1, fillOpacity: 0.3, color: '#94a3b8' })
+          const code = l.feature.properties.code
+          const kName = districtKingdomMap[code]
+          if (kName === highlightKingdom) {
+            l.setStyle({ weight: 3, fillOpacity: 1, color: '#1e293b' })
+            l.bringToFront()
+          } else {
+            l.setStyle({ weight: 1, fillOpacity: 0.3, color: '#94a3b8' })
+          }
         }
       })
     } else {
       layer.eachLayer(l => {
-        const code = l.feature.properties.code
-        const kName = districtKingdomMap[code]
-        const color = kingdomColors[kName] || '#e2e8f0'
-        l.setStyle({ weight: 1, fillOpacity: kName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
+        if (!hasDistricts) {
+          // Single outline — show with kingdom color
+          const currentKingdom = getTopKingdom()
+          const color = currentKingdom ? (kingdomColors[currentKingdom.name] || '#6366f1') : '#e2e8f0'
+          l.setStyle({ weight: 2, fillOpacity: 0.6, color: '#475569', fillColor: color })
+        } else {
+          const code = l.feature.properties.code
+          const kName = districtKingdomMap[code]
+          const color = kingdomColors[kName] || '#e2e8f0'
+          l.setStyle({ weight: 1, fillOpacity: kName ? 0.7 : 0.1, color: '#94a3b8', fillColor: color })
+        }
       })
     }
   }, [highlightKingdom, districtKingdomMap, kingdomColors])

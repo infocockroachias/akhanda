@@ -72,10 +72,10 @@ const YearPage = () => {
 
   if (loading) {
     return (
-      <div className="h-full w-full flex items-center justify-center bg-surface">
+      <div className="h-full w-full flex items-center justify-center bg-white">
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-primary-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-muted font-medium">Loading historical data...</p>
+          <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <p className="text-gray-600 font-medium">Loading historical data...</p>
         </div>
       </div>
     )
@@ -83,17 +83,17 @@ const YearPage = () => {
 
   if (error) {
     return (
-      <div className="h-full w-full flex items-center justify-center bg-surface">
+      <div className="h-full w-full flex items-center justify-center bg-white">
         <div className="text-center">
           <p className="text-red-600 font-medium mb-2">Error loading data</p>
-          <p className="text-muted text-sm">{error}</p>
+          <p className="text-gray-500 text-sm">{error}</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="h-full w-full relative overflow-hidden bg-surface">
+    <div className="h-full w-full relative overflow-hidden bg-white">
       {/* Map */}
       <div className="absolute inset-0">
         <LeafletMap
@@ -149,16 +149,16 @@ const YearPage = () => {
           <div className="card p-5 min-w-[280px]">
             <div className="flex items-start justify-between">
               <div>
-                <h3 className="font-display text-lg font-semibold text-surface">{selectedDistrict.kingdomName}</h3>
-                <p className="text-sm text-muted mt-1">District: {selectedDistrict.name}</p>
-                <p className="text-sm text-muted">Capital: {selectedDistrict.capital || 'N/A'}</p>
-                <p className="text-sm text-light mt-2">{selectedDistrict.description}</p>
+                <h3 className="font-display text-lg font-semibold text-gray-800">{selectedDistrict.kingdomName}</h3>
+                <p className="text-sm text-gray-600 mt-1">District: {selectedDistrict.name}</p>
+                <p className="text-sm text-gray-600">Capital: {selectedDistrict.capital || 'N/A'}</p>
+                <p className="text-sm text-gray-500 mt-2">{selectedDistrict.description}</p>
               </div>
               <button
                 onClick={() => setSelectedDistrict(null)}
-                className="p-1.5 rounded-lg hover:bg-surface-alt transition-colors"
+                className="p-1.5 rounded-lg hover:bg-gray-50 transition-colors"
               >
-                <svg className="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>

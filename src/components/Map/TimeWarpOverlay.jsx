@@ -33,8 +33,8 @@ const TimeWarpOverlay = ({ isActive, year }) => {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <div className="bg-white/95 backdrop-blur-sm border border-border rounded-xl px-8 py-4 shadow-xl">
-          <span className="text-5xl font-display font-bold text-surface">
+        <div className="bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl px-8 py-4 shadow-xl">
+          <span className="text-5xl font-display font-bold text-gray-800">
             {year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`}
           </span>
         </div>

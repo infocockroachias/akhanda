@@ -34,7 +34,7 @@ export default function Sidebar({
       {/* Toggle Button */}
       <button
         onClick={onToggle}
-        className="fixed top-4 right-4 z-[1000] bg-white hover:bg-surface-alt text-surface p-3 rounded-xl border border-border shadow-md transition-all duration-200"
+        className="fixed top-4 right-4 z-[1000] bg-white hover:bg-gray-50 text-gray-800 p-3 rounded-xl border border-gray-200 shadow-md transition-all duration-200"
         aria-label={isOpen ? 'Close sidebar' : 'Open sidebar'}
       >
         {isOpen ? (
@@ -51,13 +51,13 @@ export default function Sidebar({
       {/* Sidebar Panel */}
       <div
         className={`
-          fixed top-0 right-0 h-full w-96 max-w-[90vw] bg-white border-l border-border
+          fixed top-0 right-0 h-full w-96 max-w-[90vw] bg-white border-l border-gray-200
           shadow-xl z-[999] transform transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
         {/* Tab Navigation */}
-        <div className="flex border-b border-border bg-surface sticky top-0 z-10">
+        <div className="flex border-b border-gray-200 bg-white sticky top-0 z-10">
           {TABS.map(tab => (
             <button
               key={tab.id}
@@ -66,8 +66,8 @@ export default function Sidebar({
                 flex-1 flex items-center justify-center gap-1.5 px-3 py-3 text-xs font-medium
                 transition-all duration-200 border-b-2
                 ${activeTab === tab.id
-                  ? 'text-primary-600 border-primary-600 bg-primary-50'
-                  : 'text-muted border-transparent hover:text-surface hover:bg-surface-alt'
+                  ? 'text-indigo-600 border-indigo-600 bg-indigo-50'
+                  : 'text-gray-500 border-transparent hover:text-gray-800 hover:bg-gray-50'
                 }
               `}
             >

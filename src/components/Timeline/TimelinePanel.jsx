@@ -75,7 +75,7 @@ const TimelinePanel = ({
       <div className="card p-5 shadow-lg">
         {/* Year Display */}
         <div className="text-center mb-4">
-          <span className="text-4xl font-display font-bold text-surface">
+          <span className="text-4xl font-display font-bold text-gray-800">
             {formatYear(year)}
           </span>
         </div>
@@ -90,7 +90,7 @@ const TimelinePanel = ({
             onChange={handleSliderChange}
             className="timeline-slider w-full"
           />
-          <div className="flex justify-between text-xs text-light mt-1">
+          <div className="flex justify-between text-xs text-gray-400 mt-1">
             <span>{formatYear(minYear)}</span>
             <span>{formatYear(maxYear)}</span>
           </div>
@@ -100,20 +100,20 @@ const TimelinePanel = ({
         <div className="flex items-center justify-center gap-3">
           <button
             onClick={() => onYearChange(Math.max(minYear, year - 10))}
-            className="p-2 rounded-lg bg-surface-alt hover:bg-surface-muted transition-colors"
+            className="p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             title="Go back 10 years"
           >
-            <svg className="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
             </svg>
           </button>
 
           <button
             onClick={handleBackward}
-            className="p-2 rounded-lg bg-surface-alt hover:bg-surface-muted transition-colors"
+            className="p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             title="Previous year"
           >
-            <svg className="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
@@ -137,20 +137,20 @@ const TimelinePanel = ({
 
           <button
             onClick={handleForward}
-            className="p-2 rounded-lg bg-surface-alt hover:bg-surface-muted transition-colors"
+            className="p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             title="Next year"
           >
-            <svg className="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
 
           <button
             onClick={() => onYearChange(Math.min(maxYear, year + 10))}
-            className="p-2 rounded-lg bg-surface-alt hover:bg-surface-muted transition-colors"
+            className="p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             title="Go forward 10 years"
           >
-            <svg className="w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
             </svg>
           </button>
@@ -159,7 +159,7 @@ const TimelinePanel = ({
         {/* Speed & Year Input */}
         <div className="flex items-center justify-center gap-4 mt-4">
           <div className="flex items-center gap-2">
-            <span className="text-xs text-light">Speed:</span>
+            <span className="text-xs text-gray-500">Speed:</span>
             <select
               value={speed}
               onChange={(e) => onSpeedChange(Number(e.target.value))}

@@ -16,6 +16,7 @@ export function useMapData() {
   const [sources, setSources] = useState([])
   const [districtGeo, setDistrictGeo] = useState(null)
   const [territoryMeta, setTerritoryMeta] = useState(null)
+  const [changes, setChanges] = useState({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -36,6 +37,7 @@ export function useMapData() {
           { url: '/data/sources.json', setter: setSources },
           { url: '/data/india-districts.geojson', setter: setDistrictGeo },
           { url: '/data/territory-meta.json', setter: setTerritoryMeta },
+          { url: '/data/changes.json', setter: setChanges },
         ]
 
         const results = await Promise.allSettled(
@@ -75,6 +77,7 @@ export function useMapData() {
     sources,
     districtGeo,
     territoryMeta,
+    changes,
     loading,
     error,
   }

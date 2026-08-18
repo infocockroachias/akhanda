@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useMapData } from '../hooks/useMapData'
+import SourcesModal from '../components/SourcesModal'
 
 // --- Leaflet Setup ---
 delete L.Icon.Default.prototype._getIconUrl
@@ -14,6 +15,13 @@ L.Icon.Default.mergeOptions({
 
 const MIN_YEAR = -1500
 const MAX_YEAR = 2024
+
+// Format a district area (km²) compactly: "1.23M km²", "45k km²", "732 km²"
+function formatArea(km2) {
+  if (km2 >= 1000000) return `${(km2 / 1000000).toFixed(2)}M km²`
+  if (km2 >= 1000) return `${(km2 / 1000).toFixed(0)}k km²`
+  return `${Math.round(km2)} km²`
+}
 
 const YearPage = () => {
   const { year: paramYear } = useParams()
@@ -30,6 +38,13 @@ const YearPage = () => {
   const [showSearch, setShowSearch] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
+  // Sources & methodology modal
+  const [showSources, setShowSources] = useState(false)
+  // "Show all powers" toggle in the Who Ruled list
+  const [showAllPowers, setShowAllPowers] = useState(false)
+  // "View by state" dropdown selection
+  const [selectedState, setSelectedState] = useState('ALL')
+
   // Map refs
   const mapContainerRef = useRef(null)
   const mapInstanceRef = useRef(null)
@@ -45,8 +60,11 @@ const YearPage = () => {
     dynastyRulers,
     capitals,
     capitalCoords,
+    districtAreas,
     districtGeo,
     territoryMeta,
+    changes,
+    eras,
     loading,
     error,
   } = useMapData()
@@ -77,6 +95,13 @@ const YearPage = () => {
     if (!hist || hist.length === 0) return null
     return hist.find(e => e.start <= forYear && e.end >= forYear) || null
   }, [territoryMeta])
+
+  // Current ruler of a kingdom for the selected year (from dynasty_rulers)
+  const currentRuler = useCallback((kingdomName) => {
+    const rulers = dynastyRulers[kingdomName]
+    if (!rulers) return null
+    return rulers.find(r => r.start <= year && r.end >= year) || null
+  }, [dynastyRulers, year])
 
   // Build district-to-kingdom mapping for selected year
   const districtKingdomMap = useMemo(() => {
@@ -123,21 +148,32 @@ const YearPage = () => {
     return kingdom ? (kingdomColors[kingdom.name] || '#6366f1') : '#e2e8f0'
   }, [territories, kingdoms, kingdomColors])
 
-  // Filtered kingdoms for current year with area
-  const kingdomsForYear = useMemo(() => {
-    const result = []
-    const seen = new Set()
+  // Kingdom stats for the current year (area + district count + % share).
+  // CRITICAL: must call stats.set(...) after mutating `cur` — otherwise new
+  // entries created via `|| {area:0,count:0}` are never inserted into the Map
+  // and the sidebar ends up empty (classic JS Map bug).
+  const kingdomStats = useMemo(() => {
+    const stats = new Map()
+    let totalArea = 0
     territories.forEach(t => {
-      if (t.startYear <= year && t.endYear >= year && !seen.has(t.kingdomName)) {
-        seen.add(t.kingdomName)
-        const kingdom = kingdoms.find(k => k.name === t.kingdomName)
-        if (kingdom) {
-          result.push(kingdom)
-        }
+      if (t.startYear <= year && t.endYear >= year) {
+        const area = districtAreas[t.districtCode] || 0
+        const cur = stats.get(t.kingdomName) || { area: 0, count: 0 }
+        cur.area += area
+        cur.count += 1
+        totalArea += area
+        stats.set(t.kingdomName, cur) // <-- the bug fix
       }
     })
-    return result.sort((a, b) => (b.endYear - b.startYear) - (a.endYear - a.startYear))
-  }, [territories, kingdoms, year])
+    return [...stats.entries()]
+      .map(([name, s]) => ({
+        name,
+        area: s.area,
+        count: s.count,
+        pct: totalArea ? (s.area / totalArea) * 100 : 0,
+      }))
+      .sort((a, b) => b.area - a.area)
+  }, [territories, districtAreas, year])
 
   // Events for current year
   const eventsForYear = useMemo(() => {
@@ -154,16 +190,34 @@ const YearPage = () => {
     return events.filter(e => e.year === year && e.lat && e.lng)
   }, [events, year])
 
-  // Filtered kingdoms based on search
+  // Indian states derived from the district GeoJSON (for the "View by state" dropdown)
+  const indianStates = useMemo(() => {
+    if (!districtGeo) return []
+    const s = new Set()
+    districtGeo.features.forEach(f => {
+      if (f.properties && f.properties.country === 'IN') s.add(f.properties.state)
+    })
+    return [...s].sort()
+  }, [districtGeo])
+
+  // Territory that changed hands this year (Who Took What)
+  const changesForYear = useMemo(() => {
+    return changes[String(year)] || []
+  }, [changes, year])
+
+  // Search results across the kingdoms active this year
   const filteredKingdoms = useMemo(() => {
-    if (!searchQuery) return kingdomsForYear
+    const list = kingdomStats
+      .map(s => kingdomByName.get(s.name))
+      .filter(k => !!k)
+    if (!searchQuery) return list
     const q = searchQuery.toLowerCase()
-    return kingdomsForYear.filter(k =>
+    return list.filter(k =>
       k.name?.toLowerCase().includes(q) ||
       k.description?.toLowerCase().includes(q) ||
       k.capital?.toLowerCase().includes(q)
     )
-  }, [kingdomsForYear, searchQuery])
+  }, [kingdomStats, kingdomByName, searchQuery])
 
   const [mapReady, setMapReady] = useState(false)
 
@@ -469,8 +523,48 @@ const YearPage = () => {
       <div className="flex-1 flex min-h-0 overflow-hidden">
         {/* Left Sidebar - Rulers & Events */}
         <div className="w-[320px] border-r border-gray-200 flex flex-col bg-white overflow-hidden">
-          {/* Search */}
-          <div className="p-3 border-b border-gray-100">
+          {/* View by state + Sources + Search */}
+          <div className="p-3 border-b border-gray-100 space-y-2.5">
+            <div className="flex items-center gap-2">
+              <div className="flex-1">
+                <label className="text-[11px] font-semibold text-gray-500 uppercase tracking-wide">View by state</label>
+                <select
+                  value={selectedState}
+                  onChange={(e) => {
+                    setSelectedState(e.target.value)
+                    const map = mapInstanceRef.current
+                    if (!map || !districtGeo) return
+                    if (e.target.value === 'ALL') {
+                      map.setView([22.5, 80], 5, { animate: true })
+                    } else {
+                      const feats = districtGeo.features.filter(f => f.properties && f.properties.state === e.target.value)
+                      if (feats.length > 0) {
+                        const tmp = L.geoJSON(feats)
+                        try { map.fitBounds(tmp.getBounds(), { padding: [30, 30], maxZoom: 8 }) } catch (err) { /* empty bounds */ }
+                        map.removeLayer(tmp)
+                      }
+                    }
+                  }}
+                  className="mt-1 w-full text-sm border border-gray-200 rounded-lg px-2.5 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-amber-300"
+                >
+                  <option value="ALL">All India</option>
+                  {indianStates.map(s => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowSources(true)}
+                title="Sources & methodology"
+                className="mt-[18px] shrink-0 inline-flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-medium border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:border-amber-300 transition-colors"
+              >
+                <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                Sources
+              </button>
+            </div>
             <div className="relative">
               <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -515,52 +609,63 @@ const YearPage = () => {
               </div>
               <p className="text-xs text-gray-500 mb-3">Reigning powers in {year}</p>
 
-              <ul className="space-y-2">
-                {kingdomsForYear.slice(0, 12).map(kingdom => (
-                  <li
-                    key={kingdom.name}
-                    className={`flex items-start gap-2 rounded-md px-2 py-1.5 cursor-pointer transition-colors ${
-                      highlightKingdom === kingdom.name ? 'bg-amber-50 border border-amber-200' : 'hover:bg-gray-50'
-                    }`}
-                    onClick={() => handleKingdomClick(kingdom)}
-                    onMouseEnter={() => setHighlightKingdom(kingdom.name)}
-                    onMouseLeave={() => setHighlightKingdom(null)}
-                  >
-                    <span className="mt-0.5 shrink-0">
-                      <span
-                        className="inline-block rounded-[2px] border border-black/10"
-                        style={{ width: 20, height: 13, backgroundColor: kingdom.color }}
-                      />
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-baseline gap-1.5 min-w-0">
-                        <span className="text-sm font-semibold leading-tight truncate" style={{ color: kingdom.color ? `color-mix(in srgb, ${kingdom.color} 32%, #1e293b)` : '#1e293b' }}>
-                          {kingdom.name}
-                        </span>
-                        <span className="shrink-0 text-[11px] font-bold text-slate-500">
-                          ≈{((kingdom.endYear - kingdom.startYear) * 100 / (MAX_YEAR - MIN_YEAR)).toFixed(0)}k km²
-                        </span>
-                      </div>
-                      {kingdom.capital && (
-                        <div className="text-xs text-gray-700 leading-tight">
-                          <span className="font-medium text-gray-900">{kingdom.capital}</span>
+              <ul className="space-y-1">
+                {(showAllPowers ? kingdomStats : kingdomStats.slice(0, 12)).map(s => {
+                  const k = kingdomByName.get(s.name)
+                  const ruler = currentRuler(s.name)
+                  const active = highlightKingdom === s.name
+                  const swatch = k ? (colorBlindMode ? (k.cvdColor || k.color || '#94a3b8') : (k.color || '#94a3b8')) : '#94a3b8'
+                  return (
+                    <li
+                      key={s.name}
+                      className={`flex items-start gap-2 rounded-md px-2 py-1.5 cursor-pointer transition-colors ${
+                        active ? 'bg-amber-50 border border-amber-200' : 'hover:bg-gray-50'
+                      }`}
+                      onClick={() => { if (k) handleKingdomClick(k) }}
+                      onMouseEnter={() => setHighlightKingdom(s.name)}
+                      onMouseLeave={() => setHighlightKingdom(null)}
+                    >
+                      <span className="mt-0.5 shrink-0">
+                        <span
+                          className="inline-block rounded-[2px] border border-black/10"
+                          style={{ width: 20, height: 13, backgroundColor: swatch }}
+                        />
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-baseline gap-1.5 min-w-0">
+                          <span className="text-sm font-semibold leading-tight truncate" style={{ color: k && k.color ? `color-mix(in srgb, ${k.color} 32%, #1e293b)` : '#1e293b' }}>
+                            {s.name}
+                          </span>
+                          <span className="shrink-0 text-[11px] font-bold text-slate-500">
+                            ≈{formatArea(s.area)} ({s.pct.toFixed(1)}%)
+                          </span>
                         </div>
-                      )}
-                    </div>
-                  </li>
-                ))}
+                        {ruler ? (
+                          <div className="text-xs text-gray-700 leading-tight">
+                            <span className="font-medium text-gray-900">{ruler.ruler}</span>{' '}
+                            <span className="text-gray-400">({ruler.start}–{ruler.end})</span>
+                          </div>
+                        ) : k && k.capital ? (
+                          <div className="text-xs text-gray-700 leading-tight">
+                            <span className="font-medium text-gray-900">{k.capital}</span>
+                          </div>
+                        ) : null}
+                      </div>
+                    </li>
+                  )
+                })}
               </ul>
 
-              {kingdomsForYear.length > 12 && (
+              {kingdomStats.length > 12 && (
                 <button
-                  onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                  onClick={() => setShowAllPowers(v => !v)}
                   className="mt-2 w-full rounded-md border border-gray-200 px-2 py-1.5 text-xs font-medium text-gray-500 hover:bg-gray-50"
                 >
-                  ▼ Show all {kingdomsForYear.length} powers
+                  {showAllPowers ? '▲ Collapse' : `▼ Show all ${kingdomStats.length} powers`}
                 </button>
               )}
 
-              <p className="mt-3 text-[10px] text-gray-400">De-facto rulers; post-1947 shows elected leaders / military rulers.</p>
+              <p className="mt-3 text-[10px] text-gray-400">De-facto rulers; post-1947 shows elected leaders / military rulers. More dynasties added each sweep.</p>
             </div>
 
             {/* Events of the Year */}
@@ -583,18 +688,40 @@ const YearPage = () => {
                       <span className="font-serif font-bold text-sm text-red-900">Battles & Wars</span>
                       <span className="text-[10px] text-red-700/70">{eventsForYear.filter(e => e.category === 'War').length}</span>
                     </div>
-                    <ul className="space-y-1.5">
-                      {eventsForYear.filter(e => e.category === 'War').slice(0, 5).map((event, i) => (
-                        <li key={i} className="text-sm leading-snug">
-                          <div className="flex gap-1.5 text-gray-900 font-semibold">
-                            <span className="text-red-500 mt-[3px] text-[8px]">●</span>
-                            <span>{event.text}</span>
-                          </div>
-                          {event.source && (
-                            <div className="pl-3.5 text-xs font-normal text-gray-600 leading-tight">{event.source}</div>
-                          )}
-                        </li>
-                      ))}
+                    <ul className="space-y-2">
+                      {eventsForYear.filter(e => e.category === 'War').slice(0, 5).map((event, i) => {
+                        const titlePart = event.text.includes(':') ? event.text.split(':')[0] + ':' : event.text
+                        return (
+                          <li key={i} className="text-sm leading-snug">
+                            <div className="flex gap-1.5 text-gray-900 font-semibold items-start">
+                              <span className="text-red-500 mt-[3px] text-[8px]">●</span>
+                              <span className="flex-1">{titlePart}</span>
+                              {event.wiki && (
+                                <a
+                                  href={event.wiki}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="shrink-0 text-red-400 hover:text-red-600"
+                                  title="Read on Wikipedia"
+                                >
+                                  <svg className="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-0L10 14" />
+                                  </svg>
+                                </a>
+                              )}
+                            </div>
+                            {(event.belligerents || event.outcome) && (
+                              <div className="pl-3.5 text-xs font-normal text-gray-600 leading-tight mt-0.5">
+                                {event.belligerents}
+                                {event.outcome && <span className="text-gray-400"> · <span className="font-medium text-gray-700">{event.outcome}</span></span>}
+                              </div>
+                            )}
+                            {event.commanders && (
+                              <div className="pl-3.5 text-[11px] text-gray-500 leading-tight mt-0.5">{event.commanders}</div>
+                            )}
+                          </li>
+                        )
+                      })}
                     </ul>
                   </div>
                 )}
@@ -619,6 +746,38 @@ const YearPage = () => {
                 <p className="mt-3 text-[10px] text-gray-400">Curated from our cited sources, supplemented by Wikipedia</p>
               </div>
             )}
+
+            {/* Who Took What */}
+            <div className="p-4 border-t border-gray-100">
+              <div className="flex items-center gap-2 mb-1">
+                <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+                <h2 className="font-serif text-xl font-semibold text-gray-900">Who Took What</h2>
+              </div>
+              <p className="text-xs text-gray-500 mb-3">Territory that changed hands in {year}</p>
+              {changesForYear.length === 0 ? (
+                <p className="text-sm text-gray-400 italic">No borders changed in {year}.</p>
+              ) : (
+                <ul className="space-y-1.5">
+                  {changesForYear.map((c, i) => (
+                    <li key={i} className="text-sm leading-snug flex items-start gap-1.5">
+                      <span className="text-emerald-500 mt-[3px] text-[8px]">●</span>
+                      <span className="flex-1">
+                        <span className="font-medium text-gray-900">{c.from}</span>
+                        <span className="text-gray-400"> → </span>
+                        <span className="font-medium text-gray-900">{c.to}</span>
+                        <span className="text-[11px] text-gray-500"> ({c.n} {c.n === 1 ? 'district' : 'districts'})</span>
+                        {c.sample && c.sample.length > 0 && (
+                          <span className="block text-[11px] text-gray-400">{c.sample.slice(0, 4).join(', ')}{c.sample.length > 4 ? '…' : ''}</span>
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="mt-2 text-[10px] text-gray-400">Auto-generated from the map — borders that shifted this year.</p>
+            </div>
           </div>
         </div>
 
@@ -857,6 +1016,9 @@ const YearPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Sources & methodology modal */}
+      <SourcesModal open={showSources} onClose={() => setShowSources(false)} eras={eras} />
     </div>
   )
 }

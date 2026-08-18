@@ -69,31 +69,6 @@ const YearPage = () => {
     return colors
   }, [kingdoms])
 
-  // Helper: get top kingdom for a country code
-  const getKingdomForCountry = useCallback((countryCode) => {
-    const counts = {}
-    territories.forEach(t => {
-      if (t.districtCode.startsWith(countryCode + '-') && t.startYear <= year && t.endYear >= year) {
-        counts[t.kingdomName] = (counts[t.kingdomName] || 0) + 1
-      }
-    })
-    const top = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0]
-    return kingdoms.find(k => k.name === top) || null
-  }, [territories, kingdoms, year])
-
-  // Helper: get color for a country code
-  const getCountryColor = useCallback((countryCode, forYear) => {
-    const counts = {}
-    territories.forEach(t => {
-      if (t.districtCode.startsWith(countryCode + '-') && t.startYear <= forYear && t.endYear >= forYear) {
-        counts[t.kingdomName] = (counts[t.kingdomName] || 0) + 1
-      }
-    })
-    const top = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0]
-    const kingdom = kingdoms.find(k => k.name === top)
-    return kingdom ? (kingdomColors[kingdom.name] || '#6366f1') : '#e2e8f0'
-  }, [territories, kingdoms, kingdomColors])
-
   // Filtered kingdoms for current year with area
   const kingdomsForYear = useMemo(() => {
     const result = []
@@ -180,21 +155,22 @@ const YearPage = () => {
     }
   }, [])
 
-  // --- Load Country GeoJSON (ONCE) ---
+  // --- Load District GeoJSON (ONCE) ---
   useEffect(() => {
     const map = mapInstanceRef.current
     if (!map) return
 
     const loadGeoJSON = async () => {
       try {
-        // Load country outlines (India, Bangladesh, Pakistan, Nepal, Sri Lanka)
-        const response = await fetch('/data/country-outlines.json')
+        // Load India district boundaries (636 districts from Census 2011)
+        const response = await fetch('/data/districts.geojson')
         const geojson = await response.json()
 
-        // Initial style function
+        // Initial style function - color each district by ruling kingdom
         const getInitialStyle = (feature) => {
-          const countryCode = feature.properties.country
-          const color = getCountryColor(countryCode, year)
+          const districtCode = feature.properties.code
+          const kingdomName = districtKingdomMap[districtCode]
+          const color = kingdomColors[kingdomName] || '#e2e8f0'
           return {
             fillColor: color,
             fillOpacity: 1,
@@ -207,17 +183,15 @@ const YearPage = () => {
         const layer = L.geoJSON(geojson, {
           style: getInitialStyle,
           onEachFeature: (feature, lyr) => {
-            const countryCode = feature.properties.country
-            const countryName = countryCode === 'IN' ? 'India' : 
-                               countryCode === 'BD' ? 'Bangladesh' :
-                               countryCode === 'PK' ? 'Pakistan' :
-                               countryCode === 'NP' ? 'Nepal' :
-                               countryCode === 'LK' ? 'Sri Lanka' : countryCode
+            const districtCode = feature.properties.code
+            const districtName = feature.properties.name
+            const stateName = feature.properties.state
 
             // Tooltip
             lyr.bindTooltip(`
-              <div class="font-semibold text-slate-800">${countryName}</div>
-              <div class="text-sm text-slate-600" id="tooltip-kingdom-${countryCode}">Independent</div>
+              <div class="font-semibold text-slate-800">${districtName}</div>
+              <div class="text-sm text-slate-600">${stateName}</div>
+              <div class="text-xs text-slate-500" id="tooltip-kingdom-${districtCode}">Independent</div>
             `, {
               direction: 'top',
               offset: [0, -8],
@@ -229,9 +203,9 @@ const YearPage = () => {
               mouseover: (e) => {
                 lyr.setStyle({ weight: 2, fillOpacity: 1, color: '#0f172a' })
                 lyr.bringToFront()
-                const kingdom = getKingdomForCountry(countryCode)
-                if (kingdom) {
-                  setHighlightKingdom(kingdom.name)
+                const kingdomName = districtKingdomMap[districtCode]
+                if (kingdomName) {
+                  setHighlightKingdom(kingdomName)
                 }
               },
               mouseout: (e) => {
@@ -239,14 +213,13 @@ const YearPage = () => {
                 setHighlightKingdom(null)
               },
               click: () => {
-                const kingdom = getKingdomForCountry(countryCode)
-                if (kingdom) {
-                  setSelectedKingdom(kingdom)
-                  setHighlightKingdom(kingdom.name)
-                }
-                // Zoom to India when clicked
-                if (countryCode === 'IN') {
-                  map.setView([22.5, 78.5], 5, { animate: true })
+                const kingdomName = districtKingdomMap[districtCode]
+                if (kingdomName) {
+                  const kingdom = kingdoms.find(k => k.name === kingdomName)
+                  if (kingdom) {
+                    setSelectedKingdom(kingdom)
+                    setHighlightKingdom(kingdom.name)
+                  }
                 }
               },
             })
@@ -255,7 +228,7 @@ const YearPage = () => {
 
         geoJSONLayerRef.current = layer
 
-        // Fit map to show all countries
+        // Fit map to India bounds
         map.fitBounds(layer.getBounds(), { padding: [20, 20] })
 
       } catch (err) {
@@ -264,7 +237,7 @@ const YearPage = () => {
     }
 
     loadGeoJSON()
-  }, [mapReady])
+  }, [mapReady, districtKingdomMap, kingdomColors, kingdoms])
 
   // --- Update map size on window resize ---
   useEffect(() => {
@@ -277,14 +250,15 @@ const YearPage = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  // --- Update styles when year changes (BharatRajya spec §3b) ---
+  // --- Update district colors when year changes (BharatRajya spec §3b) ---
   useEffect(() => {
     const layer = geoJSONLayerRef.current
     if (!layer) return
 
     layer.eachLayer(l => {
-      const countryCode = l.feature.properties?.country
-      const color = getCountryColor(countryCode, year)
+      const districtCode = l.feature.properties?.code
+      const kingdomName = districtKingdomMap[districtCode]
+      const color = kingdomColors[kingdomName] || '#e2e8f0'
       
       // Update fill color - CSS transition handles the animation
       l.setStyle({
@@ -295,7 +269,7 @@ const YearPage = () => {
         opacity: 1,
       })
     })
-  }, [year, getCountryColor])
+  }, [year, districtKingdomMap, kingdomColors])
 
   // --- Highlight Kingdom ---
   useEffect(() => {
@@ -304,10 +278,10 @@ const YearPage = () => {
 
     if (highlightKingdom) {
       layer.eachLayer(l => {
-        const countryCode = l.feature.properties?.country
-        const kingdom = getKingdomForCountry(countryCode)
+        const districtCode = l.feature.properties?.code
+        const kingdomName = districtKingdomMap[districtCode]
         
-        if (kingdom?.name === highlightKingdom) {
+        if (kingdomName === highlightKingdom) {
           l.setStyle({ weight: 2, fillOpacity: 1, color: '#0f172a' })
           l.bringToFront()
         } else {
@@ -316,8 +290,9 @@ const YearPage = () => {
       })
     } else {
       layer.eachLayer(l => {
-        const countryCode = l.feature.properties?.country
-        const color = getCountryColor(countryCode, year)
+        const districtCode = l.feature.properties?.code
+        const kingdomName = districtKingdomMap[districtCode]
+        const color = kingdomColors[kingdomName] || '#e2e8f0'
         
         l.setStyle({
           fillColor: color,
@@ -328,7 +303,7 @@ const YearPage = () => {
         })
       })
     }
-  }, [highlightKingdom, getKingdomForCountry, getCountryColor, year])
+  }, [highlightKingdom, districtKingdomMap, kingdomColors])
 
   // --- Battle Markers ---
   useEffect(() => {

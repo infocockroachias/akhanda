@@ -152,8 +152,20 @@ const YearPage = () => {
       map.remove()
       mapInstanceRef.current = null
       setMapReady(false)
+      // Defensive: clear any leftover Leaflet id so re-init in StrictMode works
+      if (mapContainerRef.current) {
+        mapContainerRef.current._leaflet_id = null
+      }
     }
   }, [])
+
+  // Re-measure the map once data finishes loading and the layout settles
+  useEffect(() => {
+    if (loading) return
+    if (!mapInstanceRef.current) return
+    const t = setTimeout(() => mapInstanceRef.current?.invalidateSize(), 120)
+    return () => clearTimeout(t)
+  }, [loading])
 
   // --- Load District GeoJSON (ONCE) ---
   useEffect(() => {
@@ -376,19 +388,18 @@ const YearPage = () => {
     return `${y} CE`
   }
 
-  if (loading) {
-    return (
-      <div className="h-full w-full flex items-center justify-center bg-white">
-        <div className="text-center">
-          <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-gray-600 font-medium">Loading historical data...</p>
-        </div>
-      </div>
-    )
-  }
-
   return (
-    <div className="h-full w-full flex flex-col bg-white">
+    <div className="h-full w-full flex flex-col bg-white relative">
+      {/* Loading overlay — keeps the map container mounted so Leaflet can init */}
+      {loading && (
+        <div className="absolute inset-0 z-[2000] flex items-center justify-center bg-white">
+          <div className="text-center">
+            <div className="w-12 h-12 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+            <p className="text-gray-600 font-medium">Loading historical data...</p>
+          </div>
+        </div>
+      )}
+
       {/* Main Content */}
       <div className="flex-1 flex min-h-0 overflow-hidden">
         {/* Left Sidebar - Rulers & Events */}

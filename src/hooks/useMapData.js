@@ -14,6 +14,8 @@ export function useMapData() {
   const [capitalCoords, setCapitalCoords] = useState({})
   const [districtAreas, setDistrictAreas] = useState({})
   const [sources, setSources] = useState([])
+  const [districtGeo, setDistrictGeo] = useState(null)
+  const [territoryMeta, setTerritoryMeta] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -32,6 +34,8 @@ export function useMapData() {
           { url: '/data/capital_coords.json', setter: setCapitalCoords },
           { url: '/data/district_areas.json', setter: setDistrictAreas },
           { url: '/data/sources.json', setter: setSources },
+          { url: '/data/india-districts.geojson', setter: setDistrictGeo },
+          { url: '/data/territory-meta.json', setter: setTerritoryMeta },
         ]
 
         const results = await Promise.allSettled(
@@ -69,6 +73,8 @@ export function useMapData() {
     capitalCoords,
     districtAreas,
     sources,
+    districtGeo,
+    territoryMeta,
     loading,
     error,
   }

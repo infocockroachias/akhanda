@@ -45,9 +45,38 @@ const YearPage = () => {
     dynastyRulers,
     capitals,
     capitalCoords,
+    districtGeo,
+    territoryMeta,
     loading,
     error,
   } = useMapData()
+
+  // Toolbar toggles (bharatrajya spec)
+  const [showDistrictBorders, setShowDistrictBorders] = useState(true)
+  const [colorBlindMode, setColorBlindMode] = useState(false)
+  const [selectedDistrict, setSelectedDistrict] = useState(null)
+
+  // Kingdom lookup by name
+  const kingdomByName = useMemo(() => {
+    const m = new Map()
+    kingdoms.forEach(k => m.set(k.name, k))
+    return m
+  }, [kingdoms])
+
+  // Color for a kingdom name (respects colour-blind mode)
+  const colorFor = useCallback((kingdomName) => {
+    if (!kingdomName) return '#e2e8f0'
+    const k = kingdomByName.get(kingdomName)
+    if (!k) return '#94a3b8'
+    return colorBlindMode ? (k.cvdColor || k.color || '#94a3b8') : (k.color || '#94a3b8')
+  }, [kingdomByName, colorBlindMode])
+
+  // Active polity for a district code in a given year (from territory-meta)
+  const activePolity = useCallback((code, forYear) => {
+    const hist = territoryMeta && territoryMeta[code]
+    if (!hist || hist.length === 0) return null
+    return hist.find(e => e.start <= forYear && e.end >= forYear) || null
+  }, [territoryMeta])
 
   // Build district-to-kingdom mapping for selected year
   const districtKingdomMap = useMemo(() => {
@@ -68,6 +97,31 @@ const YearPage = () => {
     })
     return colors
   }, [kingdoms])
+
+  // Helper: get top kingdom for a country code
+  const getKingdomForCountry = useCallback((countryCode) => {
+    const counts = {}
+    territories.forEach(t => {
+      if (t.districtCode.startsWith(countryCode + '-') && t.startYear <= year && t.endYear >= year) {
+        counts[t.kingdomName] = (counts[t.kingdomName] || 0) + 1
+      }
+    })
+    const top = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0]
+    return kingdoms.find(k => k.name === top) || null
+  }, [territories, kingdoms, year])
+
+  // Helper: get color for a country code
+  const getCountryColor = useCallback((countryCode, forYear) => {
+    const counts = {}
+    territories.forEach(t => {
+      if (t.districtCode.startsWith(countryCode + '-') && t.startYear <= forYear && t.endYear >= forYear) {
+        counts[t.kingdomName] = (counts[t.kingdomName] || 0) + 1
+      }
+    })
+    const top = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0]
+    const kingdom = kingdoms.find(k => k.name === top)
+    return kingdom ? (kingdomColors[kingdom.name] || '#6366f1') : '#e2e8f0'
+  }, [territories, kingdoms, kingdomColors])
 
   // Filtered kingdoms for current year with area
   const kingdomsForYear = useMemo(() => {
@@ -167,89 +221,102 @@ const YearPage = () => {
     return () => clearTimeout(t)
   }, [loading])
 
-  // --- Load District GeoJSON (ONCE) ---
+  // Style helper for a district feature
+  const styleDistrict = useCallback((feature) => {
+    const code = feature.properties.districtCode
+    const entry = activePolity(code, year)
+    const kName = entry ? entry.polity : null
+    const isHighlight = highlightKingdom && kName === highlightKingdom
+    return {
+      fillColor: colorFor(kName),
+      fillOpacity: isHighlight ? 0.95 : (kName ? 0.82 : 0.25),
+      color: showDistrictBorders ? '#ffffff' : colorFor(kName),
+      weight: showDistrictBorders ? 0.4 : 0,
+      opacity: 1,
+    }
+  }, [activePolity, colorFor, highlightKingdom, showDistrictBorders, year])
+
+  // --- Render district GeoJSON layer (once geometry arrives) ---
   useEffect(() => {
     const map = mapInstanceRef.current
-    if (!map) return
+    if (!map || !districtGeo) return
 
-    const loadGeoJSON = async () => {
-      try {
-        // Load India district boundaries (636 districts from Census 2011)
-        const response = await fetch('/data/districts.geojson')
-        const geojson = await response.json()
-
-        // Initial style function - color each district by ruling kingdom
-        const getInitialStyle = (feature) => {
-          const districtCode = feature.properties.code
-          const kingdomName = districtKingdomMap[districtCode]
-          const color = kingdomColors[kingdomName] || '#e2e8f0'
-          return {
-            fillColor: color,
-            fillOpacity: 1,
-            color: '#ffffff',
-            weight: 0.5,
-            opacity: 1,
-          }
-        }
-
-        const layer = L.geoJSON(geojson, {
-          style: getInitialStyle,
-          onEachFeature: (feature, lyr) => {
-            const districtCode = feature.properties.code
-            const districtName = feature.properties.name
-            const stateName = feature.properties.state
-
-            // Tooltip
-            lyr.bindTooltip(`
-              <div class="font-semibold text-slate-800">${districtName}</div>
-              <div class="text-sm text-slate-600">${stateName}</div>
-              <div class="text-xs text-slate-500" id="tooltip-kingdom-${districtCode}">Independent</div>
-            `, {
-              direction: 'top',
-              offset: [0, -8],
-              className: 'modern-tooltip',
-            })
-
-            // Hover effects
-            lyr.on({
-              mouseover: (e) => {
-                lyr.setStyle({ weight: 2, fillOpacity: 1, color: '#0f172a' })
-                lyr.bringToFront()
-                const kingdomName = districtKingdomMap[districtCode]
-                if (kingdomName) {
-                  setHighlightKingdom(kingdomName)
-                }
-              },
-              mouseout: (e) => {
-                lyr.setStyle(getInitialStyle(feature))
-                setHighlightKingdom(null)
-              },
-              click: () => {
-                const kingdomName = districtKingdomMap[districtCode]
-                if (kingdomName) {
-                  const kingdom = kingdoms.find(k => k.name === kingdomName)
-                  if (kingdom) {
-                    setSelectedKingdom(kingdom)
-                    setHighlightKingdom(kingdom.name)
-                  }
-                }
-              },
-            })
-          },
-        }).addTo(map)
-
-        geoJSONLayerRef.current = layer
-
-        // Fit map to India bounds
-        map.fitBounds(layer.getBounds(), { padding: [20, 20] })
-
-      } catch (err) {
-        console.error('Failed to load GeoJSON:', err)
-      }
+    if (geoJSONLayerRef.current) {
+      map.removeLayer(geoJSONLayerRef.current)
     }
 
-    loadGeoJSON()
-  }, [mapReady, districtKingdomMap, kingdomColors, kingdoms])
+    const layer = L.geoJSON(districtGeo, {
+      style: styleDistrict,
+      onEachFeature: (feature, lyr) => {
+        const code = feature.properties.districtCode
+        const dname = feature.properties.name
+        const dstate = feature.properties.state
+
+        lyr.bindTooltip('', {
+          direction: 'top',
+          offset: [0, -4],
+          className: 'modern-tooltip',
+          sticky: true,
+        })
+
+        lyr.on({
+          mouseover: () => {
+            lyr.setStyle({ weight: 1.6, color: '#0f172a', fillOpacity: 1 })
+            lyr.bringToFront()
+            const entry = activePolity(code, year)
+            const kName = entry ? entry.polity : 'Independent'
+            const ruler = currentRuler(kName)
+            const t = lyr.getTooltip()
+            if (t) {
+              t.setContent(
+                `<div style="font-weight:600;color:#1e293b">${dname}</div>` +
+                `<div style="font-size:11px;color:#475569">${dstate}</div>` +
+                `<div style="margin-top:2px;color:#334155">${kName}</div>` +
+                (ruler ? `<div style="font-size:11px;color:#64748b">${ruler.ruler} (${ruler.start}–${ruler.end})</div>` : '') +
+                (entry && entry.confidence && entry.confidence !== 'high'
+                  ? `<div style="font-size:10px;color:#b45309;margin-top:1px">● ${entry.confidence} confidence</div>` : '')
+              )
+            }
+            if (entry) setHighlightKingdom(entry.polity)
+          },
+          mouseout: () => {
+            lyr.setStyle(styleDistrict(feature))
+            setHighlightKingdom(null)
+          },
+          click: () => {
+            const entry = activePolity(code, year)
+            const kName = entry ? entry.polity : 'Independent'
+            const k = kingdomByName.get(kName) || null
+            const ruler = currentRuler(kName)
+            const hist = (territoryMeta && territoryMeta[code]) || []
+            setSelectedDistrict({
+              code, name: dname, state: dstate,
+              kingdomName: kName, kingdom: k, ruler,
+              history: hist,
+              confidence: entry ? entry.confidence : null,
+              source: entry ? entry.source : null,
+            })
+            if (k) setSelectedKingdom(k)
+          },
+        })
+      },
+    }).addTo(map)
+
+    geoJSONLayerRef.current = layer
+    try {
+      map.fitBounds(layer.getBounds(), { padding: [10, 10] })
+    } catch (e) { /* bounds may be empty */ }
+  }, [districtGeo])
+
+  // --- Restyle all districts when year / toggles / highlight change ---
+  useEffect(() => {
+    const layer = geoJSONLayerRef.current
+    if (!layer) return
+    layer.eachLayer(l => {
+      const f = l.feature
+      if (f) l.setStyle(styleDistrict(f))
+    })
+  }, [year, styleDistrict, highlightKingdom, showDistrictBorders, colorBlindMode])
 
   // --- Update map size on window resize ---
   useEffect(() => {
@@ -262,15 +329,14 @@ const YearPage = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  // --- Update district colors when year changes (BharatRajya spec §3b) ---
+  // --- Update styles when year changes (BharatRajya spec §3b) ---
   useEffect(() => {
     const layer = geoJSONLayerRef.current
     if (!layer) return
 
     layer.eachLayer(l => {
-      const districtCode = l.feature.properties?.code
-      const kingdomName = districtKingdomMap[districtCode]
-      const color = kingdomColors[kingdomName] || '#e2e8f0'
+      const countryCode = l.feature.properties?.country
+      const color = getCountryColor(countryCode, year)
       
       // Update fill color - CSS transition handles the animation
       l.setStyle({
@@ -281,7 +347,7 @@ const YearPage = () => {
         opacity: 1,
       })
     })
-  }, [year, districtKingdomMap, kingdomColors])
+  }, [year, getCountryColor])
 
   // --- Highlight Kingdom ---
   useEffect(() => {
@@ -290,10 +356,10 @@ const YearPage = () => {
 
     if (highlightKingdom) {
       layer.eachLayer(l => {
-        const districtCode = l.feature.properties?.code
-        const kingdomName = districtKingdomMap[districtCode]
+        const countryCode = l.feature.properties?.country
+        const kingdom = getKingdomForCountry(countryCode)
         
-        if (kingdomName === highlightKingdom) {
+        if (kingdom?.name === highlightKingdom) {
           l.setStyle({ weight: 2, fillOpacity: 1, color: '#0f172a' })
           l.bringToFront()
         } else {
@@ -302,9 +368,8 @@ const YearPage = () => {
       })
     } else {
       layer.eachLayer(l => {
-        const districtCode = l.feature.properties?.code
-        const kingdomName = districtKingdomMap[districtCode]
-        const color = kingdomColors[kingdomName] || '#e2e8f0'
+        const countryCode = l.feature.properties?.country
+        const color = getCountryColor(countryCode, year)
         
         l.setStyle({
           fillColor: color,
@@ -315,7 +380,7 @@ const YearPage = () => {
         })
       })
     }
-  }, [highlightKingdom, districtKingdomMap, kingdomColors])
+  }, [highlightKingdom, getKingdomForCountry, getCountryColor, year])
 
   // --- Battle Markers ---
   useEffect(() => {
@@ -568,6 +633,20 @@ const YearPage = () => {
             </div>
           </div>
 
+          {/* Toolbar toggles (bharatrajya spec) */}
+          <div className="absolute top-3 left-3 z-[720] flex flex-wrap gap-1.5">
+            <button onClick={() => setShowDistrictBorders(v => !v)} title="District borders — show or hide modern district outlines"
+              className={`flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-medium border transition-colors backdrop-blur-sm ${showDistrictBorders ? 'bg-amber-600 text-white border-amber-600 shadow-sm' : 'bg-white/85 text-gray-700 border-gray-200 hover:bg-white'}`}>
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5h16M4 12h16M4 19h16M9 4v16M15 4v16" /></svg>
+              Borders
+            </button>
+            <button onClick={() => setColorBlindMode(v => !v)} title="Colour-blind mode — palette tuned for red-green colour-blindness"
+              className={`flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-medium border transition-colors backdrop-blur-sm ${colorBlindMode ? 'bg-amber-600 text-white border-amber-600 shadow-sm' : 'bg-white/85 text-gray-700 border-gray-200 hover:bg-white'}`}>
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+              CVD
+            </button>
+          </div>
+
           {/* Map Controls */}
           <div className="absolute bottom-3 left-2 z-[950] flex flex-row gap-0.5 rounded-lg border border-gray-200 bg-white/90 p-0.5 shadow-sm backdrop-blur-sm">
             <button onClick={() => mapInstanceRef.current?.zoomIn()} className="p-2 hover:bg-gray-100 rounded" title="Zoom in">
@@ -598,13 +677,82 @@ const YearPage = () => {
           </div>
         </div>
 
-        {/* Right Sidebar - Kingdom Details */}
+        {/* Right Sidebar - District / Kingdom Details */}
         <div className={`w-[280px] border-l border-gray-200 bg-white overflow-y-auto transition-all duration-300 ${isSidebarOpen ? 'block' : 'hidden'}`}>
           <div className="p-4">
-            {selectedKingdom ? (
+            {selectedDistrict ? (
+              <div className="animate-fade-in">
+                <h3 className="font-serif text-lg font-semibold text-gray-900 leading-tight">{selectedDistrict.name}</h3>
+                <p className="text-xs text-gray-500 mb-3">{selectedDistrict.state}</p>
+
+                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-gray-100">
+                  <span className="w-4 h-4 rounded-sm border border-black/10" style={{ backgroundColor: colorFor(selectedDistrict.kingdomName) }} />
+                  <div>
+                    <div className="text-sm font-semibold text-gray-900">{selectedDistrict.kingdomName}</div>
+                    {selectedDistrict.ruler && (
+                      <div className="text-xs text-gray-600">{selectedDistrict.ruler.ruler} ({selectedDistrict.ruler.start}–{selectedDistrict.ruler.end})</div>
+                    )}
+                  </div>
+                </div>
+
+                {selectedDistrict.kingdom && selectedDistrict.kingdom.capital && (
+                  <p className="text-sm text-gray-700 mb-1"><span className="font-medium text-gray-900">Capital:</span> {selectedDistrict.kingdom.capital}</p>
+                )}
+                {selectedDistrict.kingdom && selectedDistrict.kingdom.type && (
+                  <p className="text-sm text-gray-700 mb-1"><span className="font-medium text-gray-900">Type:</span> {selectedDistrict.kingdom.type}</p>
+                )}
+                {selectedDistrict.confidence && selectedDistrict.confidence !== 'high' && (
+                  <p className="text-xs text-amber-700 mt-2 flex items-center gap-1"><span>●</span> {selectedDistrict.confidence} confidence</p>
+                )}
+                {selectedDistrict.kingdom && selectedDistrict.kingdom.description && (
+                  <p className="mt-3 text-sm text-gray-600 leading-relaxed">{selectedDistrict.kingdom.description}</p>
+                )}
+
+                {/* Ruled-over-time ribbon */}
+                {selectedDistrict.history.length > 0 && (
+                  <div className="mt-4">
+                    <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Ruled over time</h4>
+                    <div className="flex flex-wrap gap-[2px]">
+                      {selectedDistrict.history.map((h, i) => {
+                        const isNow = h.start <= year && h.end >= year
+                        return (
+                          <div key={i} title={`${h.polity} (${h.start}–${h.end})`}
+                            className="h-5 rounded-[2px] border border-black/10 cursor-help"
+                            style={{
+                              backgroundColor: colorFor(h.polity),
+                              width: `${Math.max(8, Math.min(60, (h.end - h.start) / 6))}px`,
+                              outline: isNow ? '2px solid #0f172a' : 'none',
+                              outlineOffset: 1,
+                            }}
+                          />
+                        )
+                      })}
+                    </div>
+                    <div className="flex justify-between text-[10px] text-gray-400 mt-1 tabular-nums">
+                      <span>{selectedDistrict.history[0].start}</span>
+                      <span>{selectedDistrict.history[selectedDistrict.history.length - 1].end}</span>
+                    </div>
+                    <ul className="mt-2 space-y-0.5 max-h-40 overflow-y-auto">
+                      {selectedDistrict.history.map((h, i) => (
+                        <li key={i} className="flex items-center gap-1.5 text-xs">
+                          <span className="w-2.5 h-2.5 rounded-[2px] shrink-0 border border-black/10" style={{ backgroundColor: colorFor(h.polity) }} />
+                          <span className="text-gray-700 truncate flex-1">{h.polity}</span>
+                          <span className="text-gray-400 tabular-nums shrink-0">{h.start}–{h.end}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {selectedDistrict.source && (
+                  <p className="mt-3 text-[10px] text-gray-400 leading-tight border-t border-gray-100 pt-2">
+                    <span className="font-semibold">Source:</span> {selectedDistrict.source}
+                  </p>
+                )}
+              </div>
+            ) : selectedKingdom ? (
               <>
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="w-4 h-4 rounded-sm border border-black/10" style={{ backgroundColor: selectedKingdom.color }} />
+                  <span className="w-4 h-4 rounded-sm border border-black/10" style={{ backgroundColor: colorBlindMode ? (selectedKingdom.cvdColor || selectedKingdom.color) : selectedKingdom.color }} />
                   <h3 className="font-serif text-lg font-semibold text-gray-900">{selectedKingdom.name}</h3>
                 </div>
                 <div className="space-y-2 text-sm text-gray-700">
@@ -633,7 +781,7 @@ const YearPage = () => {
                 <svg className="w-12 h-12 text-gray-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                 </svg>
-                <p className="text-gray-500 text-sm">Click a region on the map to read its story.</p>
+                <p className="text-gray-500 text-sm">Click a district on the map to read its story.</p>
               </div>
             )}
           </div>

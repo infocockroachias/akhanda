@@ -11,9 +11,9 @@ import AboutPage from './pages/AboutPage'
 
 function App() {
   return (
-    <div className="h-full w-full overflow-hidden">
+    <div className="h-full w-full flex flex-col overflow-hidden">
       {/* Navigation Header */}
-      <nav className="bg-slate-900 text-white px-4 py-3 flex items-center justify-between z-50 relative shadow-md">
+      <nav className="shrink-0 bg-slate-900 text-white px-4 py-3 flex items-center justify-between z-50 shadow-md">
         <a href="/" className="flex items-center gap-2">
           <span className="text-xl">🇮🇳</span>
           <h1 className="font-serif text-xl font-bold">AkhandBharat</h1>
@@ -47,17 +47,19 @@ function App() {
       </nav>
 
       {/* Routes */}
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/year/:year" element={<YearPage />} />
-        <Route path="/state/:slug" element={<StatePage />} />
-        <Route path="/state/:slug/year/:year" element={<StatePage />} />
-        <Route path="/battles" element={<BattlesPage />} />
-        <Route path="/cards" element={<CardsPage />} />
-        <Route path="/cards/:slug" element={<CardDetailPage />} />
-        <Route path="/sources" element={<SourcesPage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
+      <div className="flex-1 min-h-0 overflow-hidden">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/year/:year" element={<YearPage />} />
+          <Route path="/state/:slug" element={<StatePage />} />
+          <Route path="/state/:slug/year/:year" element={<StatePage />} />
+          <Route path="/battles" element={<BattlesPage />} />
+          <Route path="/cards" element={<CardsPage />} />
+          <Route path="/cards/:slug" element={<CardDetailPage />} />
+          <Route path="/sources" element={<SourcesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </div>
     </div>
   )
 }

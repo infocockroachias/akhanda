@@ -50,6 +50,11 @@ body {
   left: 0;
 }
 
+/* CSS transition for smooth color animation (BharatRajya spec §3b) */
+.leaflet-overlay-pane path.leaflet-interactive {
+  transition: fill 500ms ease, stroke 160ms ease, stroke-width 160ms ease;
+}
+
 .leaflet-control-container {
   z-index: 10;
 }
